@@ -1,0 +1,326 @@
+[Sun Jan  5 23:25:48 2025] src/drone/drone.c:6 - program started!
+[Sun Jan  5 23:25:48 2025] src/drone/drone_utils.c:51 - shared memories got attached!
+[Sun Jan  5 23:25:48 2025] src/drone/drone_utils.c:64 - opened fd in read mode!
+[Sun Jan  5 23:25:48 2025] src/drone/drone_utils.c:75 - Parent: All resources are initialized successfully.
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:456 - Enqueued Command: d
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:510 - Input 'd' received from the pipe
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:525 - Equations are processing!
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:468 - Dequeued Command: d
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:291 - UPDATING USER FORCE with input 'd'
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:341 - User Force: X = 0.50, Y = 0.00
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:148 - UPDATING WALL FORCE
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:153 - CLOSE TO LEFT WALL
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:174 - CLOSE TO TOP WALL
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:197 - Wall Force (Clamped): X = 0.00, Y = 0.00
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:203 - UPDATING OBSTACLES FORCE
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:240 - Obstacle Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:246 - UPDATING TARGETS FORCE
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:284 - Target Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:357 - Total Force: X = 0.50, Y = 0.00
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:364 - UPDATING POSITION
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:414 - new positions: X_POS = 4.00, Y_POS = 0.00
+[Sun Jan  5 23:25:56 2025] src/utils.c:304 - Free spot set at (1, 2).
+[Sun Jan  5 23:25:56 2025] src/utils.c:237 - Drone moved to empty space at (4, 0).
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:422 - updated position of the drone in the grid!
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:429 - updating velocities
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:434 - dx/dt = 30.00, dy/dt = -20.00
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:444 - updated velocities
+[Sun Jan  5 23:25:56 2025] src/drone/drone_utils.c:538 - Processed input: 'd'
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:456 - Enqueued Command: c
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:510 - Input 'c' received from the pipe
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:525 - Equations are processing!
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:468 - Dequeued Command: c
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:291 - UPDATING USER FORCE with input 'c'
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:341 - User Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:148 - UPDATING WALL FORCE
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:153 - CLOSE TO LEFT WALL
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:174 - CLOSE TO TOP WALL
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:197 - Wall Force (Clamped): X = 0.00, Y = -3.00
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:203 - UPDATING OBSTACLES FORCE
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:240 - Obstacle Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:246 - UPDATING TARGETS FORCE
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:284 - Target Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:357 - Total Force: X = 0.35, Y = -2.65
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:364 - UPDATING POSITION
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:414 - new positions: X_POS = 6.00, Y_POS = 1.00
+[Sun Jan  5 23:25:58 2025] src/utils.c:304 - Free spot set at (4, 0).
+[Sun Jan  5 23:25:58 2025] src/utils.c:237 - Drone moved to empty space at (6, 1).
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:422 - updated position of the drone in the grid!
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:429 - updating velocities
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:434 - dx/dt = 20.00, dy/dt = 10.00
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:444 - updated velocities
+[Sun Jan  5 23:25:58 2025] src/drone/drone_utils.c:538 - Processed input: 'c'
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:456 - Enqueued Command: x
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:510 - Input 'x' received from the pipe
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:525 - Equations are processing!
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:468 - Dequeued Command: x
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:291 - UPDATING USER FORCE with input 'x'
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:341 - User Force: X = 0.00, Y = 0.50
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:148 - UPDATING WALL FORCE
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:174 - CLOSE TO TOP WALL
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:197 - Wall Force (Clamped): X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:203 - UPDATING OBSTACLES FORCE
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:240 - Obstacle Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:246 - UPDATING TARGETS FORCE
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:284 - Target Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:357 - Total Force: X = 0.00, Y = 0.50
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:364 - UPDATING POSITION
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:414 - new positions: X_POS = 0.00, Y_POS = 2.00
+[Sun Jan  5 23:26:00 2025] src/utils.c:304 - Free spot set at (6, 1).
+[Sun Jan  5 23:26:00 2025] src/utils.c:237 - Drone moved to empty space at (0, 2).
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:422 - updated position of the drone in the grid!
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:429 - updating velocities
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:434 - dx/dt = -60.00, dy/dt = 10.00
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:444 - updated velocities
+[Sun Jan  5 23:26:00 2025] src/drone/drone_utils.c:538 - Processed input: 'x'
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:456 - Enqueued Command: c
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:510 - Input 'c' received from the pipe
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:525 - Equations are processing!
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:468 - Dequeued Command: c
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:291 - UPDATING USER FORCE with input 'c'
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:341 - User Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:148 - UPDATING WALL FORCE
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:153 - CLOSE TO LEFT WALL
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:174 - CLOSE TO TOP WALL
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:197 - Wall Force (Clamped): X = -3.00, Y = 0.00
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:203 - UPDATING OBSTACLES FORCE
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:240 - Obstacle Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:246 - UPDATING TARGETS FORCE
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:284 - Target Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:357 - Total Force: X = -2.65, Y = 0.35
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:364 - UPDATING POSITION
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:414 - new positions: X_POS = 1.00, Y_POS = 3.00
+[Sun Jan  5 23:26:01 2025] src/utils.c:304 - Free spot set at (0, 2).
+[Sun Jan  5 23:26:01 2025] src/utils.c:237 - Drone moved to empty space at (1, 3).
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:422 - updated position of the drone in the grid!
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:429 - updating velocities
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:434 - dx/dt = 10.00, dy/dt = 10.00
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:444 - updated velocities
+[Sun Jan  5 23:26:01 2025] src/drone/drone_utils.c:538 - Processed input: 'c'
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:456 - Enqueued Command: c
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:510 - Input 'c' received from the pipe
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:525 - Equations are processing!
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:468 - Dequeued Command: c
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:291 - UPDATING USER FORCE with input 'c'
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:341 - User Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:148 - UPDATING WALL FORCE
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:153 - CLOSE TO LEFT WALL
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:174 - CLOSE TO TOP WALL
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:197 - Wall Force (Clamped): X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:203 - UPDATING OBSTACLES FORCE
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:240 - Obstacle Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:246 - UPDATING TARGETS FORCE
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:284 - Target Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:357 - Total Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:364 - UPDATING POSITION
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:414 - new positions: X_POS = 2.00, Y_POS = 4.00
+[Sun Jan  5 23:26:03 2025] src/utils.c:304 - Free spot set at (1, 3).
+[Sun Jan  5 23:26:03 2025] src/utils.c:237 - Drone moved to empty space at (2, 4).
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:422 - updated position of the drone in the grid!
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:429 - updating velocities
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:434 - dx/dt = 10.00, dy/dt = 10.00
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:444 - updated velocities
+[Sun Jan  5 23:26:03 2025] src/drone/drone_utils.c:538 - Processed input: 'c'
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:456 - Enqueued Command: c
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:510 - Input 'c' received from the pipe
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:525 - Equations are processing!
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:468 - Dequeued Command: c
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:291 - UPDATING USER FORCE with input 'c'
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:341 - User Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:148 - UPDATING WALL FORCE
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:153 - CLOSE TO LEFT WALL
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:174 - CLOSE TO TOP WALL
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:197 - Wall Force (Clamped): X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:203 - UPDATING OBSTACLES FORCE
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:240 - Obstacle Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:246 - UPDATING TARGETS FORCE
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:284 - Target Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:357 - Total Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:364 - UPDATING POSITION
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:414 - new positions: X_POS = 3.00, Y_POS = 5.00
+[Sun Jan  5 23:26:04 2025] src/utils.c:304 - Free spot set at (2, 4).
+[Sun Jan  5 23:26:04 2025] src/utils.c:237 - Drone moved to empty space at (3, 5).
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:422 - updated position of the drone in the grid!
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:429 - updating velocities
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:434 - dx/dt = 10.00, dy/dt = 10.00
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:444 - updated velocities
+[Sun Jan  5 23:26:04 2025] src/drone/drone_utils.c:538 - Processed input: 'c'
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:456 - Enqueued Command: c
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:510 - Input 'c' received from the pipe
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:525 - Equations are processing!
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:468 - Dequeued Command: c
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:291 - UPDATING USER FORCE with input 'c'
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:341 - User Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:148 - UPDATING WALL FORCE
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:153 - CLOSE TO LEFT WALL
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:197 - Wall Force (Clamped): X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:203 - UPDATING OBSTACLES FORCE
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:240 - Obstacle Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:246 - UPDATING TARGETS FORCE
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:284 - Target Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:357 - Total Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:364 - UPDATING POSITION
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:414 - new positions: X_POS = 4.00, Y_POS = 6.00
+[Sun Jan  5 23:26:05 2025] src/utils.c:304 - Free spot set at (3, 5).
+[Sun Jan  5 23:26:05 2025] src/utils.c:237 - Drone moved to empty space at (4, 6).
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:422 - updated position of the drone in the grid!
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:429 - updating velocities
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:434 - dx/dt = 10.00, dy/dt = 10.00
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:444 - updated velocities
+[Sun Jan  5 23:26:05 2025] src/drone/drone_utils.c:538 - Processed input: 'c'
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:456 - Enqueued Command: c
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:510 - Input 'c' received from the pipe
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:525 - Equations are processing!
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:468 - Dequeued Command: c
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:291 - UPDATING USER FORCE with input 'c'
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:341 - User Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:148 - UPDATING WALL FORCE
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:153 - CLOSE TO LEFT WALL
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:197 - Wall Force (Clamped): X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:203 - UPDATING OBSTACLES FORCE
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:240 - Obstacle Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:246 - UPDATING TARGETS FORCE
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:284 - Target Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:357 - Total Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:364 - UPDATING POSITION
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:414 - new positions: X_POS = 5.00, Y_POS = 7.00
+[Sun Jan  5 23:26:06 2025] src/utils.c:304 - Free spot set at (4, 6).
+[Sun Jan  5 23:26:06 2025] src/utils.c:237 - Drone moved to empty space at (5, 7).
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:422 - updated position of the drone in the grid!
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:429 - updating velocities
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:434 - dx/dt = 10.00, dy/dt = 10.00
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:444 - updated velocities
+[Sun Jan  5 23:26:06 2025] src/drone/drone_utils.c:538 - Processed input: 'c'
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:456 - Enqueued Command: c
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:510 - Input 'c' received from the pipe
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:525 - Equations are processing!
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:468 - Dequeued Command: c
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:291 - UPDATING USER FORCE with input 'c'
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:341 - User Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:148 - UPDATING WALL FORCE
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:197 - Wall Force (Clamped): X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:203 - UPDATING OBSTACLES FORCE
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:240 - Obstacle Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:246 - UPDATING TARGETS FORCE
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:284 - Target Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:357 - Total Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:364 - UPDATING POSITION
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:414 - new positions: X_POS = 6.00, Y_POS = 8.00
+[Sun Jan  5 23:26:08 2025] src/utils.c:304 - Free spot set at (5, 7).
+[Sun Jan  5 23:26:08 2025] src/utils.c:237 - Drone moved to empty space at (6, 8).
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:422 - updated position of the drone in the grid!
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:429 - updating velocities
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:434 - dx/dt = 10.00, dy/dt = 10.00
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:444 - updated velocities
+[Sun Jan  5 23:26:08 2025] src/drone/drone_utils.c:538 - Processed input: 'c'
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:456 - Enqueued Command: c
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:510 - Input 'c' received from the pipe
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:525 - Equations are processing!
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:468 - Dequeued Command: c
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:291 - UPDATING USER FORCE with input 'c'
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:341 - User Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:148 - UPDATING WALL FORCE
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:197 - Wall Force (Clamped): X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:203 - UPDATING OBSTACLES FORCE
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:240 - Obstacle Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:246 - UPDATING TARGETS FORCE
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:284 - Target Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:357 - Total Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:364 - UPDATING POSITION
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:414 - new positions: X_POS = 7.00, Y_POS = 9.00
+[Sun Jan  5 23:26:10 2025] src/utils.c:304 - Free spot set at (6, 8).
+[Sun Jan  5 23:26:10 2025] src/utils.c:237 - Drone moved to empty space at (7, 9).
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:422 - updated position of the drone in the grid!
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:429 - updating velocities
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:434 - dx/dt = 10.00, dy/dt = 10.00
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:444 - updated velocities
+[Sun Jan  5 23:26:10 2025] src/drone/drone_utils.c:538 - Processed input: 'c'
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:456 - Enqueued Command: c
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:510 - Input 'c' received from the pipe
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:525 - Equations are processing!
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:468 - Dequeued Command: c
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:291 - UPDATING USER FORCE with input 'c'
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:341 - User Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:148 - UPDATING WALL FORCE
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:197 - Wall Force (Clamped): X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:203 - UPDATING OBSTACLES FORCE
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:240 - Obstacle Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:246 - UPDATING TARGETS FORCE
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:284 - Target Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:357 - Total Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:364 - UPDATING POSITION
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:414 - new positions: X_POS = 8.00, Y_POS = 10.00
+[Sun Jan  5 23:26:11 2025] src/utils.c:304 - Free spot set at (7, 9).
+[Sun Jan  5 23:26:11 2025] src/utils.c:237 - Drone moved to empty space at (8, 10).
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:422 - updated position of the drone in the grid!
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:429 - updating velocities
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:434 - dx/dt = 10.00, dy/dt = 10.00
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:444 - updated velocities
+[Sun Jan  5 23:26:11 2025] src/drone/drone_utils.c:538 - Processed input: 'c'
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:456 - Enqueued Command: c
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:510 - Input 'c' received from the pipe
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:525 - Equations are processing!
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:468 - Dequeued Command: c
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:291 - UPDATING USER FORCE with input 'c'
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:341 - User Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:148 - UPDATING WALL FORCE
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:197 - Wall Force (Clamped): X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:203 - UPDATING OBSTACLES FORCE
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:240 - Obstacle Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:246 - UPDATING TARGETS FORCE
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:284 - Target Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:357 - Total Force: X = 0.35, Y = 0.35
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:364 - UPDATING POSITION
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:414 - new positions: X_POS = 9.00, Y_POS = 11.00
+[Sun Jan  5 23:26:12 2025] src/utils.c:304 - Free spot set at (8, 10).
+[Sun Jan  5 23:26:12 2025] src/utils.c:237 - Drone moved to empty space at (9, 11).
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:422 - updated position of the drone in the grid!
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:429 - updating velocities
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:434 - dx/dt = 10.00, dy/dt = 10.00
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:444 - updated velocities
+[Sun Jan  5 23:26:12 2025] src/drone/drone_utils.c:538 - Processed input: 'c'
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:456 - Enqueued Command: x
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:510 - Input 'x' received from the pipe
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:525 - Equations are processing!
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:468 - Dequeued Command: x
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:291 - UPDATING USER FORCE with input 'x'
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:341 - User Force: X = 0.00, Y = 0.50
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:148 - UPDATING WALL FORCE
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:197 - Wall Force (Clamped): X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:203 - UPDATING OBSTACLES FORCE
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:240 - Obstacle Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:246 - UPDATING TARGETS FORCE
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:284 - Target Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:357 - Total Force: X = 0.00, Y = 0.50
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:364 - UPDATING POSITION
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:414 - new positions: X_POS = 0.00, Y_POS = 12.00
+[Sun Jan  5 23:26:13 2025] src/utils.c:304 - Free spot set at (9, 11).
+[Sun Jan  5 23:26:13 2025] src/utils.c:237 - Drone moved to empty space at (0, 12).
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:422 - updated position of the drone in the grid!
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:429 - updating velocities
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:434 - dx/dt = -90.00, dy/dt = 10.00
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:444 - updated velocities
+[Sun Jan  5 23:26:13 2025] src/drone/drone_utils.c:538 - Processed input: 'x'
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:456 - Enqueued Command: d
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:510 - Input 'd' received from the pipe
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:525 - Equations are processing!
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:468 - Dequeued Command: d
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:291 - UPDATING USER FORCE with input 'd'
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:341 - User Force: X = 0.50, Y = 0.00
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:148 - UPDATING WALL FORCE
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:153 - CLOSE TO LEFT WALL
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:197 - Wall Force (Clamped): X = -3.00, Y = 0.00
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:203 - UPDATING OBSTACLES FORCE
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:240 - Obstacle Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:246 - UPDATING TARGETS FORCE
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:284 - Target Force: X = 0.00, Y = 0.00
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:357 - Total Force: X = -2.50, Y = 0.00
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:364 - UPDATING POSITION
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:414 - new positions: X_POS = 1.00, Y_POS = 0.00
+[Sun Jan  5 23:26:14 2025] src/utils.c:304 - Free spot set at (0, 12).
+[Sun Jan  5 23:26:14 2025] src/utils.c:237 - Drone moved to empty space at (1, 0).
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:422 - updated position of the drone in the grid!
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:429 - updating velocities
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:434 - dx/dt = 10.00, dy/dt = -120.00
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:444 - updated velocities
+[Sun Jan  5 23:26:14 2025] src/drone/drone_utils.c:538 - Processed input: 'd'
