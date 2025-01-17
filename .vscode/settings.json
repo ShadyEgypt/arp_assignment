@@ -1,0 +1,22 @@
+{
+    "files.associations": {
+        "ipc.h": "c",
+        "unistd.h": "c",
+        "fcntl.h": "c",
+        "types.h": "c",
+        "errno.h": "c",
+        "stdio.h": "c",
+        "mman.h": "c",
+        "semaphore.h": "c",
+        "signal.h": "c",
+        "utils.h": "c",
+        "stdlib.h": "c",
+        "stat.h": "c",
+        "map_utils.h": "c",
+        "time.h": "c",
+        "display_utils.h": "c",
+        "globals.h": "c",
+        "server_utils.h": "c"
+    },
+    "ros.distro": "humble"
+}
