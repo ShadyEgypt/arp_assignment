@@ -1,0 +1,155 @@
+[Sun Jan  5 23:25:49 2025] src/map/targets.c:38 - Targets process started.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:322 - Starting target placement...
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:323 - config->Map.MaxEntities.Targets: 15
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:326 - placed targets: 0
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:330 - Checking position (34, 86)
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:370 - Single-digit target 1 placed at (34, 86).
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:377 - 1 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:326 - placed targets: 1
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:330 - Checking position (59, 27)
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:370 - Single-digit target 2 placed at (59, 27).
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:377 - 2 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:326 - placed targets: 2
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:330 - Checking position (9, 60)
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:370 - Single-digit target 3 placed at (9, 60).
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:377 - 3 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:326 - placed targets: 3
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:330 - Checking position (26, 70)
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:370 - Single-digit target 4 placed at (26, 70).
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:377 - 4 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:326 - placed targets: 4
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:330 - Checking position (56, 97)
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:370 - Single-digit target 5 placed at (56, 97).
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:377 - 5 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:326 - placed targets: 5
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:330 - Checking position (76, 95)
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:370 - Single-digit target 6 placed at (76, 95).
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:377 - 6 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:326 - placed targets: 6
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:330 - Checking position (12, 53)
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:370 - Single-digit target 7 placed at (12, 53).
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:377 - 7 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:326 - placed targets: 7
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:330 - Checking position (99, 8)
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:370 - Single-digit target 8 placed at (99, 8).
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:377 - 8 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:326 - placed targets: 8
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:330 - Checking position (40, 94)
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:370 - Single-digit target 9 placed at (40, 94).
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:377 - 9 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:326 - placed targets: 9
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:330 - Checking position (58, 7)
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:355 - Two-digit target 10 placed at (58, 7) and (59, 7).
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:377 - 10 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:326 - placed targets: 10
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:330 - Checking position (83, 83)
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:355 - Two-digit target 11 placed at (83, 83) and (84, 83).
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:377 - 11 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:326 - placed targets: 11
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:330 - Checking position (22, 85)
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:355 - Two-digit target 12 placed at (22, 85) and (23, 85).
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:377 - 12 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:326 - placed targets: 12
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:330 - Checking position (93, 26)
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:355 - Two-digit target 13 placed at (93, 26) and (94, 26).
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:377 - 13 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:326 - placed targets: 13
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:330 - Checking position (61, 92)
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:355 - Two-digit target 14 placed at (61, 92) and (62, 92).
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:377 - 14 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:326 - placed targets: 14
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:330 - Checking position (28, 25)
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:355 - Two-digit target 15 placed at (28, 25) and (29, 25).
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:377 - 15 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:25:52 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:322 - Starting target placement...
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:323 - config->Map.MaxEntities.Targets: 15
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:326 - placed targets: 0
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:330 - Checking position (70, 42)
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:370 - Single-digit target 1 placed at (70, 42).
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:377 - 1 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:326 - placed targets: 1
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:330 - Checking position (23, 11)
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:370 - Single-digit target 2 placed at (23, 11).
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:377 - 2 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:326 - placed targets: 2
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:330 - Checking position (8, 16)
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:370 - Single-digit target 3 placed at (8, 16).
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:377 - 3 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:326 - placed targets: 3
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:330 - Checking position (92, 89)
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:370 - Single-digit target 4 placed at (92, 89).
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:377 - 4 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:326 - placed targets: 4
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:330 - Checking position (78, 37)
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:370 - Single-digit target 5 placed at (78, 37).
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:377 - 5 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:326 - placed targets: 5
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:330 - Checking position (99, 29)
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:370 - Single-digit target 6 placed at (99, 29).
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:377 - 6 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:326 - placed targets: 6
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:330 - Checking position (81, 12)
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:370 - Single-digit target 7 placed at (81, 12).
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:377 - 7 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:326 - placed targets: 7
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:330 - Checking position (10, 17)
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:370 - Single-digit target 8 placed at (10, 17).
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:377 - 8 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:326 - placed targets: 8
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:330 - Checking position (57, 42)
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:370 - Single-digit target 9 placed at (57, 42).
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:377 - 9 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:326 - placed targets: 9
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:330 - Checking position (83, 62)
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:355 - Two-digit target 10 placed at (83, 62) and (84, 62).
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:377 - 10 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:326 - placed targets: 10
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:330 - Checking position (54, 74)
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:355 - Two-digit target 11 placed at (54, 74) and (55, 74).
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:377 - 11 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:326 - placed targets: 11
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:330 - Checking position (4, 12)
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:355 - Two-digit target 12 placed at (4, 12) and (5, 12).
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:377 - 12 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:326 - placed targets: 12
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:330 - Checking position (46, 13)
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:355 - Two-digit target 13 placed at (46, 13) and (47, 13).
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:377 - 13 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:326 - placed targets: 13
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:330 - Checking position (43, 78)
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:355 - Two-digit target 14 placed at (43, 78) and (44, 78).
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:377 - 14 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:380 - Target placement complete.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:326 - placed targets: 14
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:330 - Checking position (48, 98)
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:355 - Two-digit target 15 placed at (48, 98) and (49, 98).
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:377 - 15 targets (single and two-digit) have been sequentially placed on the grid.
+[Sun Jan  5 23:26:12 2025] src/map/map_utils.c:380 - Target placement complete.
