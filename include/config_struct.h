@@ -78,6 +78,7 @@ typedef struct
     float MaxObstacleForces;
     float MaxTargetForces;
     float MaxWallForce;
+    int RepulsiveForce;
 } ThresholdsConfig;
 
 // Pipes Configuration

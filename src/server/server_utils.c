@@ -120,7 +120,7 @@ void setup_resources()
     config->Thresholds.MaxObstacleForces = (float)cJSON_GetObjectItemCaseSensitive(thresholds, "MaxObstacleForces")->valuedouble;
     config->Thresholds.MaxTargetForces = (float)cJSON_GetObjectItemCaseSensitive(thresholds, "MaxTargetForces")->valuedouble;
     config->Thresholds.MaxWallForce = (float)cJSON_GetObjectItemCaseSensitive(thresholds, "MaxWallForce")->valuedouble;
-
+    config->Thresholds.RepulsiveForce = (int)cJSON_GetObjectItemCaseSensitive(thresholds, "RepulsiveForce")->valuedouble;
     // ✅ Parse Pipes Configuration
     cJSON *pipes = cJSON_GetObjectItemCaseSensitive(json, "Pipes");
     strcpy(config->Pipes.KeyboardPipe, cJSON_GetObjectItemCaseSensitive(pipes, "KeyboardPipe")->valuestring);

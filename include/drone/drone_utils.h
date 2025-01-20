@@ -17,6 +17,7 @@
 
 // Global variable declarations (extern)
 extern FILE *log_file;
+extern FILE *repulsive_force_log_file;
 extern sem_t *sem_grid;
 extern sem_t *sem_g;
 extern sem_t *sem_drone;
@@ -41,8 +42,8 @@ void handle_sigint(int sig);
 float diag(float side);
 float slow_down(void);
 void update_wall_force(Drone *drone);
-void update_obstacle_force(Drone *drone, Obstacle obstacles[], int obstacles_num);
-void update_target_force(Drone *drone, Target targets[], int targets_num);
+void update_obstacle_force(Drone *drone, Grid *grid, int obstacles_num);
+void update_target_force(Drone *drone, Grid *grid, int targets_num);
 void update_user_force(Drone *drone, char cmd);
 void calculate_total_force(Drone *drone);
 void update_position(Drone *drone, Grid *grid);
