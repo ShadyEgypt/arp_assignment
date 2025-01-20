@@ -3,6 +3,7 @@
 int main()
 {
     log_file = initialize_log_file("drone.txt");
+    repulsive_force_log_file = initialize_log_file("repulsive_force.txt");
     LOG_MESSAGE(log_file, "program started!");
     signal(SIGINT, handle_sigint);
 

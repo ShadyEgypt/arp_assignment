@@ -91,6 +91,7 @@ void setup_resources()
     layout.bl_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l, start_x_l + 8);
     layout.bc_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l + 6, start_x_l + 8);
     layout.br_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l + 12, start_x_l + 8);
+    LOG_MESSAGE(log_file, "SERVER PIPE: ", config->Pipes.ServerPipe);
     fd = open(config->Pipes.ServerPipe, O_WRONLY);
     if (fd == -1)
     {

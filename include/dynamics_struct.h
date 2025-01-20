@@ -7,6 +7,7 @@
 #define GRID_WIDTH 100
 #define OBSTACLES 15
 #define TARGETS 15
+
 struct force
 {
     float x;

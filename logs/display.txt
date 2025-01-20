@@ -1,19 +1,18 @@
-[Sun Jan  5 23:25:46 2025] src/display/display.c:6 - program started!
-[Sun Jan  5 23:25:46 2025] src/display/display_utils.c:47 - ncurses initialized!
-[Sun Jan  5 23:25:46 2025] src/display/display_utils.c:64 - shared memories got attached!
-[Sun Jan  5 23:25:46 2025] src/display/display_utils.c:70 - wrote my pid in the shared memory globals!
-[Sun Jan  5 23:25:46 2025] src/display/display_utils.c:100 - opened fd in write mode!
-[Sun Jan  5 23:25:56 2025] src/display/display_utils.c:167 - Input 'd' written to the pipe
-[Sun Jan  5 23:25:58 2025] src/display/display_utils.c:167 - Input 'c' written to the pipe
-[Sun Jan  5 23:26:00 2025] src/display/display_utils.c:167 - Input 'x' written to the pipe
-[Sun Jan  5 23:26:01 2025] src/display/display_utils.c:167 - Input 'c' written to the pipe
-[Sun Jan  5 23:26:03 2025] src/display/display_utils.c:167 - Input 'c' written to the pipe
-[Sun Jan  5 23:26:04 2025] src/display/display_utils.c:167 - Input 'c' written to the pipe
-[Sun Jan  5 23:26:05 2025] src/display/display_utils.c:167 - Input 'c' written to the pipe
-[Sun Jan  5 23:26:06 2025] src/display/display_utils.c:167 - Input 'c' written to the pipe
-[Sun Jan  5 23:26:08 2025] src/display/display_utils.c:167 - Input 'c' written to the pipe
-[Sun Jan  5 23:26:10 2025] src/display/display_utils.c:167 - Input 'c' written to the pipe
-[Sun Jan  5 23:26:11 2025] src/display/display_utils.c:167 - Input 'c' written to the pipe
-[Sun Jan  5 23:26:12 2025] src/display/display_utils.c:167 - Input 'c' written to the pipe
-[Sun Jan  5 23:26:13 2025] src/display/display_utils.c:167 - Input 'x' written to the pipe
-[Sun Jan  5 23:26:14 2025] src/display/display_utils.c:167 - Input 'd' written to the pipe
+[Mon Jan 20 18:24:42 2025] src/display/display.c:6 - program started!
+[Mon Jan 20 18:24:42 2025] src/display/display_utils.c:47 - ncurses initialized!
+[Mon Jan 20 18:24:42 2025] src/display/display_utils.c:64 - shared memories got attached!
+[Mon Jan 20 18:24:42 2025] src/display/display_utils.c:70 - wrote my pid in the shared memory globals!
+[Mon Jan 20 18:24:42 2025] src/display/display_utils.c:94 - SERVER PIPE: 
+[Mon Jan 20 18:24:42 2025] src/display/display_utils.c:101 - opened fd in write mode!
+[Mon Jan 20 18:24:50 2025] src/display/display_utils.c:168 - Input 'd' written to the pipe
+[Mon Jan 20 18:24:53 2025] src/display/display_utils.c:168 - Input 'w' written to the pipe
+[Mon Jan 20 18:24:55 2025] src/display/display_utils.c:168 - Input 'w' written to the pipe
+[Mon Jan 20 18:24:58 2025] src/display/display_utils.c:168 - Input 'a' written to the pipe
+[Mon Jan 20 18:25:02 2025] src/display/display_utils.c:168 - Input 'a' written to the pipe
+[Mon Jan 20 18:25:06 2025] src/display/display_utils.c:168 - Input 'x' written to the pipe
+[Mon Jan 20 18:25:10 2025] src/display/display_utils.c:168 - Input 'w' written to the pipe
+[Mon Jan 20 18:25:16 2025] src/display/display_utils.c:168 - Input 'd' written to the pipe
+[Mon Jan 20 18:25:18 2025] src/display/display_utils.c:168 - Input 'd' written to the pipe
+[Mon Jan 20 18:25:21 2025] src/display/display_utils.c:168 - Input 'd' written to the pipe
+[Mon Jan 20 18:25:23 2025] src/display/display_utils.c:168 - Input 'x' written to the pipe
+[Mon Jan 20 18:25:32 2025] src/display/display_utils.c:168 - Input 'p' written to the pipe

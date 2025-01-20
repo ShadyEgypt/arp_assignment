@@ -2,6 +2,7 @@
 
 // Define global variables
 FILE *log_file = NULL;
+FILE *repulsive_force_log_file = NULL;
 sem_t *sem_grid = NULL;
 sem_t *sem_g = NULL;
 sem_t *sem_drone = NULL;
@@ -135,11 +136,50 @@ float slow_down(void)
     return 0.f;
 }
 
-float repulsive_force(float distance, float function_scale,
+void determine_drone_position(float drone_pos_x, float drone_pos_y, float obs_x, float obs_y, int result[2])
+{
+    // Determine left/right
+    result[0] = (drone_pos_x < obs_x) ? 1 : 0;
+
+    // Determine top/bottom
+    result[1] = (drone_pos_y < obs_y) ? 1 : 0;
+}
+
+float repulsive_force(FILE *log_file, float distance, float function_scale,
                       float area_of_effect, float vel_x, float vel_y)
 {
-    return function_scale * ((1 / distance) - (1 / area_of_effect)) *
-           (1 / (distance * distance)) * sqrt(pow(vel_x, 2) + pow(vel_y, 2));
+    float result;
+    float inv_distance = 1 / distance;
+    float inv_area_of_effect = 1 / area_of_effect;
+    float distance_squared = distance * distance;
+    float velocity_magnitude = sqrt(pow(vel_x, 2) + pow(vel_y, 2));
+
+    LOG_MESSAGE(log_file, "Inputs - distance: %f, function_scale: %f, area_of_effect: %f, vel_x: %f, vel_y: %f",
+                distance, function_scale, area_of_effect, vel_x, vel_y);
+    LOG_MESSAGE(log_file, "Intermediate calculations - 1/distance: %f, 1/area_of_effect: %f, distance^2: %f, velocity magnitude: %f",
+                inv_distance, inv_area_of_effect, distance_squared, velocity_magnitude);
+
+    if (distance == 0.0)
+    {
+        result = 0.0;
+        LOG_MESSAGE(log_file, "Result - repulsive_force: %f , the distance between the drone and the object is zero", result);
+        return result;
+    }
+
+    if (velocity_magnitude)
+    {
+        result = function_scale * (inv_distance - inv_area_of_effect) *
+                 (1 / distance_squared) * velocity_magnitude;
+    }
+    else
+    {
+        result = function_scale * (inv_distance - inv_area_of_effect) *
+                 (1 / distance_squared);
+    }
+
+    LOG_MESSAGE(log_file, "Result - repulsive_force: %f", result);
+
+    return result;
 }
 
 // Update wall repulsive force with clamping
@@ -151,17 +191,17 @@ void update_wall_force(Drone *drone)
     if (drone->drone_pos.x < config->EffectRadius.Wall)
     {
         LOG_MESSAGE(log_file, "CLOSE TO LEFT WALL");
-        drone->wall_force.x = repulsive_force(
-            drone->drone_pos.x, config->Forces.Wall, config->EffectRadius.Wall,
-            drone->drone_vel.x, drone->drone_vel.y);
+        drone->wall_force.x = repulsive_force(repulsive_force_log_file,
+                                              drone->drone_pos.x, config->Forces.Wall, config->EffectRadius.Wall,
+                                              drone->drone_vel.x, drone->drone_vel.y);
     }
     else if (drone->drone_pos.x > config->Map.Size.Width - config->EffectRadius.Wall)
     {
         LOG_MESSAGE(log_file, "CLOSE TO RIGHT WALL");
 
-        drone->wall_force.y = -repulsive_force(
-            config->Map.Size.Width - drone->drone_pos.x, config->Forces.Wall,
-            config->EffectRadius.Wall, drone->drone_vel.x, drone->drone_vel.y);
+        drone->wall_force.y = -repulsive_force(repulsive_force_log_file,
+                                               config->Map.Size.Width - drone->drone_pos.x, config->Forces.Wall,
+                                               config->EffectRadius.Wall, drone->drone_vel.x, drone->drone_vel.y);
     }
     // Otherwise set it to 0
     else
@@ -172,16 +212,16 @@ void update_wall_force(Drone *drone)
     if (drone->drone_pos.y < config->EffectRadius.Wall)
     {
         LOG_MESSAGE(log_file, "CLOSE TO TOP WALL");
-        drone->wall_force.y = repulsive_force(
-            drone->drone_pos.y, config->Forces.Wall, config->EffectRadius.Wall,
-            drone->drone_vel.x, drone->drone_vel.y);
+        drone->wall_force.y = repulsive_force(repulsive_force_log_file,
+                                              drone->drone_pos.y, config->Forces.Wall, config->EffectRadius.Wall,
+                                              drone->drone_vel.x, drone->drone_vel.y);
     }
     else if (drone->drone_pos.y > config->Map.Size.Height - config->EffectRadius.Wall)
     {
         LOG_MESSAGE(log_file, "CLOSE TO BOTTOM WALL");
-        drone->wall_force.y = -repulsive_force(
-            config->Map.Size.Height - drone->drone_pos.y, config->Forces.Wall,
-            config->EffectRadius.Wall, drone->drone_vel.y, drone->drone_vel.y);
+        drone->wall_force.y = -repulsive_force(repulsive_force_log_file,
+                                               config->Map.Size.Height - drone->drone_pos.y, config->Forces.Wall,
+                                               config->EffectRadius.Wall, drone->drone_vel.y, drone->drone_vel.y);
     }
     // Otherwise set it to 0
     else
@@ -198,32 +238,59 @@ void update_wall_force(Drone *drone)
 }
 
 // Update obstacle repulsive force
-void update_obstacle_force(Drone *drone, Obstacle obstacles[], int obstacles_num)
+void update_obstacle_force(Drone *drone, Grid *grid, int obstacles_num)
 {
     LOG_MESSAGE(log_file, "UPDATING OBSTACLES FORCE");
+    int result[2];
     drone->obs_force.x = 0.0f;
     drone->obs_force.y = 0.0f;
+    float drone_pos_x = grid->drone_pos.x;
+    float drone_pos_y = grid->drone_pos.y;
+
+    // log drone position
+    LOG_MESSAGE(log_file, "Drone Position: X = %.2f, Y = %.2f", drone_pos_x, drone_pos_y);
     for (int i = 0; i < obstacles_num; i++)
     {
-        float distance = sqrt(pow(obstacles[i].x - drone->drone_pos.x, 2) +
-                              pow(obstacles[i].y - drone->drone_pos.y, 2));
+        float obs_x = grid->obstacles[i].x;
+        float obs_y = grid->obstacles[i].y;
+        // log obstacle position
+        LOG_MESSAGE(log_file, "Obstacle %d Position: X = %.2f, Y = %.2f", i, obs_x, obs_y);
+        float distance = sqrt(pow(obs_x - drone_pos_x, 2) +
+                              pow(obs_y - drone_pos_y, 2));
+        LOG_MESSAGE(log_file, "Distance to obstacle %d: %.2f", i, distance);
         // If it's quite close but not too much then apply the force.
-        if (distance < config->EffectRadius.Obstacle && distance > 1)
+        if (distance < config->EffectRadius.Obstacle && distance > 30)
         {
-            double x_distance = obstacles[i].x - drone->drone_pos.x;
-            double y_distance = obstacles[i].y - drone->drone_pos.y;
+            double x_distance = obs_x - drone_pos_x;
+            double y_distance = obs_y - drone_pos_y;
 
             // Compute the magnitude of the repulsive force
             double force =
-                -repulsive_force(distance, 10000, config->EffectRadius.Obstacle,
-                                 drone->drone_vel.x, drone->drone_vel.y);
-
-            // Compute the direction of the repulsive force
+                repulsive_force(repulsive_force_log_file, distance, config->Thresholds.RepulsiveForce, config->EffectRadius.Obstacle,
+                                drone->drone_vel.x, drone->drone_vel.y);
+            LOG_MESSAGE(log_file, "Repulsive Force for obstacle %d: %.2f", i, force);
+            determine_drone_position(drone_pos_x, drone_pos_y, obs_x, obs_y, result); // Compute the direction of the repulsive force
             double angle = atan2(y_distance, x_distance);
-
-            // Add the force to the accumulation variable
-            drone->obs_force.x += cos(angle) * force;
-            drone->obs_force.y += sin(angle) * force;
+            // the drone is on the left of the obs
+            if (result[0])
+            {
+                drone->obs_force.x -= cos(angle) * force;
+            }
+            // the drone is on the right of the obs
+            else
+            {
+                drone->obs_force.x += cos(angle) * force;
+            }
+            // the drone is on top of the obs
+            if (result[1])
+            {
+                drone->obs_force.y -= sin(angle) * force;
+            }
+            // the drone is below the obs
+            else
+            {
+                drone->obs_force.y += sin(angle) * force;
+            }
 
             // Cap the force at a certain threshold.
             if (drone->obs_force.x > config->Thresholds.MaxObstacleForces)
@@ -241,33 +308,60 @@ void update_obstacle_force(Drone *drone, Obstacle obstacles[], int obstacles_num
 }
 
 // Update target attractive force
-void update_target_force(Drone *drone, Target targets[], int targets_num)
+void update_target_force(Drone *drone, Grid *grid, int targets_num)
 {
     LOG_MESSAGE(log_file, "UPDATING TARGETS FORCE");
+    int result[2];
     drone->tar_force.x = 0.0f;
     drone->tar_force.y = 0.0f;
 
+    float drone_pos_x = grid->drone_pos.x;
+    float drone_pos_y = grid->drone_pos.y;
     for (int i = 0; i < targets_num; i++)
     {
-        float distance = sqrt(pow(targets[i].x - drone->drone_pos.x, 2) +
-                              pow(targets[i].y - drone->drone_pos.y, 2));
+        float tar_x = grid->targets[i].x;
+        float tar_y = grid->targets[i].y;
+        LOG_MESSAGE(log_file, "Target %d Position: X = %.2f, Y = %.2f", i, tar_x, tar_y);
+        float distance = sqrt(pow(tar_x - drone_pos_x, 2) +
+                              pow(tar_y - drone_pos_y, 2));
+        LOG_MESSAGE(log_file, "Distance to target %d: %.2f", i, distance);
+
         // If it's quite close but not too much then apply the force.
         if (distance < config->EffectRadius.Target && distance > 1)
         {
-            double x_distance = targets[i].x - drone->drone_pos.x;
-            double y_distance = targets[i].y - drone->drone_pos.y;
+            double x_distance = tar_x - drone_pos_x;
+            double y_distance = tar_y - drone_pos_y;
 
             // Compute the magnitude of the repulsive force
             double force =
-                -repulsive_force(distance, 10000, config->EffectRadius.Target,
-                                 drone->drone_vel.x, drone->drone_vel.y);
+                repulsive_force(repulsive_force_log_file, distance, config->Thresholds.RepulsiveForce, config->EffectRadius.Target,
+                                drone->drone_vel.x, drone->drone_vel.y);
+            LOG_MESSAGE(log_file, "Attractive Force for target %d: %.2f", i, force);
 
+            determine_drone_position(drone_pos_x, drone_pos_y, tar_x, tar_y, result); // Compute the direction of the repulsive force
             // Compute the direction of the repulsive force
             double angle = atan2(y_distance, x_distance);
 
-            // Add the force to the accumulation variable
-            drone->tar_force.x += cos(angle) * force;
-            drone->tar_force.y += sin(angle) * force;
+            // the drone is on the left of the tar
+            if (result[0])
+            {
+                drone->tar_force.x += cos(angle) * force;
+            }
+            // the drone is on the right of the tar
+            else
+            {
+                drone->tar_force.x -= cos(angle) * force;
+            }
+            // the drone is on top of the tar
+            if (result[1])
+            {
+                drone->tar_force.y += sin(angle) * force;
+            }
+            // the drone is below the tar
+            else
+            {
+                drone->tar_force.y -= sin(angle) * force;
+            }
 
             // Cap the force at a certain threshold.
             if (drone->tar_force.x > config->Thresholds.MaxTargetForces)
@@ -433,8 +527,8 @@ void update_velocity(Drone *drone)
 
     LOG_MESSAGE(log_file, "dx/dt = %.2f, dy/dt = %.2f", dx_dt, dy_dt);
     // // Cap the velocity
-    // drone->drone_vel.x = fminf(fmaxf(dx_dt, -config->Thresholds.MaxVelocity), config->Thresholds.MaxVelocity);
-    // drone->drone_vel.y = fminf(fmaxf(dy_dt, -config->Thresholds.MaxVelocity), config->Thresholds.MaxVelocity);
+    drone->drone_vel.x = fminf(fmaxf(dx_dt, -config->Thresholds.MaxVelocity), config->Thresholds.MaxVelocity);
+    drone->drone_vel.y = fminf(fmaxf(dy_dt, -config->Thresholds.MaxVelocity), config->Thresholds.MaxVelocity);
 
     drone->drone_pos_1.x = drone->drone_pos.x;
     drone->drone_pos_1.y = drone->drone_pos.y;
@@ -527,8 +621,8 @@ void child2_task()
             // Update forces based on the grid's targets and obstacles
             update_user_force(drone, cmd);
             update_wall_force(drone);
-            update_obstacle_force(drone, grid->obstacles, grid->obstacle_count);
-            update_target_force(drone, grid->targets, grid->target_count);
+            update_obstacle_force(drone, grid, grid->obstacle_count);
+            update_target_force(drone, grid, grid->target_count);
             calculate_total_force(drone);
             // Update drone's state
             update_position(drone, grid);
@@ -537,7 +631,6 @@ void child2_task()
             // Log state after processing
             LOG_MESSAGE(log_file, "Processed input: '%c'", cmd);
         }
-
         // sleep to prevent high CPU usage
         usleep(1000000 * config->Physics.IntegrationInterval);
     }
