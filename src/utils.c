@@ -173,7 +173,7 @@ bool is_point_occupied(Grid *grid, int x, int y, int grid_h, int grid_w)
 // Set a grid point with additional handling for TARGET, OBSTACLE, and DRONE
 void set_grid_point(Grid *grid, GridPointType type, FILE *log_file, Config *config, int x, int y, int value)
 {
-
+    log_file = initialize_log_file("map.txt");
     if (x < 0 || x >= config->Map.Size.Width || y < 0 || y >= config->Map.Size.Height)
     {
         LOG_MESSAGE(log_file, "Error: Grid coordinates out of bounds.");
@@ -182,6 +182,10 @@ void set_grid_point(Grid *grid, GridPointType type, FILE *log_file, Config *conf
 
     switch (type)
     {
+    case FREE:
+        grid->grid[y][x] = 0;
+        LOG_MESSAGE(log_file, "Free spot set at (%d, %d).", x, y);
+        break;
     case TARGET:
         grid->targets[grid->target_count].x = (float)x;
         grid->targets[grid->target_count].y = (float)y;
@@ -328,11 +332,6 @@ void set_grid_point(Grid *grid, GridPointType type, FILE *log_file, Config *conf
                 grid->drone_pos.y = y;
             }
         }
-        break;
-
-    case FREE:
-        grid->grid[y][x] = 0;
-        LOG_MESSAGE(log_file, "Free spot set at (%d, %d).", x, y);
         break;
 
     default:

@@ -1,21 +1,14 @@
-[Thu Jan 23 05:46:15 2025] src/server/server.c:6 - program started!
-[Thu Jan 23 05:46:15 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+[Thu Jan 30 15:59:51 2025] src/server/server.c:6 - program started!
+[Thu Jan 30 15:59:51 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
 
-[Thu Jan 23 05:46:15 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+[Thu Jan 30 15:59:51 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
 
-[Thu Jan 23 05:46:15 2025] src/server/server_utils.c:227 - config->Map.MaxEntities.Obstacles: 15
-[Thu Jan 23 05:46:15 2025] src/server/server_utils.c:273 - Grid initialized successfully
-[Thu Jan 23 05:48:34 2025] src/server/server.c:6 - program started!
-[Thu Jan 23 05:48:34 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+[Thu Jan 30 15:59:51 2025] src/server/server_utils.c:235 - config->Map.MaxEntities.Obstacles: 15
+[Thu Jan 30 15:59:51 2025] src/server/server_utils.c:281 - Grid initialized successfully
+[Thu Jan 30 16:01:34 2025] src/server/server.c:6 - program started!
+[Thu Jan 30 16:01:34 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
 
-[Thu Jan 23 05:48:34 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+[Thu Jan 30 16:01:34 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
 
-[Thu Jan 23 05:48:34 2025] src/server/server_utils.c:229 - config->Map.MaxEntities.Obstacles: 15
-[Thu Jan 23 05:48:34 2025] src/server/server_utils.c:275 - Grid initialized successfully
-[Thu Jan 23 05:49:31 2025] src/server/server.c:6 - program started!
-[Thu Jan 23 05:49:31 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
-
-[Thu Jan 23 05:49:31 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
-
-[Thu Jan 23 05:49:31 2025] src/server/server_utils.c:229 - config->Map.MaxEntities.Obstacles: 15
-[Thu Jan 23 05:49:31 2025] src/server/server_utils.c:275 - Grid initialized successfully
+[Thu Jan 30 16:01:34 2025] src/server/server_utils.c:235 - config->Map.MaxEntities.Obstacles: 15
+[Thu Jan 30 16:01:34 2025] src/server/server_utils.c:281 - Grid initialized successfully

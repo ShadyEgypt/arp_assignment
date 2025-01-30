@@ -1,16 +1,142 @@
-[Thu Jan 23 05:46:23 2025] src/display/display.c:6 - program started!
-[Thu Jan 23 05:46:23 2025] src/display/display_utils.c:58 - ncurses initialized!
-[Thu Jan 23 05:46:23 2025] src/display/display_utils.c:75 - shared memories got attached!
-[Thu Jan 23 05:46:23 2025] src/display/display_utils.c:81 - wrote my pid in the shared memory globals!
-[Thu Jan 23 05:46:23 2025] src/display/display_utils.c:115 - opened fd in write mode!
-[Thu Jan 23 05:48:38 2025] src/display/display.c:6 - program started!
-[Thu Jan 23 05:48:38 2025] src/display/display_utils.c:58 - ncurses initialized!
-[Thu Jan 23 05:48:38 2025] src/display/display_utils.c:75 - shared memories got attached!
-[Thu Jan 23 05:48:38 2025] src/display/display_utils.c:81 - wrote my pid in the shared memory globals!
-[Thu Jan 23 05:48:38 2025] src/display/display_utils.c:115 - opened fd in write mode!
-[Thu Jan 23 05:49:48 2025] src/display/display.c:6 - program started!
-[Thu Jan 23 05:49:48 2025] src/display/display_utils.c:58 - ncurses initialized!
-[Thu Jan 23 05:49:48 2025] src/display/display_utils.c:75 - shared memories got attached!
-[Thu Jan 23 05:49:48 2025] src/display/display_utils.c:81 - wrote my pid in the shared memory globals!
-[Thu Jan 23 05:49:48 2025] src/display/display_utils.c:115 - opened fd in write mode!
-[Thu Jan 23 05:49:53 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 15:59:54 2025] src/display/display.c:6 - program started!
+[Thu Jan 30 15:59:54 2025] src/display/display_utils.c:58 - ncurses initialized!
+[Thu Jan 30 15:59:54 2025] src/display/display_utils.c:75 - shared memories got attached!
+[Thu Jan 30 15:59:54 2025] src/display/display_utils.c:81 - wrote my pid in the shared memory globals!
+[Thu Jan 30 15:59:54 2025] src/display/display_utils.c:115 - opened fd in write mode!
+[Thu Jan 30 16:00:04 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:05 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:00:07 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:08 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:09 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:09 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:10 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:11 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:11 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:12 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:12 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:00:13 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:14 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:15 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:15 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:16 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:00:17 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:17 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:17 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:18 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:18 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:19 2025] src/display/display_utils.c:180 - Input 'w' written to the pipe
+[Thu Jan 30 16:00:21 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:21 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:22 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:00:23 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:23 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:24 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:24 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:24 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:25 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:25 2025] src/display/display_utils.c:180 - Input 'w' written to the pipe
+[Thu Jan 30 16:00:26 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:00:27 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:28 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:29 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:30 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:31 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:00:31 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:32 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:32 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:33 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:00:33 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:00:35 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:35 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:36 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:36 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:36 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:37 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:37 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:37 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:38 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:40 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:40 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:40 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:41 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:00:42 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:00:44 2025] src/display/display_utils.c:180 - Input 'w' written to the pipe
+[Thu Jan 30 16:01:37 2025] src/display/display.c:6 - program started!
+[Thu Jan 30 16:01:37 2025] src/display/display_utils.c:58 - ncurses initialized!
+[Thu Jan 30 16:01:37 2025] src/display/display_utils.c:75 - shared memories got attached!
+[Thu Jan 30 16:01:37 2025] src/display/display_utils.c:81 - wrote my pid in the shared memory globals!
+[Thu Jan 30 16:01:37 2025] src/display/display_utils.c:115 - opened fd in write mode!
+[Thu Jan 30 16:01:44 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:44 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:45 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:01:46 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:46 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:47 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:47 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:48 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:48 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:49 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:49 2025] src/display/display_utils.c:180 - Input 'w' written to the pipe
+[Thu Jan 30 16:01:50 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:01:51 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:01:51 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:52 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:52 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:52 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:53 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:53 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:53 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:53 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:53 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:53 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:53 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:53 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:55 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:58 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:58 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:58 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:01:59 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:02:00 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:02:00 2025] src/display/display_utils.c:180 - Input 'd' written to the pipe
+[Thu Jan 30 16:02:04 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:02:05 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:02:07 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:02:07 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:02:08 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:02:10 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:11 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:11 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:12 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:12 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:13 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:14 2025] src/display/display_utils.c:180 - Input 'w' written to the pipe
+[Thu Jan 30 16:02:15 2025] src/display/display_utils.c:180 - Input 'w' written to the pipe
+[Thu Jan 30 16:02:17 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:02:18 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:02:19 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:19 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:19 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:20 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:20 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:21 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:21 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:22 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Thu Jan 30 16:02:23 2025] src/display/display_utils.c:180 - Input 'w' written to the pipe
+[Thu Jan 30 16:02:25 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:25 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:26 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:26 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:28 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:29 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:29 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:30 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:30 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:30 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:31 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:31 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:32 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:32 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:33 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:33 2025] src/display/display_utils.c:180 - Input 'w' written to the pipe
+[Thu Jan 30 16:02:34 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
+[Thu Jan 30 16:02:40 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe

@@ -16,7 +16,7 @@ pid_t child2_pid = -1;
 WINDOW *game_window;
 WINDOW *instruction_window;
 
-WINDOW *setup_win(int h, int w, int startx, int starty)
+WINDOW *setup_win(uint h, uint w, uint startx, uint starty)
 {
     WINDOW *local_win;
 
@@ -77,15 +77,15 @@ void setup_resources()
 
 void draw_game()
 {
-    int x, y;
-    int starty = (LINES - GRID_HEIGHT) / 2;
-    int startx = (COLS - GRID_WIDTH) / 2;
-    if (game_window == NULL || game_window == NULL || game_window == NULL)
+    uint x, y;
+    uint starty = (uint)(LINES - GRID_HEIGHT) / 2;
+    uint startx = (uint)(COLS - GRID_WIDTH) / 2;
+    if (game_window == NULL)
     {
         // Ensure all windows are set up
         game_window = setup_win(LINES - 1, COLS - 2, 2, 2);
     }
-
+    wclear(game_window);
     mvprintw(0, 3, "MAP DISPLAY");
     mvprintw(0, 25, "Score: %d", grid->score);
     mvprintw(0, 50, "Press Ctrl+C to exit.");
@@ -93,7 +93,7 @@ void draw_game()
 
     // Draw Targets
     wattron(game_window, COLOR_PAIR(1));
-    for (int i = 0; i < grid->target_count; i++)
+    for (uint i = 0; i < grid->target_count; i++)
     {
         Target target = grid->targets[i];
         x = target.x;
@@ -102,8 +102,8 @@ void draw_game()
         if (target.is_two_digit)
         {
             // Split two-digit target into two digits
-            int first_digit = target.id / 10;
-            int second_digit = target.id % 10;
+            uint first_digit = target.id / 10;
+            uint second_digit = target.id % 10;
             grid->grid[y][x] = first_digit;
             grid->grid[y][x + 1] = second_digit;
         }
@@ -118,7 +118,7 @@ void draw_game()
 
     // Draw Obstacles
     wattron(game_window, COLOR_PAIR(2));
-    for (int i = 0; i < grid->obstacle_count; i++)
+    for (uint i = 0; i < grid->obstacle_count; i++)
     {
         Obstacle obstacle = grid->obstacles[i];
         x = obstacle.x;
@@ -132,24 +132,24 @@ void draw_game()
     // Draw walls
     // Top and bottom borders
     wattron(game_window, COLOR_PAIR(2));
-    for (int x = 0; x < GRID_WIDTH; x++)
+    for (uint x = 0; x < GRID_WIDTH; x++)
     {
         mvwaddch(game_window, 0, x, '*');               // Top border
         mvwaddch(game_window, GRID_HEIGHT - 1, x, '*'); // Bottom border
     }
 
     // Left and right borders
-    for (int y = 0; y < GRID_HEIGHT; y++)
+    for (uint y = 0; y < GRID_HEIGHT; y++)
     {
         mvwaddch(game_window, y, 0, '*');              // Left border
         mvwaddch(game_window, y, GRID_WIDTH - 1, '*'); // Right border
     }
     wattroff(game_window, COLOR_PAIR(2));
 
-    int drone_x = grid->drone_pos.x;
-    int drone_y = grid->drone_pos.y;
+    uint drone_x = grid->drone_pos.x;
+    uint drone_y = grid->drone_pos.y;
     // Draw Drone (Assuming single drone at specific coordinates)
-    grid->grid[drone_x][drone_y] = 254;
+    grid->grid[drone_y][drone_x] = 254;
     wattron(game_window, COLOR_PAIR(3));
     mvwprintw(game_window, drone_y, drone_x, "+");
     wattroff(game_window, COLOR_PAIR(3));
@@ -158,33 +158,28 @@ void draw_game()
     refresh();
 }
 
-void setup_game()
-{
-    if (LINES < GRID_HEIGHT + 1 || COLS < GRID_WIDTH + 2)
-    {
-        if (instruction_window == NULL)
-        {
-            instruction_window = setup_win(3, COLS, 0, 0);
-            mvwprintw(instruction_window, 1, 1, "Resize terminal to at least %dx%d to view the game correctly.", config->Map.Size.Height, config->Map.Size.Width);
-        }
-        wrefresh(instruction_window);
-    }
-    else
-    {
-        if (instruction_window != NULL)
-        {
-            destroy_win(instruction_window);
-            instruction_window = NULL;
-        }
-        draw_game(); // Draw game if enough space and instruction window is not needed
-    }
-}
-
 void child1_task()
 {
     while (1)
     {
-        setup_game();   // Check and update the windows as necessary
+        if (LINES < GRID_HEIGHT + 1 || COLS < GRID_WIDTH + 2)
+        {
+            if (instruction_window == NULL)
+            {
+                instruction_window = setup_win(3, COLS, 0, 0);
+                mvwprintw(instruction_window, 1, 1, "Resize terminal to at least %dx%d to view the game correctly.", config->Map.Size.Height, config->Map.Size.Width);
+            }
+            wrefresh(instruction_window);
+        }
+        else
+        {
+            if (instruction_window != NULL)
+            {
+                destroy_win(instruction_window);
+                instruction_window = NULL;
+            }
+            draw_game(); // Draw game if enough space and instruction window is not needed
+        }
         usleep(100000); // Reduce CPU usage
     }
 }
@@ -215,6 +210,7 @@ void handle_sigint_map(int sig)
     {
         detach_shared_memory(grid, SHM_GRID_SIZE);
         detach_shared_memory(globals, SHM_G_SIZE);
+        detach_shared_memory(config, SHM_CONFIG_SIZE);
         printf("Shared memory detached and destroyed.\n");
     }
     // Cleanup ncurses
@@ -241,7 +237,18 @@ void reset_targets(Grid *grid)
     }
 
     grid->target_count = 0;
-    memset(grid->targets, 0, sizeof(Target) * TARGETS); // Clear obstacles array
+    memset(grid->targets, 0, sizeof(Target) * TARGETS);
+    // Iterate over each cell in the 2D grid
+    for (int i = 0; i < GRID_HEIGHT; i++)
+    {
+        for (int j = 0; j < GRID_WIDTH; j++)
+        {
+            if (grid->grid[j][i] < 250)
+            {
+                grid->grid[j][i] = 0; // Reset cells with the value 254
+            }
+        }
+    }
     printf("All targets have been reset.\n");
 }
 
@@ -259,21 +266,32 @@ void reset_obstacles(Grid *grid)
         return;
     }
 
-    grid->obstacle_count = 0;                                 // Reset obstacle count
-    memset(grid->obstacles, 0, sizeof(Obstacle) * OBSTACLES); // Clear obstacles array
+    grid->obstacle_count = 0; // Reset obstacle count
+    memset(grid->obstacles, 0, sizeof(Obstacle) * OBSTACLES);
+    // Iterate over each cell in the 2D grid
+    for (int i = 0; i < GRID_HEIGHT; i++)
+    {
+        for (int j = 0; j < GRID_WIDTH; j++)
+        {
+            if (grid->grid[j][i] = 255)
+            {
+                grid->grid[j][i] = 0; // Reset cells with the value 254
+            }
+        }
+    }
     printf("All obstacles have been reset.\n");
 }
 
 // Helper function to check if adjacent cells are occupied
-bool is_adjacent_occupied(Grid *grid, int x, int y)
+bool is_adjacent_occupied(Grid *grid, uint x, uint y)
 {
-    int dx[] = {-1, 1, 0, 0}; // Left, Right, Up, Down
-    int dy[] = {0, 0, -1, 1};
+    uint dx[] = {-1, 1, 0, 0}; // Left, Right, Up, Down
+    uint dy[] = {0, 0, -1, 1};
 
-    for (int i = 0; i < 4; i++)
+    for (uint i = 0; i < 4; i++)
     {
-        int nx = x + dx[i];
-        int ny = y + dy[i];
+        uint nx = x + dx[i];
+        uint ny = y + dy[i];
 
         if (nx >= 0 && nx < config->Map.Size.Width && ny >= 0 && ny < config->Map.Size.Height)
         {
@@ -290,11 +308,11 @@ void set_obstacles_randomly(Grid *grid, FILE *log_file)
 {
     srand(time(NULL) + 1); // Slightly different seed for randomness
 
-    int placed_obstacles = 0;
+    uint placed_obstacles = 0;
     while (placed_obstacles < OBSTACLES)
     {
-        int x = rand() % GRID_WIDTH;
-        int y = rand() % GRID_HEIGHT;
+        uint x = (uint)(rand() % GRID_WIDTH);
+        uint y = (uint)(rand() % GRID_HEIGHT);
 
         if (is_point_occupied(grid, x, y, GRID_HEIGHT, GRID_WIDTH) || is_adjacent_occupied(grid, x, y))
         {
@@ -316,8 +334,8 @@ void set_obstacles_randomly(Grid *grid, FILE *log_file)
 
 void set_targets_randomly(Grid *grid, FILE *log_file)
 {
-    int placed_targets = 0;
-    int target_id = 1;
+    uint placed_targets = 0;
+    uint target_id = 1;
     char log_buffer[512];
     srand(time(NULL)); // Seed the random number generator
 
@@ -326,8 +344,8 @@ void set_targets_randomly(Grid *grid, FILE *log_file)
     while (placed_targets < TARGETS)
     {
         LOG_MESSAGE(log_file, "placed targets: %d", placed_targets);
-        int x = rand() % GRID_WIDTH;
-        int y = rand() % GRID_HEIGHT;
+        uint x = rand() % GRID_WIDTH;
+        uint y = rand() % GRID_HEIGHT;
 
         LOG_MESSAGE(log_file, "Checking position (%d, %d)", x, y);
 
@@ -345,8 +363,8 @@ void set_targets_randomly(Grid *grid, FILE *log_file)
             !is_adjacent_occupied(grid, x + 1, y))
         {
             // Two-digit target placement
-            int first_digit = target_id / 10;
-            int second_digit = target_id % 10;
+            uint first_digit = target_id / 10;
+            uint second_digit = target_id % 10;
 
             // Store only one entry in the targets array
             grid->targets[placed_targets].x = x;

@@ -35,7 +35,7 @@ extern WINDOW *game_window;
 extern WINDOW *instruction_window;
 
 // Function prototypes for map window creation and destruction
-WINDOW *setup_win(int height, int width, int starty, int startx);
+WINDOW *setup_win(uint height, uint width, uint starty, uint startx);
 void destroy_win(WINDOW *local_win);
 // map functions
 void setup_resources();
@@ -44,8 +44,7 @@ void child2_task();
 void handle_sigint_map(int sig);
 void reset_targets(Grid *grid);
 void reset_obstacles(Grid *grid);
-bool is_adjacent_occupied(Grid *grid, int x, int y);
+bool is_adjacent_occupied(Grid *grid, uint x, uint y);
 void set_targets_randomly(Grid *grid, FILE *log_file);
 void set_obstacles_randomly(Grid *grid, FILE *log_file);
-void log_grid(Grid *grid, FILE *log_file);
 #endif // MAP_UTILS_H

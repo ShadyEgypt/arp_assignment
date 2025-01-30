@@ -24,6 +24,7 @@ typedef struct
 } Globals;
 
 #define MAX_FILE_SIZE 8192
+#define uint unsigned char
 
 // Shared memory object name (used with shm_open)
 #define SHM_GRID_NAME "/shared_memory_grid"

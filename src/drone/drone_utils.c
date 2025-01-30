@@ -64,13 +64,6 @@ void setup_resources()
     }
     LOG_MESSAGE(log_file, "opened fd in read mode!");
 
-    // Set the drone in the shared memory to be (1,1)
-    drone->drone_pos.x = 1;
-    drone->drone_pos.y = 1;
-    drone->drone_pos_1.x = 2;
-    drone->drone_pos_1.y = 2;
-    grid->drone_pos.x = 1;
-    grid->drone_pos.y = 1;
     // LOG_MESSAGE(log_file, "Drone position set to (1, 1)");
     // set_grid_point(grid, DRONE, log_file, config, drone->drone_pos.x, drone->drone_pos.y, 254);
     LOG_MESSAGE(log_file, "Parent: All resources are initialized successfully.");
@@ -471,6 +464,7 @@ void update_position(Drone *drone, Grid *grid)
 
     // release_semaphore(sem_drone);
     // acquire_semaphore(sem_grid);
+
     set_grid_point(grid, FREE, log_file, config, drone->drone_pos_1.x, drone->drone_pos_1.y, 0);
     set_grid_point(grid, DRONE, log_file, config, drone->drone_pos.x, drone->drone_pos.y, 254);
     // release_semaphore(sem_grid);

@@ -131,8 +131,14 @@ void setup_resources()
     create_fifo(config->Pipes.ServerPipe);
     create_fifo(config->Pipes.DronePipe);
     grid->score = 0;
-    grid->drone_pos.x = 0;
-    grid->drone_pos.y = 0;
+
+    // Set the drone in the shared memory to be (1,1)
+    drone->drone_pos.x = 1;
+    drone->drone_pos.y = 1;
+    drone->drone_pos_1.x = 2;
+    drone->drone_pos_1.y = 2;
+    grid->drone_pos.x = 1;
+    grid->drone_pos.y = 1;
 
     printf("Parent: All resources are created successfully.\n");
     resources_exist = true;
