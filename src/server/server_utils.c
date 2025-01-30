@@ -131,6 +131,8 @@ void setup_resources()
     create_fifo(config->Pipes.ServerPipe);
     create_fifo(config->Pipes.DronePipe);
     grid->score = 0;
+    grid->drone_pos.x = 0;
+    grid->drone_pos.y = 0;
 
     printf("Parent: All resources are created successfully.\n");
     resources_exist = true;
@@ -261,6 +263,8 @@ void child1_task()
         }
     }
 
+    // Init wall values
+
     grid->score = 0;
     grid->target_count = 0;
     grid->obstacle_count = 0;
@@ -326,7 +330,7 @@ void child3_task()
         kill(globals->obstacles_pid, SIGUSR1);
 
         printf("Child 3: Grid reset, sleeping...\n");
-        sleep(20);
+        sleep(60);
     }
 }
 

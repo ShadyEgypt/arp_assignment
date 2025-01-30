@@ -36,6 +36,17 @@ void destroy_win(WINDOW *local_win)
     delwin(local_win);
 }
 
+void refresh_win(WINDOW *local_win, int height, int width, int startx, int starty)
+{
+    if (local_win != NULL)
+    {
+        wresize(local_win, height, width); // Resize the window
+        mvwin(local_win, starty, startx);  // Move the window
+        box(local_win, 0, 0);              // Redraw the window border
+        wrefresh(local_win);               // Refresh the window to display changes
+    }
+}
+
 void setup_resources()
 {
     initscr();
@@ -69,29 +80,32 @@ void setup_resources()
     release_semaphore(sem_g);
     LOG_MESSAGE(log_file, "wrote my pid in the shared memory globals!");
 
-    layout.left_split = setup_win(LINES - 1, COLS / 2 - 1, 0, 0);
-
-    layout.right_split = setup_win(LINES - 1, COLS / 2 - 1, COLS / 2, 0);
-
+    int grid_height = config->Keyboard.Box.Height;
+    int grid_width = config->Keyboard.Box.Width;
+    int cell_height = config->Keyboard.Key.Height;
+    int cell_width = config->Keyboard.Key.Width;
+    layout.left_split = setup_win(LINES, COLS / 2 - 1, 0, 0);
+    layout.right_split = setup_win(LINES, COLS / 2 - 1, COLS / 2, 0);
     getmaxyx(layout.left_split, parent_height, parent_width);
 
-    start_y_l = (parent_height - config->Keyboard.Box.Height) / 2;
-    start_x_l = (parent_width - config->Keyboard.Box.Width) / 2;
+    start_x_l = (parent_height - grid_height) / 2;
+    start_y_l = (parent_width - grid_width) / 2 + 1;
     start_y_r = (parent_height - 14) / 2;
     start_x_r = (parent_width - 15) / 2;
 
-    layout.left_split = setup_win(LINES, COLS / 2 - 1, 0, 0);
-    layout.right_split = setup_win(LINES, COLS / 2 - 1, COLS / 2, 0);
-    layout.tl_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l, start_x_l);
-    layout.tc_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l + 6, start_x_l);
-    layout.tr_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l + 12, start_x_l);
-    layout.cl_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l, start_x_l + 4);
-    layout.cc_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l + 6, start_x_l + 4);
-    layout.cr_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l + 12, start_x_l + 4);
-    layout.bl_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l, start_x_l + 8);
-    layout.bc_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l + 6, start_x_l + 8);
-    layout.br_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l + 12, start_x_l + 8);
-    LOG_MESSAGE(log_file, "SERVER PIPE: ", config->Pipes.ServerPipe);
+    layout.tl_win = setup_win(cell_height, cell_width, start_y_l, start_x_l);
+    layout.tc_win = setup_win(cell_height, cell_width, start_y_l + 6, start_x_l);
+    layout.tr_win = setup_win(cell_height, cell_width, start_y_l + 12, start_x_l);
+    layout.cl_win = setup_win(cell_height, cell_width, start_y_l, start_x_l + 4);
+    layout.cc_win = setup_win(cell_height, cell_width, start_y_l + 6, start_x_l + 4);
+    layout.cr_win = setup_win(cell_height, cell_width, start_y_l + 12, start_x_l + 4);
+    layout.bl_win = setup_win(cell_height, cell_width, start_y_l, start_x_l + 8);
+    layout.bc_win = setup_win(cell_height, cell_width, start_y_l + 6, start_x_l + 8);
+    layout.br_win = setup_win(cell_height, cell_width, start_y_l + 12, start_x_l + 8);
+    // Setting the "titles" of the splits
+    mvwprintw(layout.left_split, 0, 1, "INPUT DISPLAY");
+    mvwprintw(layout.right_split, 0, 1, "DYNAMICS DISPLAY");
+
     fd = open(config->Pipes.ServerPipe, O_WRONLY);
     if (fd == -1)
     {
@@ -109,28 +123,27 @@ void child1_task()
     int cell_width = config->Keyboard.Key.Width;
     while (1)
     {
+        refresh_win(layout.left_split, LINES, COLS / 2 - 1, 0, 0);
+        refresh_win(layout.right_split, LINES, COLS / 2, COLS / 2, 0);
         getmaxyx(layout.left_split, parent_height, parent_width);
 
-        start_x_l = (parent_height - config->Keyboard.Box.Height) / 2;
-        start_y_l = (parent_width - config->Keyboard.Box.Width) / 2 + 1;
+        start_x_l = (parent_height - grid_height) / 2;
+        start_y_l = (parent_width - grid_width) / 2 + 1;
         start_y_r = (parent_height - 14) / 2;
         start_x_r = (parent_width - 15) / 2;
-        destroy_win(layout.left_split);
-        destroy_win(layout.right_split);
-        layout.left_split = setup_win(LINES, COLS / 2 - 1, 0, 0);
-        layout.right_split = setup_win(LINES, COLS / 2 - 1, COLS / 2, 0);
-        layout.tl_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l, start_x_l);
-        layout.tc_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l + 6, start_x_l);
-        layout.tr_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l + 12, start_x_l);
-        layout.cl_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l, start_x_l + 4);
-        layout.cc_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l + 6, start_x_l + 4);
-        layout.cr_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l + 12, start_x_l + 4);
-        layout.bl_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l, start_x_l + 8);
-        layout.bc_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l + 6, start_x_l + 8);
-        layout.br_win = setup_win(config->Keyboard.Key.Height, config->Keyboard.Key.Width, start_y_l + 12, start_x_l + 8);
+        refresh_win(layout.tl_win, cell_height, cell_width, start_y_l, start_x_l);
+        refresh_win(layout.tc_win, cell_height, cell_width, start_y_l + 6, start_x_l);
+        refresh_win(layout.tr_win, cell_height, cell_width, start_y_l + 12, start_x_l);
+        refresh_win(layout.cl_win, cell_height, cell_width, start_y_l, start_x_l + 4);
+        refresh_win(layout.cc_win, cell_height, cell_width, start_y_l + 6, start_x_l + 4);
+        refresh_win(layout.cr_win, cell_height, cell_width, start_y_l + 12, start_x_l + 4);
+        refresh_win(layout.bl_win, cell_height, cell_width, start_y_l, start_x_l + 8);
+        refresh_win(layout.bc_win, cell_height, cell_width, start_y_l + 6, start_x_l + 8);
+        refresh_win(layout.br_win, cell_height, cell_width, start_y_l + 12, start_x_l + 8);
         // Setting the "titles" of the splits
         mvwprintw(layout.left_split, 0, 1, "INPUT DISPLAY");
         mvwprintw(layout.right_split, 0, 1, "DYNAMICS DISPLAY");
+
         // snprintf(log_msg, sizeof(log_msg), );
         // LOG_MESSAGE(log_file, "Input '%c' received", globals->input);
         format_left_win(globals->input, layout);
@@ -146,7 +159,6 @@ void child2_task()
 {
     while (1)
     {
-
         // Getting user input if present
         input = getch();
         // Check if the input is valid (not ERR and not a control character like ESC)

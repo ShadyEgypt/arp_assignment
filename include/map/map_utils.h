@@ -31,10 +31,8 @@ extern pid_t child1_pid;
 extern pid_t child2_pid;
 
 extern int fd;
-extern WINDOW *target_window;
-extern WINDOW *drone_window;
-extern WINDOW *obstacle_window;
-extern WINDOW *wall_window;
+extern WINDOW *game_window;
+extern WINDOW *instruction_window;
 
 // Function prototypes for map window creation and destruction
 WINDOW *setup_win(int height, int width, int starty, int startx);

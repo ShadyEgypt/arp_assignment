@@ -438,15 +438,8 @@ void update_user_force(Drone *drone, char cmd)
 // Calculate total force from all individual forces
 void calculate_total_force(Drone *drone)
 {
-    drone->drone_force.x = drone->user_force.x +
-                           drone->wall_force.x +
-                           drone->obs_force.x +
-                           drone->tar_force.x;
-
-    drone->drone_force.y = drone->user_force.y +
-                           drone->wall_force.y +
-                           drone->obs_force.y +
-                           drone->tar_force.y;
+    drone->drone_force.x = drone->user_force.x;
+    drone->drone_force.y = drone->user_force.y;
 
     LOG_MESSAGE(log_file, "Total Force: X = %.2f, Y = %.2f", drone->drone_force.x, drone->drone_force.y);
 }
@@ -458,39 +451,8 @@ void update_position(Drone *drone, Grid *grid)
     LOG_MESSAGE(log_file, "UPDATING POSITION");
     // acquire_semaphore(sem_drone);
 
-    if (drone->drone_vel.x < config->Thresholds.ZeroThreshold &&
-        drone->drone_vel.x > -config->Thresholds.ZeroThreshold &&
-        drone->drone_force.x == 0.0)
-    {
-        drone->drone_pos.x = drone->drone_pos_1.x;
-    }
-    else
-    {
-        // Precompute constants to improve readability
-        float mass_term = config->Physics.Mass / (config->Physics.IntegrationInterval * config->Physics.IntegrationInterval);
-        float viscous_term = config->Physics.ViscousCoefficient / config->Physics.IntegrationInterval;
-        float denominator = mass_term + viscous_term;
-        float numerator = drone->drone_force.x - mass_term * (drone->drone_pos_2.x - 2 * drone->drone_pos_1.x) + viscous_term * drone->drone_pos_1.x;
-
-        pos_x = numerator / denominator;
-    }
-
-    if (drone->drone_vel.y < config->Thresholds.ZeroThreshold &&
-        drone->drone_vel.y > -config->Thresholds.ZeroThreshold &&
-        drone->drone_force.y == 0.0)
-    {
-        drone->drone_pos.y = drone->drone_pos_1.y;
-    }
-    else
-    {
-        // Precompute constants to improve readability
-        float mass_term = config->Physics.Mass / (config->Physics.IntegrationInterval * config->Physics.IntegrationInterval);
-        float viscous_term = config->Physics.ViscousCoefficient / config->Physics.IntegrationInterval;
-        float denominator = mass_term + viscous_term;
-        float numerator = drone->drone_force.y - mass_term * (drone->drone_pos_2.y - 2 * drone->drone_pos_1.y) + viscous_term * drone->drone_pos_1.y;
-
-        pos_y = numerator / denominator;
-    }
+    pos_x = drone->drone_pos.x + drone->drone_force.x;
+    pos_y = drone->drone_pos.y + drone->drone_force.y;
 
     if (pos_x > config->Map.Size.Width)
         pos_x = config->Map.Size.Width - 1;
@@ -620,9 +582,6 @@ void child2_task()
             char cmd = dequeue_cmd(drone);
             // Update forces based on the grid's targets and obstacles
             update_user_force(drone, cmd);
-            update_wall_force(drone);
-            update_obstacle_force(drone, grid, grid->obstacle_count);
-            update_target_force(drone, grid, grid->target_count);
             calculate_total_force(drone);
             // Update drone's state
             update_position(drone, grid);
