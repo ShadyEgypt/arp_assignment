@@ -5,3 +5,10 @@
 
 [Mon Jan 20 18:24:40 2025] src/server/server_utils.c:227 - config->Map.MaxEntities.Obstacles: 15
 [Mon Jan 20 18:24:40 2025] src/server/server_utils.c:271 - Grid initialized successfully
+[Sat Feb  8 16:13:02 2025] src/server/server.c:6 - program started!
+[Sat Feb  8 16:13:02 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Sat Feb  8 16:13:02 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Sat Feb  8 16:13:02 2025] src/server/server_utils.c:235 - config->Map.MaxEntities.Obstacles: 15
+[Sat Feb  8 16:13:02 2025] src/server/server_utils.c:256 - Grid dimensions exceed static allocation size

@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-#define GRID_HEIGHT 100
+#define GRID_HEIGHT 30
 #define GRID_WIDTH 100
 #define OBSTACLES 15
 #define TARGETS 15
@@ -52,31 +52,31 @@ typedef enum
 
 typedef struct
 {
-    int x;
-    int y;
+    unsigned char x;
+    unsigned char y;
     unsigned char id; // Unique identifier for the target
     bool is_two_digit;
 } Target;
 
 typedef struct
 {
-    int x;
-    int y;
+    unsigned char x;
+    unsigned char y;
 } Obstacle;
 
 typedef struct
 {
-    int grid[GRID_WIDTH][GRID_HEIGHT]; // Pointer to a 2D array
-    int grid_actual_height;
-    int grid_actual_width;
+    unsigned char grid[GRID_WIDTH][GRID_HEIGHT]; // Pointer to a 2D array
+    unsigned char grid_actual_height;
+    unsigned char grid_actual_width;
     struct pos drone_pos;
-    int score;
+    unsigned char score;
 
     Target targets[TARGETS];
-    int target_count;
+    unsigned char target_count;
 
     Obstacle obstacles[OBSTACLES];
-    int obstacle_count;
+    unsigned char obstacle_count;
 } Grid;
 
 // Grid *create_grid(int height, int width) {
