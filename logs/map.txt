@@ -659,3 +659,19 @@
 [Mon Jan 20 18:25:32 2025] src/map/map_utils.c:149 - Obstacle 12 at grid (6, 76) mapped to screen (4, 15)
 [Mon Jan 20 18:25:32 2025] src/map/map_utils.c:149 - Obstacle 13 at grid (15, 77) mapped to screen (11, 16)
 [Mon Jan 20 18:25:32 2025] src/map/map_utils.c:149 - Obstacle 14 at grid (4, 97) mapped to screen (3, 20)
+[Sat Feb  8 16:13:04 2025] src/map/map.c:13 - program started!
+[Sat Feb  8 16:13:17 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 16:13:17 2025] src/utils.c:210 - Drone set at (4, 4) with value 254.
+[Sat Feb  8 16:13:21 2025] src/utils.c:187 - Free spot set at (4, 4).
+[Sat Feb  8 16:13:21 2025] src/utils.c:210 - Drone set at (7, 7) with value 254.
+[Sat Feb  8 16:13:23 2025] src/utils.c:187 - Free spot set at (7, 7).
+[Sat Feb  8 16:13:23 2025] src/utils.c:210 - Drone set at (11, 11) with value 254.
+[Sat Feb  8 16:13:25 2025] src/utils.c:187 - Free spot set at (11, 11).
+[Sat Feb  8 16:13:25 2025] src/utils.c:210 - Drone set at (16, 16) with value 254.
+[Sat Feb  8 16:13:27 2025] src/utils.c:187 - Free spot set at (16, 16).
+[Sat Feb  8 16:13:27 2025] src/utils.c:279 - Drone hit a multi-digit target 14 formed at (20, 21) and (21, 21).
+[Sat Feb  8 16:13:27 2025] src/utils.c:282 - Score increased by 5. Current score: 5.
+[Sat Feb  8 16:13:27 2025] src/utils.c:293 - Target 14 removed from target list.
+[Sat Feb  8 16:13:27 2025] src/utils.c:330 - Drone set at (21, 21) with value 254.
+[Sat Feb  8 16:13:29 2025] src/utils.c:187 - Free spot set at (21, 21).
+[Sat Feb  8 16:13:29 2025] src/utils.c:210 - Drone set at (26, 26) with value 254.

@@ -173,7 +173,7 @@ bool is_point_occupied(Grid *grid, int x, int y, int grid_h, int grid_w)
 // Set a grid point with additional handling for TARGET, OBSTACLE, and DRONE
 void set_grid_point(Grid *grid, GridPointType type, FILE *log_file, Config *config, int x, int y, int value)
 {
-
+    log_file = initialize_log_file("map.txt");
     if (x < 0 || x >= config->Map.Size.Width || y < 0 || y >= config->Map.Size.Height)
     {
         LOG_MESSAGE(log_file, "Error: Grid coordinates out of bounds.");
@@ -182,6 +182,10 @@ void set_grid_point(Grid *grid, GridPointType type, FILE *log_file, Config *conf
 
     switch (type)
     {
+    case FREE:
+        grid->grid[y][x] = 0;
+        LOG_MESSAGE(log_file, "Free spot set at (%d, %d).", x, y);
+        break;
     case TARGET:
         grid->targets[grid->target_count].x = (float)x;
         grid->targets[grid->target_count].y = (float)y;
@@ -200,7 +204,14 @@ void set_grid_point(Grid *grid, GridPointType type, FILE *log_file, Config *conf
         break;
 
     case DRONE:
-        if (grid->grid[y][x] == 250)
+        if (grid->grid[y][x] == 0) // Drone moves to a free spot
+        {
+            grid->grid[y][x] = 254;
+            LOG_MESSAGE(log_file, "Drone set at (%d, %d) with value 254.", x, y);
+            grid->drone_pos.x = x;
+            grid->drone_pos.y = y;
+        }
+        else if (grid->grid[y][x] == 250) // Drone hits the wall
         {
             grid->score -= 2;
             LOG_MESSAGE(log_file, "Drone hit the wall at (%d, %d).", x, y);
@@ -226,82 +237,101 @@ void set_grid_point(Grid *grid, GridPointType type, FILE *log_file, Config *conf
         }
         else if (grid->grid[y][x] == 255) // Drone hits an obstacle
         {
+            grid->grid[y][x] = 254;
             grid->score -= 2;
             LOG_MESSAGE(log_file, "Drone hit an obstacle at (%d, %d).", x, y);
             grid->drone_pos.x = x + 1;
             grid->drone_pos.y = y;
             // it will be scaled by the map process
         }
-        else if (grid->grid[y][x] == 0) // Empty space
-        {
-            LOG_MESSAGE(log_file, "Drone moved to empty space at (%d, %d).", x, y);
-            grid->drone_pos.x = x;
-            grid->drone_pos.y = y;
-        }
-        else if (grid->grid[y][x] > 0 & grid->grid[y][x] < 255) // Any other value (assuming it's a target)
+        else // Any other value (assuming it's a target)
         {
             int final_number = grid->grid[y][x]; // Start with the current digit
 
-            // Check the left adjacent cell
-            if (x > 0 && grid->grid[y][x - 1] >= 0 && grid->grid[y][x - 1] <= 9)
-            {
-                // Left cell is a digit; concatenate
-                final_number = grid->grid[y][x - 1] * 10 + grid->grid[y][x];
-                LOG_MESSAGE(log_file, "Drone hit a multi-digit target %d formed at (%d, %d) and (%d, %d).",
-                            final_number, x - 1, y, x, y);
-
-                // Clear the left and current grid spots
-                grid->grid[y][x - 1] = 0;
-                grid->grid[y][x] = 0;
-            }
-            // Check the right adjacent cell
-            else if (x < config->Map.Size.Width - 1 && grid->grid[y][x + 1] >= 0 && grid->grid[y][x + 1] <= 9)
-            {
-                // Right cell is a digit; concatenate
-                final_number = grid->grid[y][x] * 10 + grid->grid[y][x + 1];
-                LOG_MESSAGE(log_file, "Drone hit a multi-digit target %d formed at (%d, %d) and (%d, %d).",
-                            final_number, x, y, x + 1, y);
-
-                // Clear the current and right grid spots
-                grid->grid[y][x] = 0;
-                grid->grid[y][x + 1] = 0;
-            }
-            else
-            {
-                // Single-digit target
-                LOG_MESSAGE(log_file, "Drone hit a single-digit target %d at (%d, %d).", final_number, x, y);
-                grid->grid[y][x] = 0;
-            }
-
-            // Remove the target from the list
+            // Check for a single-digit target first
             for (int i = 0; i < grid->target_count; i++)
             {
-                if ((int)grid->targets[i].id == final_number)
+                if ((int)grid->targets[i].id == final_number && (int)grid->targets[i].x == x && (int)grid->targets[i].y == y)
                 {
+                    LOG_MESSAGE(log_file, "Drone hit a single-digit target %d at (%d, %d).", final_number, x, y);
+                    grid->grid[y][x] = 254;
+                    grid->score += 5;
+                    LOG_MESSAGE(log_file, "Score increased by 5. Current score: %d.", grid->score);
+
                     for (int j = i; j < grid->target_count - 1; j++)
                     {
                         grid->targets[j] = grid->targets[j + 1];
                     }
                     grid->target_count--;
                     LOG_MESSAGE(log_file, "Target %d removed from target list.", final_number);
-                    break;
+                    break; // Exit the loop once target is handled
                 }
             }
 
-            // Update score
-            grid->score += 5;
-            LOG_MESSAGE(log_file, "Score increased by 5. Current score: %d.", grid->score);
+            // If the target was not a single-digit target, check the left adjacent cell
+            if (grid->grid[y][x] != 254)
+            {
+                final_number = grid->grid[y][x - 1] * 10 + grid->grid[y][x]; // Attempt to form a multi-digit target
+                for (int i = 0; i < grid->target_count; i++)
+                {
+                    if ((int)grid->targets[i].id == final_number && (int)grid->targets[i].x == x - 1 && (int)grid->targets[i].y == y)
+                    {
+                        LOG_MESSAGE(log_file, "Drone hit a multi-digit target %d formed at (%d, %d) and (%d, %d).",
+                                    final_number, x - 1, y, x, y);
+                        grid->score += 5;
+                        LOG_MESSAGE(log_file, "Score increased by 5. Current score: %d.", grid->score);
 
-            // Set the drone's new position
-            grid->drone_pos.x = x;
-            grid->drone_pos.y = y;
-            LOG_MESSAGE(log_file, "Drone set at (%d, %d) with value %d.", x, y, 254);
+                        // Clear the left and current grid spots
+                        grid->grid[y][x - 1] = 0;
+                        grid->grid[y][x] = 254;
+                        for (int j = i; j < grid->target_count - 1; j++)
+                        {
+                            grid->targets[j] = grid->targets[j + 1];
+                        }
+
+                        grid->target_count--;
+                        LOG_MESSAGE(log_file, "Target %d removed from target list.", final_number);
+                        break; // Exit the loop once target is handled
+                    }
+                }
+            }
+
+            // Finally, check the right adjacent cell if no target has been handled yet
+            if (grid->grid[y][x] != 254)
+            {
+                final_number = grid->grid[y][x] * 10 + grid->grid[y][x + 1]; // Attempt to form a multi-digit target
+                for (int i = 0; i < grid->target_count; i++)
+                {
+                    if ((int)grid->targets[i].id == final_number && (int)grid->targets[i].x == x && (int)grid->targets[i].y == y)
+                    {
+                        LOG_MESSAGE(log_file, "Drone hit a multi-digit target %d formed at (%d, %d) and (%d, %d).",
+                                    final_number, x, y, x + 1, y);
+                        grid->score += 5;
+                        LOG_MESSAGE(log_file, "Score increased by 5. Current score: %d.", grid->score);
+
+                        // Clear the current and right grid spots
+                        grid->grid[y][x] = 254;
+                        grid->grid[y][x + 1] = 0;
+                        for (int j = i; j < grid->target_count - 1; j++)
+                        {
+                            grid->targets[j] = grid->targets[j + 1];
+                        }
+
+                        grid->target_count--;
+                        LOG_MESSAGE(log_file, "Target %d removed from target list.", final_number);
+                        break; // Exit the loop once target is handled
+                    }
+                }
+            }
+
+            // Update score and set drone position if a target was hit
+            if (grid->grid[y][x] == 254) // Check if a target was hit and grid spot cleared
+            {
+                LOG_MESSAGE(log_file, "Drone set at (%d, %d) with value 254.", x, y);
+                grid->drone_pos.x = x;
+                grid->drone_pos.y = y;
+            }
         }
-        break;
-
-    case FREE:
-        grid->grid[y][x] = 0;
-        LOG_MESSAGE(log_file, "Free spot set at (%d, %d).", x, y);
         break;
 
     default:

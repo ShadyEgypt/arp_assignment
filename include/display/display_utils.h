@@ -54,6 +54,7 @@ extern pid_t child1_pid;
 extern pid_t child2_pid;
 
 WINDOW *setup_win(int height, int width, int starty, int startx);
+void refresh_win(WINDOW *local_win, int height, int width, int startx, int starty);
 void destroy_win(WINDOW *local_win);
 void setup_resources();
 void child1_task();
