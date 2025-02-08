@@ -43,4 +43,4 @@ void release_semaphore(sem_t *sem);
 void destroy_semaphore(const char *sem_name, sem_t *sem);
 bool is_point_occupied(Grid *grid, int x, int y, int grid_h, int grid_w);
 void set_grid_point(Grid *grid, GridPointType type, FILE *log_file, Config *config, int x, int y, int value);
-#endif // UTILS_
+#endif // UTILS_H
