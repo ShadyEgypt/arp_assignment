@@ -140,3 +140,198 @@
 [Thu Jan 30 16:02:33 2025] src/display/display_utils.c:180 - Input 'w' written to the pipe
 [Thu Jan 30 16:02:34 2025] src/display/display_utils.c:180 - Input 'a' written to the pipe
 [Thu Jan 30 16:02:40 2025] src/display/display_utils.c:180 - Input 'x' written to the pipe
+[Sat Feb  8 15:03:26 2025] src/display/display.c:6 - program started!
+[Sat Feb  8 15:03:26 2025] src/display/display.c:16 - ncurses initialized!
+[Sat Feb  8 15:03:26 2025] src/display/display.c:33 - shared memories got attached!
+[Sat Feb  8 15:03:26 2025] src/display/display.c:39 - wrote my pid in the shared memory globals!
+[Sat Feb  8 15:03:26 2025] src/display/display.c:73 - opened fd in write mode!
+[Sat Feb  8 15:10:44 2025] src/display/display.c:6 - program started!
+[Sat Feb  8 15:10:44 2025] src/display/display.c:16 - ncurses initialized!
+[Sat Feb  8 15:10:44 2025] src/display/display.c:33 - shared memories got attached!
+[Sat Feb  8 15:10:44 2025] src/display/display.c:39 - wrote my pid in the shared memory globals!
+[Sat Feb  8 15:10:44 2025] src/display/display.c:73 - opened fd in write mode!
+[Sat Feb  8 15:10:58 2025] src/display/display.c:6 - program started!
+[Sat Feb  8 15:10:58 2025] src/display/display.c:16 - ncurses initialized!
+[Sat Feb  8 15:10:58 2025] src/display/display.c:33 - shared memories got attached!
+[Sat Feb  8 15:10:58 2025] src/display/display.c:39 - wrote my pid in the shared memory globals!
+[Sat Feb  8 15:10:58 2025] src/display/display.c:73 - opened fd in write mode!
+[Sat Feb  8 15:13:48 2025] src/display/display.c:6 - program started!
+[Sat Feb  8 15:13:48 2025] src/display/display.c:16 - ncurses initialized!
+[Sat Feb  8 15:13:48 2025] src/display/display.c:33 - shared memories got attached!
+[Sat Feb  8 15:13:48 2025] src/display/display.c:39 - wrote my pid in the shared memory globals!
+[Sat Feb  8 15:13:48 2025] src/display/display.c:73 - opened fd in write mode!
+[Sat Feb  8 15:19:20 2025] src/display/display.c:6 - program started!
+[Sat Feb  8 15:19:20 2025] src/display/display.c:25 - shared memories got attached!
+[Sat Feb  8 15:19:20 2025] src/display/display.c:31 - wrote my pid in the shared memory globals!
+[Sat Feb  8 15:19:20 2025] src/display/display.c:65 - opened fd in write mode!
+[Sat Feb  8 15:19:20 2025] src/display/display.c:73 - ncurses initialized!
+[Sat Feb  8 15:19:38 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:19:42 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:19:44 2025] src/display/display.c:126 - Input 'x' written to the pipe
+[Sat Feb  8 15:19:46 2025] src/display/display.c:126 - Input 'e' written to the pipe
+[Sat Feb  8 15:19:48 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:19:50 2025] src/display/display.c:126 - Input 'x' written to the pipe
+[Sat Feb  8 15:19:52 2025] src/display/display.c:126 - Input 'x' written to the pipe
+[Sat Feb  8 15:19:54 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:19:56 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:19:58 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:20:00 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:20:02 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:20:04 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:20:06 2025] src/display/display.c:126 - Input 'w' written to the pipe
+[Sat Feb  8 15:20:08 2025] src/display/display.c:126 - Input 'w' written to the pipe
+[Sat Feb  8 15:20:10 2025] src/display/display.c:126 - Input 'w' written to the pipe
+[Sat Feb  8 15:20:12 2025] src/display/display.c:126 - Input 'w' written to the pipe
+[Sat Feb  8 15:20:14 2025] src/display/display.c:126 - Input 'w' written to the pipe
+[Sat Feb  8 15:20:16 2025] src/display/display.c:126 - Input 'w' written to the pipe
+[Sat Feb  8 15:20:18 2025] src/display/display.c:126 - Input 'w' written to the pipe
+[Sat Feb  8 15:20:21 2025] src/display/display.c:126 - Input 'w' written to the pipe
+[Sat Feb  8 15:20:24 2025] src/display/display.c:126 - Input 'w' written to the pipe
+[Sat Feb  8 15:20:26 2025] src/display/display.c:126 - Input 'w' written to the pipe
+[Sat Feb  8 15:20:28 2025] src/display/display.c:126 - Input 'w' written to the pipe
+[Sat Feb  8 15:20:30 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:20:32 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:20:34 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:20:36 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:20:38 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:20:40 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:20:42 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:20:44 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:20:46 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:20:48 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:20:50 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:20:52 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:20:54 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:20:56 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:20:58 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:00 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:02 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:04 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:06 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:08 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:10 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:12 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:14 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:16 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:18 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:20 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:22 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:24 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:26 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:28 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:30 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:32 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:34 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:21:36 2025] src/display/display.c:126 - Input 'a' written to the pipe
+[Sat Feb  8 15:22:57 2025] src/display/display.c:6 - program started!
+[Sat Feb  8 15:22:57 2025] src/display/display.c:25 - shared memories got attached!
+[Sat Feb  8 15:22:57 2025] src/display/display.c:31 - wrote my pid in the shared memory globals!
+[Sat Feb  8 15:22:57 2025] src/display/display.c:65 - opened fd in write mode!
+[Sat Feb  8 15:22:57 2025] src/display/display.c:73 - ncurses initialized!
+[Sat Feb  8 15:22:57 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:22:59 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:01 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:03 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:05 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:07 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:09 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:11 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:13 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:15 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:17 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:19 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:21 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:23 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:25 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:27 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:29 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:31 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:33 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:35 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:37 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:39 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:41 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:43 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:45 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:47 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:49 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:51 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:53 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:55 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:57 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:23:59 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:17 2025] src/display/display.c:6 - program started!
+[Sat Feb  8 15:24:17 2025] src/display/display.c:25 - shared memories got attached!
+[Sat Feb  8 15:24:17 2025] src/display/display.c:31 - wrote my pid in the shared memory globals!
+[Sat Feb  8 15:24:17 2025] src/display/display.c:39 - ncurses initialized!
+[Sat Feb  8 15:24:17 2025] src/display/display.c:73 - opened fd in write mode!
+[Sat Feb  8 15:24:17 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:19 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:21 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:23 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:25 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:27 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:29 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:31 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:33 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:35 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:37 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:39 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:41 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:43 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:45 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:47 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:49 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:51 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:53 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:55 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:57 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:24:59 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:01 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:03 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:05 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:07 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:09 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:11 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:13 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:15 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:17 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:19 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:21 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:23 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:25 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:27 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:29 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:31 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:33 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:35 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:37 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:39 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:41 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:43 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:45 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:47 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:49 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:51 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:53 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:25:55 2025] src/display/display.c:126 - Input ' ' written to the pipe
+[Sat Feb  8 15:26:06 2025] src/display/display.c:6 - program started!
+[Sat Feb  8 15:26:06 2025] src/display/display.c:25 - shared memories got attached!
+[Sat Feb  8 15:26:06 2025] src/display/display.c:31 - wrote my pid in the shared memory globals!
+[Sat Feb  8 15:26:06 2025] src/display/display.c:39 - ncurses initialized!
+[Sat Feb  8 15:26:06 2025] src/display/display.c:73 - opened fd in write mode!
+[Sat Feb  8 15:29:07 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:29:16 2025] src/display/display.c:126 - Input 'c' written to the pipe
+[Sat Feb  8 15:29:20 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:29:22 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:29:24 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:29:26 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:29:28 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:29:30 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:29:32 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:29:34 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:29:36 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:29:38 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:29:40 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:29:42 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb  8 15:29:44 2025] src/display/display.c:126 - Input 'd' written to the pipe

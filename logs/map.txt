@@ -1,2 +1,162 @@
 [Thu Jan 30 15:59:52 2025] src/map/map.c:13 - program started!
 [Thu Jan 30 16:01:36 2025] src/map/map.c:13 - program started!
+[Sat Feb  8 15:13:46 2025] src/map/map.c:13 - program started!
+[Sat Feb  8 15:19:13 2025] src/map/map.c:13 - program started!
+[Sat Feb  8 15:19:38 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 15:19:38 2025] src/utils.c:210 - Drone set at (3, 1) with value 254.
+[Sat Feb  8 15:19:42 2025] src/utils.c:187 - Free spot set at (3, 1).
+[Sat Feb  8 15:19:42 2025] src/utils.c:210 - Drone set at (5, 1) with value 254.
+[Sat Feb  8 15:19:44 2025] src/utils.c:187 - Free spot set at (5, 1).
+[Sat Feb  8 15:19:44 2025] src/utils.c:210 - Drone set at (5, 3) with value 254.
+[Sat Feb  8 15:19:46 2025] src/utils.c:187 - Free spot set at (5, 3).
+[Sat Feb  8 15:19:46 2025] src/utils.c:279 - Drone hit a multi-digit target 13 formed at (6, 2) and (7, 2).
+[Sat Feb  8 15:19:46 2025] src/utils.c:282 - Score increased by 5. Current score: 5.
+[Sat Feb  8 15:19:46 2025] src/utils.c:293 - Target 13 removed from target list.
+[Sat Feb  8 15:19:46 2025] src/utils.c:330 - Drone set at (7, 2) with value 254.
+[Sat Feb  8 15:19:48 2025] src/utils.c:187 - Free spot set at (7, 2).
+[Sat Feb  8 15:19:48 2025] src/utils.c:210 - Drone set at (9, 2) with value 254.
+[Sat Feb  8 15:19:50 2025] src/utils.c:187 - Free spot set at (9, 2).
+[Sat Feb  8 15:19:50 2025] src/utils.c:210 - Drone set at (9, 4) with value 254.
+[Sat Feb  8 15:19:52 2025] src/utils.c:187 - Free spot set at (9, 4).
+[Sat Feb  8 15:19:52 2025] src/utils.c:210 - Drone set at (9, 6) with value 254.
+[Sat Feb  8 15:19:54 2025] src/utils.c:187 - Free spot set at (9, 6).
+[Sat Feb  8 15:19:54 2025] src/utils.c:210 - Drone set at (11, 6) with value 254.
+[Sat Feb  8 15:19:56 2025] src/utils.c:187 - Free spot set at (11, 6).
+[Sat Feb  8 15:19:56 2025] src/utils.c:210 - Drone set at (13, 6) with value 254.
+[Sat Feb  8 15:19:58 2025] src/utils.c:187 - Free spot set at (13, 6).
+[Sat Feb  8 15:19:58 2025] src/utils.c:210 - Drone set at (15, 6) with value 254.
+[Sat Feb  8 15:20:00 2025] src/utils.c:187 - Free spot set at (15, 6).
+[Sat Feb  8 15:20:00 2025] src/utils.c:210 - Drone set at (17, 6) with value 254.
+[Sat Feb  8 15:20:02 2025] src/utils.c:187 - Free spot set at (17, 6).
+[Sat Feb  8 15:20:02 2025] src/utils.c:210 - Drone set at (19, 6) with value 254.
+[Sat Feb  8 15:20:04 2025] src/utils.c:187 - Free spot set at (19, 6).
+[Sat Feb  8 15:20:04 2025] src/utils.c:256 - Drone hit a single-digit target 7 at (21, 6).
+[Sat Feb  8 15:20:04 2025] src/utils.c:259 - Score increased by 5. Current score: 10.
+[Sat Feb  8 15:20:04 2025] src/utils.c:266 - Target 7 removed from target list.
+[Sat Feb  8 15:20:04 2025] src/utils.c:330 - Drone set at (21, 6) with value 254.
+[Sat Feb  8 15:20:06 2025] src/utils.c:187 - Free spot set at (21, 6).
+[Sat Feb  8 15:20:06 2025] src/utils.c:210 - Drone set at (21, 5) with value 254.
+[Sat Feb  8 15:20:08 2025] src/utils.c:187 - Free spot set at (21, 5).
+[Sat Feb  8 15:20:08 2025] src/utils.c:210 - Drone set at (21, 4) with value 254.
+[Sat Feb  8 15:20:10 2025] src/utils.c:187 - Free spot set at (21, 4).
+[Sat Feb  8 15:20:10 2025] src/utils.c:210 - Drone set at (21, 3) with value 254.
+[Sat Feb  8 15:20:12 2025] src/utils.c:187 - Free spot set at (21, 3).
+[Sat Feb  8 15:20:12 2025] src/utils.c:210 - Drone set at (21, 2) with value 254.
+[Sat Feb  8 15:20:14 2025] src/utils.c:187 - Free spot set at (21, 2).
+[Sat Feb  8 15:20:14 2025] src/utils.c:210 - Drone set at (21, 1) with value 254.
+[Sat Feb  8 15:20:16 2025] src/utils.c:187 - Free spot set at (21, 1).
+[Sat Feb  8 15:20:16 2025] src/utils.c:210 - Drone set at (21, 1) with value 254.
+[Sat Feb  8 15:20:18 2025] src/utils.c:187 - Free spot set at (21, 1).
+[Sat Feb  8 15:20:18 2025] src/utils.c:210 - Drone set at (21, 1) with value 254.
+[Sat Feb  8 15:20:21 2025] src/utils.c:187 - Free spot set at (21, 1).
+[Sat Feb  8 15:20:21 2025] src/utils.c:210 - Drone set at (21, 1) with value 254.
+[Sat Feb  8 15:20:24 2025] src/utils.c:187 - Free spot set at (21, 1).
+[Sat Feb  8 15:20:24 2025] src/utils.c:210 - Drone set at (21, 1) with value 254.
+[Sat Feb  8 15:20:26 2025] src/utils.c:187 - Free spot set at (21, 1).
+[Sat Feb  8 15:20:26 2025] src/utils.c:210 - Drone set at (21, 1) with value 254.
+[Sat Feb  8 15:20:28 2025] src/utils.c:187 - Free spot set at (21, 1).
+[Sat Feb  8 15:20:28 2025] src/utils.c:210 - Drone set at (21, 1) with value 254.
+[Sat Feb  8 15:20:30 2025] src/utils.c:187 - Free spot set at (21, 1).
+[Sat Feb  8 15:20:30 2025] src/utils.c:210 - Drone set at (20, 1) with value 254.
+[Sat Feb  8 15:20:32 2025] src/utils.c:187 - Free spot set at (20, 1).
+[Sat Feb  8 15:20:32 2025] src/utils.c:210 - Drone set at (19, 1) with value 254.
+[Sat Feb  8 15:20:34 2025] src/utils.c:187 - Free spot set at (19, 1).
+[Sat Feb  8 15:20:34 2025] src/utils.c:210 - Drone set at (18, 1) with value 254.
+[Sat Feb  8 15:20:36 2025] src/utils.c:187 - Free spot set at (18, 1).
+[Sat Feb  8 15:20:36 2025] src/utils.c:210 - Drone set at (17, 1) with value 254.
+[Sat Feb  8 15:20:38 2025] src/utils.c:187 - Free spot set at (17, 1).
+[Sat Feb  8 15:20:38 2025] src/utils.c:210 - Drone set at (16, 1) with value 254.
+[Sat Feb  8 15:20:40 2025] src/utils.c:187 - Free spot set at (16, 1).
+[Sat Feb  8 15:20:40 2025] src/utils.c:210 - Drone set at (15, 1) with value 254.
+[Sat Feb  8 15:20:42 2025] src/utils.c:187 - Free spot set at (15, 1).
+[Sat Feb  8 15:20:42 2025] src/utils.c:210 - Drone set at (14, 1) with value 254.
+[Sat Feb  8 15:20:44 2025] src/utils.c:187 - Free spot set at (14, 1).
+[Sat Feb  8 15:20:44 2025] src/utils.c:210 - Drone set at (13, 1) with value 254.
+[Sat Feb  8 15:20:46 2025] src/utils.c:187 - Free spot set at (13, 1).
+[Sat Feb  8 15:20:46 2025] src/utils.c:210 - Drone set at (12, 1) with value 254.
+[Sat Feb  8 15:20:48 2025] src/utils.c:187 - Free spot set at (12, 1).
+[Sat Feb  8 15:20:48 2025] src/utils.c:210 - Drone set at (11, 1) with value 254.
+[Sat Feb  8 15:20:50 2025] src/utils.c:187 - Free spot set at (11, 1).
+[Sat Feb  8 15:20:50 2025] src/utils.c:210 - Drone set at (10, 1) with value 254.
+[Sat Feb  8 15:20:52 2025] src/utils.c:187 - Free spot set at (10, 1).
+[Sat Feb  8 15:20:52 2025] src/utils.c:210 - Drone set at (9, 1) with value 254.
+[Sat Feb  8 15:20:54 2025] src/utils.c:187 - Free spot set at (9, 1).
+[Sat Feb  8 15:20:54 2025] src/utils.c:210 - Drone set at (8, 1) with value 254.
+[Sat Feb  8 15:20:56 2025] src/utils.c:187 - Free spot set at (8, 1).
+[Sat Feb  8 15:20:56 2025] src/utils.c:210 - Drone set at (7, 1) with value 254.
+[Sat Feb  8 15:20:58 2025] src/utils.c:187 - Free spot set at (7, 1).
+[Sat Feb  8 15:20:58 2025] src/utils.c:210 - Drone set at (6, 1) with value 254.
+[Sat Feb  8 15:21:00 2025] src/utils.c:187 - Free spot set at (6, 1).
+[Sat Feb  8 15:21:00 2025] src/utils.c:210 - Drone set at (5, 1) with value 254.
+[Sat Feb  8 15:21:02 2025] src/utils.c:187 - Free spot set at (5, 1).
+[Sat Feb  8 15:21:02 2025] src/utils.c:210 - Drone set at (4, 1) with value 254.
+[Sat Feb  8 15:21:04 2025] src/utils.c:187 - Free spot set at (4, 1).
+[Sat Feb  8 15:21:04 2025] src/utils.c:210 - Drone set at (3, 1) with value 254.
+[Sat Feb  8 15:21:06 2025] src/utils.c:187 - Free spot set at (3, 1).
+[Sat Feb  8 15:21:06 2025] src/utils.c:210 - Drone set at (2, 1) with value 254.
+[Sat Feb  8 15:21:08 2025] src/utils.c:187 - Free spot set at (2, 1).
+[Sat Feb  8 15:21:08 2025] src/utils.c:210 - Drone set at (1, 1) with value 254.
+[Sat Feb  8 15:21:10 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 15:21:10 2025] src/utils.c:210 - Drone set at (1, 1) with value 254.
+[Sat Feb  8 15:21:12 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 15:21:12 2025] src/utils.c:210 - Drone set at (1, 1) with value 254.
+[Sat Feb  8 15:21:14 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 15:21:14 2025] src/utils.c:210 - Drone set at (1, 1) with value 254.
+[Sat Feb  8 15:21:16 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 15:21:16 2025] src/utils.c:210 - Drone set at (1, 1) with value 254.
+[Sat Feb  8 15:21:18 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 15:21:18 2025] src/utils.c:210 - Drone set at (1, 1) with value 254.
+[Sat Feb  8 15:21:20 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 15:21:20 2025] src/utils.c:210 - Drone set at (1, 1) with value 254.
+[Sat Feb  8 15:21:22 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 15:21:22 2025] src/utils.c:210 - Drone set at (1, 1) with value 254.
+[Sat Feb  8 15:21:24 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 15:21:24 2025] src/utils.c:210 - Drone set at (1, 1) with value 254.
+[Sat Feb  8 15:21:26 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 15:21:26 2025] src/utils.c:210 - Drone set at (1, 1) with value 254.
+[Sat Feb  8 15:21:28 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 15:21:28 2025] src/utils.c:210 - Drone set at (1, 1) with value 254.
+[Sat Feb  8 15:21:30 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 15:21:30 2025] src/utils.c:210 - Drone set at (1, 1) with value 254.
+[Sat Feb  8 15:21:32 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 15:21:32 2025] src/utils.c:210 - Drone set at (1, 1) with value 254.
+[Sat Feb  8 15:21:34 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 15:21:34 2025] src/utils.c:210 - Drone set at (1, 1) with value 254.
+[Sat Feb  8 15:21:36 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 15:21:36 2025] src/utils.c:210 - Drone set at (1, 1) with value 254.
+[Sat Feb  8 15:22:53 2025] src/map/map.c:13 - program started!
+[Sat Feb  8 15:24:05 2025] src/map/map.c:13 - program started!
+[Sat Feb  8 15:26:01 2025] src/map/map.c:13 - program started!
+[Sat Feb  8 15:29:07 2025] src/utils.c:187 - Free spot set at (1, 1).
+[Sat Feb  8 15:29:07 2025] src/utils.c:210 - Drone set at (3, 1) with value 254.
+[Sat Feb  8 15:29:16 2025] src/utils.c:187 - Free spot set at (3, 1).
+[Sat Feb  8 15:29:16 2025] src/utils.c:210 - Drone set at (5, 3) with value 254.
+[Sat Feb  8 15:29:20 2025] src/utils.c:187 - Free spot set at (5, 3).
+[Sat Feb  8 15:29:20 2025] src/utils.c:210 - Drone set at (7, 3) with value 254.
+[Sat Feb  8 15:29:22 2025] src/utils.c:187 - Free spot set at (7, 3).
+[Sat Feb  8 15:29:22 2025] src/utils.c:210 - Drone set at (9, 3) with value 254.
+[Sat Feb  8 15:29:24 2025] src/utils.c:187 - Free spot set at (9, 3).
+[Sat Feb  8 15:29:24 2025] src/utils.c:210 - Drone set at (11, 3) with value 254.
+[Sat Feb  8 15:29:26 2025] src/utils.c:187 - Free spot set at (11, 3).
+[Sat Feb  8 15:29:26 2025] src/utils.c:210 - Drone set at (13, 3) with value 254.
+[Sat Feb  8 15:29:28 2025] src/utils.c:187 - Free spot set at (13, 3).
+[Sat Feb  8 15:29:28 2025] src/utils.c:210 - Drone set at (15, 3) with value 254.
+[Sat Feb  8 15:29:30 2025] src/utils.c:187 - Free spot set at (15, 3).
+[Sat Feb  8 15:29:30 2025] src/utils.c:210 - Drone set at (17, 3) with value 254.
+[Sat Feb  8 15:29:32 2025] src/utils.c:187 - Free spot set at (17, 3).
+[Sat Feb  8 15:29:32 2025] src/utils.c:210 - Drone set at (19, 3) with value 254.
+[Sat Feb  8 15:29:34 2025] src/utils.c:187 - Free spot set at (19, 3).
+[Sat Feb  8 15:29:34 2025] src/utils.c:210 - Drone set at (21, 3) with value 254.
+[Sat Feb  8 15:29:36 2025] src/utils.c:187 - Free spot set at (21, 3).
+[Sat Feb  8 15:29:36 2025] src/utils.c:210 - Drone set at (23, 3) with value 254.
+[Sat Feb  8 15:29:38 2025] src/utils.c:187 - Free spot set at (23, 3).
+[Sat Feb  8 15:29:38 2025] src/utils.c:210 - Drone set at (25, 3) with value 254.
+[Sat Feb  8 15:29:40 2025] src/utils.c:187 - Free spot set at (25, 3).
+[Sat Feb  8 15:29:40 2025] src/utils.c:210 - Drone set at (27, 3) with value 254.
+[Sat Feb  8 15:29:42 2025] src/utils.c:187 - Free spot set at (27, 3).
+[Sat Feb  8 15:29:42 2025] src/utils.c:279 - Drone hit a multi-digit target 11 formed at (28, 3) and (29, 3).
+[Sat Feb  8 15:29:42 2025] src/utils.c:282 - Score increased by 5. Current score: 5.
+[Sat Feb  8 15:29:42 2025] src/utils.c:293 - Target 11 removed from target list.
+[Sat Feb  8 15:29:42 2025] src/utils.c:330 - Drone set at (29, 3) with value 254.
+[Sat Feb  8 15:29:44 2025] src/utils.c:187 - Free spot set at (29, 3).
+[Sat Feb  8 15:29:44 2025] src/utils.c:210 - Drone set at (31, 3) with value 254.

@@ -2133,3 +2133,1045 @@
 [Thu Jan 30 16:02:40 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 20.00
 [Thu Jan 30 16:02:40 2025] src/drone/drone_utils.c:494 - updated velocities
 [Thu Jan 30 16:02:40 2025] src/drone/drone_utils.c:585 - Processed input: 'x'
+[Sat Feb  8 15:13:51 2025] src/drone/drone.c:7 - program started!
+[Sat Feb  8 15:13:51 2025] src/drone/drone_utils.c:52 - shared memories got attached!
+[Sat Feb  8 15:13:51 2025] src/drone/drone_utils.c:65 - opened fd in read mode!
+[Sat Feb  8 15:13:51 2025] src/drone/drone_utils.c:69 - Parent: All resources are initialized successfully.
+[Sat Feb  8 15:19:19 2025] src/drone/drone.c:7 - program started!
+[Sat Feb  8 15:19:19 2025] src/drone/drone_utils.c:52 - shared memories got attached!
+[Sat Feb  8 15:19:20 2025] src/drone/drone_utils.c:65 - opened fd in read mode!
+[Sat Feb  8 15:19:20 2025] src/drone/drone_utils.c:69 - Parent: All resources are initialized successfully.
+[Sat Feb  8 15:19:38 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:19:38 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:19:38 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:19:38 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:19:38 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:19:38 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:19:38 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:19:38 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:19:38 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 3.00, Y_POS = 1.00
+[Sat Feb  8 15:19:38 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:19:38 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:19:38 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:19:38 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:19:38 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:19:42 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:19:42 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:19:42 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:19:42 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:19:42 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:19:42 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:19:42 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:19:42 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:19:42 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 5.00, Y_POS = 1.00
+[Sat Feb  8 15:19:42 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:19:42 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:19:42 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:19:42 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:19:42 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:19:44 2025] src/drone/drone_utils.c:506 - Enqueued Command: x
+[Sat Feb  8 15:19:44 2025] src/drone/drone_utils.c:560 - Input 'x' received from the pipe
+[Sat Feb  8 15:19:44 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:19:44 2025] src/drone/drone_utils.c:518 - Dequeued Command: x
+[Sat Feb  8 15:19:44 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'x'
+[Sat Feb  8 15:19:44 2025] src/drone/drone_utils.c:428 - User Force: X = 0.00, Y = 1.50
+[Sat Feb  8 15:19:44 2025] src/drone/drone_utils.c:437 - Total Force: X = 0.00, Y = 1.50
+[Sat Feb  8 15:19:44 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:19:44 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 5.00, Y_POS = 3.00
+[Sat Feb  8 15:19:44 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:19:44 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:19:44 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 20.00
+[Sat Feb  8 15:19:44 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:19:44 2025] src/drone/drone_utils.c:585 - Processed input: 'x'
+[Sat Feb  8 15:19:46 2025] src/drone/drone_utils.c:506 - Enqueued Command: e
+[Sat Feb  8 15:19:46 2025] src/drone/drone_utils.c:560 - Input 'e' received from the pipe
+[Sat Feb  8 15:19:46 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:19:46 2025] src/drone/drone_utils.c:518 - Dequeued Command: e
+[Sat Feb  8 15:19:46 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'e'
+[Sat Feb  8 15:19:46 2025] src/drone/drone_utils.c:428 - User Force: X = 1.06, Y = -1.06
+[Sat Feb  8 15:19:46 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.06, Y = -1.06
+[Sat Feb  8 15:19:46 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:19:46 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 7.00, Y_POS = 2.00
+[Sat Feb  8 15:19:46 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:19:46 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:19:46 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = -10.00
+[Sat Feb  8 15:19:46 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:19:46 2025] src/drone/drone_utils.c:585 - Processed input: 'e'
+[Sat Feb  8 15:19:48 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:19:48 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:19:48 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:19:48 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:19:48 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:19:48 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:19:48 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:19:48 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:19:48 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 9.00, Y_POS = 2.00
+[Sat Feb  8 15:19:48 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:19:48 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:19:48 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:19:48 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:19:48 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:19:50 2025] src/drone/drone_utils.c:506 - Enqueued Command: x
+[Sat Feb  8 15:19:50 2025] src/drone/drone_utils.c:560 - Input 'x' received from the pipe
+[Sat Feb  8 15:19:50 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:19:50 2025] src/drone/drone_utils.c:518 - Dequeued Command: x
+[Sat Feb  8 15:19:50 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'x'
+[Sat Feb  8 15:19:50 2025] src/drone/drone_utils.c:428 - User Force: X = 0.00, Y = 1.50
+[Sat Feb  8 15:19:50 2025] src/drone/drone_utils.c:437 - Total Force: X = 0.00, Y = 1.50
+[Sat Feb  8 15:19:50 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:19:50 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 9.00, Y_POS = 4.00
+[Sat Feb  8 15:19:50 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:19:50 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:19:50 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 20.00
+[Sat Feb  8 15:19:50 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:19:50 2025] src/drone/drone_utils.c:585 - Processed input: 'x'
+[Sat Feb  8 15:19:52 2025] src/drone/drone_utils.c:506 - Enqueued Command: x
+[Sat Feb  8 15:19:52 2025] src/drone/drone_utils.c:560 - Input 'x' received from the pipe
+[Sat Feb  8 15:19:52 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:19:52 2025] src/drone/drone_utils.c:518 - Dequeued Command: x
+[Sat Feb  8 15:19:52 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'x'
+[Sat Feb  8 15:19:52 2025] src/drone/drone_utils.c:428 - User Force: X = 0.00, Y = 1.50
+[Sat Feb  8 15:19:52 2025] src/drone/drone_utils.c:437 - Total Force: X = 0.00, Y = 1.50
+[Sat Feb  8 15:19:52 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:19:52 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 9.00, Y_POS = 6.00
+[Sat Feb  8 15:19:52 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:19:52 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:19:52 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 20.00
+[Sat Feb  8 15:19:52 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:19:52 2025] src/drone/drone_utils.c:585 - Processed input: 'x'
+[Sat Feb  8 15:19:54 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:19:54 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:19:54 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:19:54 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:19:54 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:19:54 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:19:54 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:19:54 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:19:54 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 11.00, Y_POS = 6.00
+[Sat Feb  8 15:19:54 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:19:54 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:19:54 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:19:54 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:19:54 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:19:56 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:19:56 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:19:56 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:19:56 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:19:56 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:19:56 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:19:56 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:19:56 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:19:56 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 13.00, Y_POS = 6.00
+[Sat Feb  8 15:19:56 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:19:56 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:19:56 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:19:56 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:19:56 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:19:58 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:19:58 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:19:58 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:19:58 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:19:58 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:19:58 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:19:58 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:19:58 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:19:58 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 15.00, Y_POS = 6.00
+[Sat Feb  8 15:19:58 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:19:58 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:19:58 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:19:58 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:19:58 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:20:00 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:20:00 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:20:00 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:00 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:20:00 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:20:00 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:20:00 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:20:00 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:00 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 17.00, Y_POS = 6.00
+[Sat Feb  8 15:20:00 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:00 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:00 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:20:00 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:00 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:20:02 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:20:02 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:20:02 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:02 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:20:02 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:20:02 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:20:02 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:20:02 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:02 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 19.00, Y_POS = 6.00
+[Sat Feb  8 15:20:02 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:02 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:02 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:20:02 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:02 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:20:04 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:20:04 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:20:04 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:04 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:20:04 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:20:04 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:20:04 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:20:04 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:04 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 21.00, Y_POS = 6.00
+[Sat Feb  8 15:20:04 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:04 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:04 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:20:04 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:04 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:20:06 2025] src/drone/drone_utils.c:506 - Enqueued Command: w
+[Sat Feb  8 15:20:06 2025] src/drone/drone_utils.c:560 - Input 'w' received from the pipe
+[Sat Feb  8 15:20:06 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:06 2025] src/drone/drone_utils.c:518 - Dequeued Command: w
+[Sat Feb  8 15:20:06 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'w'
+[Sat Feb  8 15:20:06 2025] src/drone/drone_utils.c:428 - User Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:06 2025] src/drone/drone_utils.c:437 - Total Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:06 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:06 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 21.00, Y_POS = 5.00
+[Sat Feb  8 15:20:06 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:06 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:06 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = -10.00
+[Sat Feb  8 15:20:06 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:06 2025] src/drone/drone_utils.c:585 - Processed input: 'w'
+[Sat Feb  8 15:20:08 2025] src/drone/drone_utils.c:506 - Enqueued Command: w
+[Sat Feb  8 15:20:08 2025] src/drone/drone_utils.c:560 - Input 'w' received from the pipe
+[Sat Feb  8 15:20:08 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:08 2025] src/drone/drone_utils.c:518 - Dequeued Command: w
+[Sat Feb  8 15:20:08 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'w'
+[Sat Feb  8 15:20:08 2025] src/drone/drone_utils.c:428 - User Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:08 2025] src/drone/drone_utils.c:437 - Total Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:08 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:08 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 21.00, Y_POS = 4.00
+[Sat Feb  8 15:20:08 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:08 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:08 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = -10.00
+[Sat Feb  8 15:20:08 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:08 2025] src/drone/drone_utils.c:585 - Processed input: 'w'
+[Sat Feb  8 15:20:10 2025] src/drone/drone_utils.c:506 - Enqueued Command: w
+[Sat Feb  8 15:20:10 2025] src/drone/drone_utils.c:560 - Input 'w' received from the pipe
+[Sat Feb  8 15:20:10 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:10 2025] src/drone/drone_utils.c:518 - Dequeued Command: w
+[Sat Feb  8 15:20:10 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'w'
+[Sat Feb  8 15:20:10 2025] src/drone/drone_utils.c:428 - User Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:10 2025] src/drone/drone_utils.c:437 - Total Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:10 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:10 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 21.00, Y_POS = 3.00
+[Sat Feb  8 15:20:10 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:10 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:10 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = -10.00
+[Sat Feb  8 15:20:10 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:10 2025] src/drone/drone_utils.c:585 - Processed input: 'w'
+[Sat Feb  8 15:20:12 2025] src/drone/drone_utils.c:506 - Enqueued Command: w
+[Sat Feb  8 15:20:12 2025] src/drone/drone_utils.c:560 - Input 'w' received from the pipe
+[Sat Feb  8 15:20:12 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:12 2025] src/drone/drone_utils.c:518 - Dequeued Command: w
+[Sat Feb  8 15:20:12 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'w'
+[Sat Feb  8 15:20:12 2025] src/drone/drone_utils.c:428 - User Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:12 2025] src/drone/drone_utils.c:437 - Total Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:12 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:12 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 21.00, Y_POS = 2.00
+[Sat Feb  8 15:20:12 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:12 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:12 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = -10.00
+[Sat Feb  8 15:20:12 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:12 2025] src/drone/drone_utils.c:585 - Processed input: 'w'
+[Sat Feb  8 15:20:14 2025] src/drone/drone_utils.c:506 - Enqueued Command: w
+[Sat Feb  8 15:20:14 2025] src/drone/drone_utils.c:560 - Input 'w' received from the pipe
+[Sat Feb  8 15:20:14 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:14 2025] src/drone/drone_utils.c:518 - Dequeued Command: w
+[Sat Feb  8 15:20:14 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'w'
+[Sat Feb  8 15:20:14 2025] src/drone/drone_utils.c:428 - User Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:14 2025] src/drone/drone_utils.c:437 - Total Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:14 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:14 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 21.00, Y_POS = 1.00
+[Sat Feb  8 15:20:14 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:14 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:14 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = -10.00
+[Sat Feb  8 15:20:14 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:14 2025] src/drone/drone_utils.c:585 - Processed input: 'w'
+[Sat Feb  8 15:20:16 2025] src/drone/drone_utils.c:506 - Enqueued Command: w
+[Sat Feb  8 15:20:16 2025] src/drone/drone_utils.c:560 - Input 'w' received from the pipe
+[Sat Feb  8 15:20:16 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:16 2025] src/drone/drone_utils.c:518 - Dequeued Command: w
+[Sat Feb  8 15:20:16 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'w'
+[Sat Feb  8 15:20:16 2025] src/drone/drone_utils.c:428 - User Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:16 2025] src/drone/drone_utils.c:437 - Total Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:16 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:16 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 21.00, Y_POS = 1.00
+[Sat Feb  8 15:20:16 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:16 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:16 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:20:16 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:16 2025] src/drone/drone_utils.c:585 - Processed input: 'w'
+[Sat Feb  8 15:20:18 2025] src/drone/drone_utils.c:506 - Enqueued Command: w
+[Sat Feb  8 15:20:18 2025] src/drone/drone_utils.c:560 - Input 'w' received from the pipe
+[Sat Feb  8 15:20:18 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:18 2025] src/drone/drone_utils.c:518 - Dequeued Command: w
+[Sat Feb  8 15:20:18 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'w'
+[Sat Feb  8 15:20:18 2025] src/drone/drone_utils.c:428 - User Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:18 2025] src/drone/drone_utils.c:437 - Total Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:18 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:18 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 21.00, Y_POS = 1.00
+[Sat Feb  8 15:20:18 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:18 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:18 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:20:18 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:18 2025] src/drone/drone_utils.c:585 - Processed input: 'w'
+[Sat Feb  8 15:20:21 2025] src/drone/drone_utils.c:506 - Enqueued Command: w
+[Sat Feb  8 15:20:21 2025] src/drone/drone_utils.c:560 - Input 'w' received from the pipe
+[Sat Feb  8 15:20:21 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:21 2025] src/drone/drone_utils.c:518 - Dequeued Command: w
+[Sat Feb  8 15:20:21 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'w'
+[Sat Feb  8 15:20:21 2025] src/drone/drone_utils.c:428 - User Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:21 2025] src/drone/drone_utils.c:437 - Total Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:21 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:21 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 21.00, Y_POS = 1.00
+[Sat Feb  8 15:20:21 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:21 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:21 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:20:21 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:21 2025] src/drone/drone_utils.c:585 - Processed input: 'w'
+[Sat Feb  8 15:20:24 2025] src/drone/drone_utils.c:506 - Enqueued Command: w
+[Sat Feb  8 15:20:24 2025] src/drone/drone_utils.c:560 - Input 'w' received from the pipe
+[Sat Feb  8 15:20:24 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:24 2025] src/drone/drone_utils.c:518 - Dequeued Command: w
+[Sat Feb  8 15:20:24 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'w'
+[Sat Feb  8 15:20:24 2025] src/drone/drone_utils.c:428 - User Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:24 2025] src/drone/drone_utils.c:437 - Total Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:24 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:24 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 21.00, Y_POS = 1.00
+[Sat Feb  8 15:20:24 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:24 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:24 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:20:24 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:24 2025] src/drone/drone_utils.c:585 - Processed input: 'w'
+[Sat Feb  8 15:20:26 2025] src/drone/drone_utils.c:506 - Enqueued Command: w
+[Sat Feb  8 15:20:26 2025] src/drone/drone_utils.c:560 - Input 'w' received from the pipe
+[Sat Feb  8 15:20:26 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:26 2025] src/drone/drone_utils.c:518 - Dequeued Command: w
+[Sat Feb  8 15:20:26 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'w'
+[Sat Feb  8 15:20:26 2025] src/drone/drone_utils.c:428 - User Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:26 2025] src/drone/drone_utils.c:437 - Total Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:26 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:26 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 21.00, Y_POS = 1.00
+[Sat Feb  8 15:20:26 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:26 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:26 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:20:26 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:26 2025] src/drone/drone_utils.c:585 - Processed input: 'w'
+[Sat Feb  8 15:20:28 2025] src/drone/drone_utils.c:506 - Enqueued Command: w
+[Sat Feb  8 15:20:28 2025] src/drone/drone_utils.c:560 - Input 'w' received from the pipe
+[Sat Feb  8 15:20:28 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:28 2025] src/drone/drone_utils.c:518 - Dequeued Command: w
+[Sat Feb  8 15:20:28 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'w'
+[Sat Feb  8 15:20:28 2025] src/drone/drone_utils.c:428 - User Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:28 2025] src/drone/drone_utils.c:437 - Total Force: X = 0.00, Y = -1.50
+[Sat Feb  8 15:20:28 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:28 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 21.00, Y_POS = 1.00
+[Sat Feb  8 15:20:28 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:28 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:28 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:20:28 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:28 2025] src/drone/drone_utils.c:585 - Processed input: 'w'
+[Sat Feb  8 15:20:30 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:20:30 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:20:30 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:30 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:20:30 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:20:30 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:30 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:30 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:30 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 20.00, Y_POS = 1.00
+[Sat Feb  8 15:20:30 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:30 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:30 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:20:30 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:30 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:20:32 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:20:32 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:20:32 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:32 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:20:32 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:20:32 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:32 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:32 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:32 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 19.00, Y_POS = 1.00
+[Sat Feb  8 15:20:32 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:32 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:32 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:20:32 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:32 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:20:34 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:20:34 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:20:34 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:34 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:20:34 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:20:34 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:34 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:34 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:34 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 18.00, Y_POS = 1.00
+[Sat Feb  8 15:20:34 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:34 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:34 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:20:34 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:34 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:20:36 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:20:36 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:20:36 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:36 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:20:36 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:20:36 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:36 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:36 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:36 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 17.00, Y_POS = 1.00
+[Sat Feb  8 15:20:36 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:36 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:36 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:20:36 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:36 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:20:38 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:20:38 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:20:38 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:38 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:20:38 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:20:38 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:38 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:38 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:38 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 16.00, Y_POS = 1.00
+[Sat Feb  8 15:20:38 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:38 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:38 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:20:38 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:38 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:20:40 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:20:40 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:20:40 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:40 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:20:40 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:20:40 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:40 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:40 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:40 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 15.00, Y_POS = 1.00
+[Sat Feb  8 15:20:40 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:40 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:40 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:20:40 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:40 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:20:42 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:20:42 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:20:42 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:42 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:20:42 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:20:42 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:42 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:42 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:42 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 14.00, Y_POS = 1.00
+[Sat Feb  8 15:20:42 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:42 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:42 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:20:42 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:42 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:20:44 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:20:44 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:20:44 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:44 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:20:44 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:20:44 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:44 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:44 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:44 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 13.00, Y_POS = 1.00
+[Sat Feb  8 15:20:44 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:44 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:44 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:20:44 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:44 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:20:46 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:20:46 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:20:46 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:46 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:20:46 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:20:46 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:46 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:46 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:46 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 12.00, Y_POS = 1.00
+[Sat Feb  8 15:20:46 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:46 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:46 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:20:46 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:46 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:20:48 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:20:48 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:20:48 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:48 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:20:48 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:20:48 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:48 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:48 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:48 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 11.00, Y_POS = 1.00
+[Sat Feb  8 15:20:48 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:48 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:48 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:20:48 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:48 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:20:50 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:20:50 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:20:50 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:50 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:20:50 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:20:50 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:50 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:50 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:50 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 10.00, Y_POS = 1.00
+[Sat Feb  8 15:20:50 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:50 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:50 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:20:50 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:50 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:20:52 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:20:52 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:20:52 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:52 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:20:52 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:20:52 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:52 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:52 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:52 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 9.00, Y_POS = 1.00
+[Sat Feb  8 15:20:52 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:52 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:52 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:20:52 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:52 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:20:54 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:20:54 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:20:54 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:54 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:20:54 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:20:54 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:54 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:54 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:54 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 8.00, Y_POS = 1.00
+[Sat Feb  8 15:20:54 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:54 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:54 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:20:54 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:54 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:20:56 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:20:56 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:20:56 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:56 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:20:56 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:20:56 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:56 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:56 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:56 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 7.00, Y_POS = 1.00
+[Sat Feb  8 15:20:56 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:56 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:56 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:20:56 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:56 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:20:58 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:20:58 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:20:58 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:20:58 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:20:58 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:20:58 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:58 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:20:58 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:20:58 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 6.00, Y_POS = 1.00
+[Sat Feb  8 15:20:58 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:20:58 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:20:58 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:20:58 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:20:58 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:00 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:00 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:00 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:00 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:00 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:00 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:00 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:00 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:00 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 5.00, Y_POS = 1.00
+[Sat Feb  8 15:21:00 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:00 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:00 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:21:00 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:00 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:02 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:02 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:02 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:02 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:02 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:02 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:02 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:02 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:02 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 4.00, Y_POS = 1.00
+[Sat Feb  8 15:21:02 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:02 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:02 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:21:02 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:02 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:04 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:04 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:04 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:04 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:04 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:04 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:04 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:04 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:04 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 3.00, Y_POS = 1.00
+[Sat Feb  8 15:21:04 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:04 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:04 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:21:04 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:04 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:06 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:06 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:06 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:06 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:06 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:06 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:06 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:06 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:06 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 2.00, Y_POS = 1.00
+[Sat Feb  8 15:21:06 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:06 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:06 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:21:06 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:06 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:08 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:08 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:08 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:08 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:08 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:08 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:08 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:08 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:08 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 1.00, Y_POS = 1.00
+[Sat Feb  8 15:21:08 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:08 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:08 2025] src/drone/drone_utils.c:484 - dx/dt = -10.00, dy/dt = 0.00
+[Sat Feb  8 15:21:08 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:08 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:10 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:10 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:10 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:10 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:10 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:10 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:10 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:10 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:10 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 1.00, Y_POS = 1.00
+[Sat Feb  8 15:21:10 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:10 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:10 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:21:10 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:10 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:12 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:12 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:12 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:12 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:12 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:12 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:12 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:12 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:12 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 1.00, Y_POS = 1.00
+[Sat Feb  8 15:21:12 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:12 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:12 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:21:12 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:12 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:14 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:14 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:14 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:14 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:14 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:14 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:14 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:14 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:14 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 1.00, Y_POS = 1.00
+[Sat Feb  8 15:21:14 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:14 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:14 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:21:14 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:14 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:16 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:16 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:16 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:16 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:16 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:16 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:16 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:16 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:16 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 1.00, Y_POS = 1.00
+[Sat Feb  8 15:21:16 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:16 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:16 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:21:16 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:16 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:18 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:18 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:18 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:18 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:18 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:18 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:18 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:18 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:18 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 1.00, Y_POS = 1.00
+[Sat Feb  8 15:21:18 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:18 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:18 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:21:18 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:18 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:20 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:20 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:20 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:20 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:20 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:20 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:20 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:20 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:20 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 1.00, Y_POS = 1.00
+[Sat Feb  8 15:21:20 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:20 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:20 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:21:20 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:20 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:22 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:22 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:22 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:22 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:22 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:22 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:22 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:22 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:22 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 1.00, Y_POS = 1.00
+[Sat Feb  8 15:21:22 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:22 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:22 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:21:22 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:22 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:24 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:24 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:24 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:24 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:24 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:24 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:24 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:24 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:24 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 1.00, Y_POS = 1.00
+[Sat Feb  8 15:21:24 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:24 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:24 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:21:24 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:24 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:26 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:26 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:26 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:26 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:26 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:26 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:26 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:26 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:26 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 1.00, Y_POS = 1.00
+[Sat Feb  8 15:21:26 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:26 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:26 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:21:26 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:26 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:28 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:28 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:28 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:28 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:28 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:28 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:28 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:28 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:28 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 1.00, Y_POS = 1.00
+[Sat Feb  8 15:21:28 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:28 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:28 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:21:28 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:28 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:30 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:30 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:30 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:30 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:30 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:30 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:30 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:30 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:30 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 1.00, Y_POS = 1.00
+[Sat Feb  8 15:21:30 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:30 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:30 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:21:30 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:30 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:32 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:32 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:32 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:32 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:32 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:32 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:32 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:32 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:32 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 1.00, Y_POS = 1.00
+[Sat Feb  8 15:21:32 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:32 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:32 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:21:32 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:32 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:34 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:34 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:34 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:34 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:34 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:34 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:34 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:34 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:34 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 1.00, Y_POS = 1.00
+[Sat Feb  8 15:21:34 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:34 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:34 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:21:34 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:34 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:21:36 2025] src/drone/drone_utils.c:506 - Enqueued Command: a
+[Sat Feb  8 15:21:36 2025] src/drone/drone_utils.c:560 - Input 'a' received from the pipe
+[Sat Feb  8 15:21:36 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:21:36 2025] src/drone/drone_utils.c:518 - Dequeued Command: a
+[Sat Feb  8 15:21:36 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'a'
+[Sat Feb  8 15:21:36 2025] src/drone/drone_utils.c:428 - User Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:36 2025] src/drone/drone_utils.c:437 - Total Force: X = -1.50, Y = 0.00
+[Sat Feb  8 15:21:36 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:21:36 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 1.00, Y_POS = 1.00
+[Sat Feb  8 15:21:36 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:21:36 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:21:36 2025] src/drone/drone_utils.c:484 - dx/dt = 0.00, dy/dt = 0.00
+[Sat Feb  8 15:21:36 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:21:36 2025] src/drone/drone_utils.c:585 - Processed input: 'a'
+[Sat Feb  8 15:23:03 2025] src/drone/drone.c:7 - program started!
+[Sat Feb  8 15:23:03 2025] src/drone/drone_utils.c:52 - shared memories got attached!
+[Sat Feb  8 15:23:03 2025] src/drone/drone_utils.c:65 - opened fd in read mode!
+[Sat Feb  8 15:23:03 2025] src/drone/drone_utils.c:69 - Parent: All resources are initialized successfully.
+[Sat Feb  8 15:24:09 2025] src/drone/drone.c:7 - program started!
+[Sat Feb  8 15:24:09 2025] src/drone/drone_utils.c:52 - shared memories got attached!
+[Sat Feb  8 15:24:17 2025] src/drone/drone_utils.c:65 - opened fd in read mode!
+[Sat Feb  8 15:24:17 2025] src/drone/drone_utils.c:69 - Parent: All resources are initialized successfully.
+[Sat Feb  8 15:26:11 2025] src/drone/drone.c:7 - program started!
+[Sat Feb  8 15:26:11 2025] src/drone/drone_utils.c:52 - shared memories got attached!
+[Sat Feb  8 15:26:11 2025] src/drone/drone_utils.c:65 - opened fd in read mode!
+[Sat Feb  8 15:26:11 2025] src/drone/drone_utils.c:69 - Parent: All resources are initialized successfully.
+[Sat Feb  8 15:29:07 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:29:07 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:29:07 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:29:07 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:29:07 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:29:07 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:07 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:07 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:29:07 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 3.00, Y_POS = 1.00
+[Sat Feb  8 15:29:07 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:29:07 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:29:07 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:29:07 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:29:07 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:29:16 2025] src/drone/drone_utils.c:506 - Enqueued Command: c
+[Sat Feb  8 15:29:16 2025] src/drone/drone_utils.c:560 - Input 'c' received from the pipe
+[Sat Feb  8 15:29:16 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:29:16 2025] src/drone/drone_utils.c:518 - Dequeued Command: c
+[Sat Feb  8 15:29:16 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'c'
+[Sat Feb  8 15:29:16 2025] src/drone/drone_utils.c:428 - User Force: X = 1.06, Y = 1.06
+[Sat Feb  8 15:29:16 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.06, Y = 1.06
+[Sat Feb  8 15:29:16 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:29:16 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 5.00, Y_POS = 3.00
+[Sat Feb  8 15:29:16 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:29:16 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:29:16 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 20.00
+[Sat Feb  8 15:29:16 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:29:16 2025] src/drone/drone_utils.c:585 - Processed input: 'c'
+[Sat Feb  8 15:29:20 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:29:20 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:29:20 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:29:20 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:29:20 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:29:20 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:20 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:20 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:29:20 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 7.00, Y_POS = 3.00
+[Sat Feb  8 15:29:20 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:29:20 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:29:20 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:29:20 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:29:20 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:29:22 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:29:22 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:29:22 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:29:22 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:29:22 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:29:22 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:22 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:22 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:29:22 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 9.00, Y_POS = 3.00
+[Sat Feb  8 15:29:22 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:29:22 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:29:22 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:29:22 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:29:22 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:29:24 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:29:24 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:29:24 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:29:24 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:29:24 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:29:24 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:24 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:24 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:29:24 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 11.00, Y_POS = 3.00
+[Sat Feb  8 15:29:24 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:29:24 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:29:24 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:29:24 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:29:24 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:29:26 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:29:26 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:29:26 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:29:26 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:29:26 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:29:26 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:26 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:26 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:29:26 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 13.00, Y_POS = 3.00
+[Sat Feb  8 15:29:26 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:29:26 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:29:26 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:29:26 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:29:26 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:29:28 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:29:28 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:29:28 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:29:28 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:29:28 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:29:28 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:28 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:28 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:29:28 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 15.00, Y_POS = 3.00
+[Sat Feb  8 15:29:28 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:29:28 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:29:28 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:29:28 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:29:28 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:29:30 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:29:30 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:29:30 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:29:30 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:29:30 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:29:30 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:30 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:30 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:29:30 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 17.00, Y_POS = 3.00
+[Sat Feb  8 15:29:30 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:29:30 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:29:30 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:29:30 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:29:30 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:29:32 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:29:32 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:29:32 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:29:32 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:29:32 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:29:32 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:32 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:32 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:29:32 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 19.00, Y_POS = 3.00
+[Sat Feb  8 15:29:32 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:29:32 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:29:32 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:29:32 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:29:32 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:29:34 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:29:34 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:29:34 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:29:34 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:29:34 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:29:34 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:34 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:34 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:29:34 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 21.00, Y_POS = 3.00
+[Sat Feb  8 15:29:34 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:29:34 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:29:34 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:29:34 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:29:34 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:29:36 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:29:36 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:29:36 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:29:36 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:29:36 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:29:36 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:36 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:36 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:29:36 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 23.00, Y_POS = 3.00
+[Sat Feb  8 15:29:36 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:29:36 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:29:36 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:29:36 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:29:36 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:29:38 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:29:38 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:29:38 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:29:38 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:29:38 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:29:38 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:38 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:38 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:29:38 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 25.00, Y_POS = 3.00
+[Sat Feb  8 15:29:38 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:29:38 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:29:38 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:29:38 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:29:38 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:29:40 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:29:40 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:29:40 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:29:40 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:29:40 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:29:40 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:40 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:40 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:29:40 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 27.00, Y_POS = 3.00
+[Sat Feb  8 15:29:40 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:29:40 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:29:40 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:29:40 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:29:40 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:29:42 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:29:42 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:29:42 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:29:42 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:29:42 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:29:42 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:42 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:42 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:29:42 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 29.00, Y_POS = 3.00
+[Sat Feb  8 15:29:42 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:29:42 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:29:42 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:29:42 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:29:42 2025] src/drone/drone_utils.c:585 - Processed input: 'd'
+[Sat Feb  8 15:29:44 2025] src/drone/drone_utils.c:506 - Enqueued Command: d
+[Sat Feb  8 15:29:44 2025] src/drone/drone_utils.c:560 - Input 'd' received from the pipe
+[Sat Feb  8 15:29:44 2025] src/drone/drone_utils.c:575 - Equations are processing!
+[Sat Feb  8 15:29:44 2025] src/drone/drone_utils.c:518 - Dequeued Command: d
+[Sat Feb  8 15:29:44 2025] src/drone/drone_utils.c:378 - UPDATING USER FORCE with input 'd'
+[Sat Feb  8 15:29:44 2025] src/drone/drone_utils.c:428 - User Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:44 2025] src/drone/drone_utils.c:437 - Total Force: X = 1.50, Y = 0.00
+[Sat Feb  8 15:29:44 2025] src/drone/drone_utils.c:444 - UPDATING POSITION
+[Sat Feb  8 15:29:44 2025] src/drone/drone_utils.c:463 - new positions: X_POS = 31.00, Y_POS = 3.00
+[Sat Feb  8 15:29:44 2025] src/drone/drone_utils.c:472 - updated position of the drone in the grid!
+[Sat Feb  8 15:29:44 2025] src/drone/drone_utils.c:479 - updating velocities
+[Sat Feb  8 15:29:44 2025] src/drone/drone_utils.c:484 - dx/dt = 20.00, dy/dt = 0.00
+[Sat Feb  8 15:29:44 2025] src/drone/drone_utils.c:494 - updated velocities
+[Sat Feb  8 15:29:44 2025] src/drone/drone_utils.c:585 - Processed input: 'd'

@@ -12,3 +12,59 @@
 
 [Thu Jan 30 16:01:34 2025] src/server/server_utils.c:235 - config->Map.MaxEntities.Obstacles: 15
 [Thu Jan 30 16:01:34 2025] src/server/server_utils.c:281 - Grid initialized successfully
+[Sat Feb  8 15:03:25 2025] src/server/server.c:6 - program started!
+[Sat Feb  8 15:03:25 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Sat Feb  8 15:03:25 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Sat Feb  8 15:03:25 2025] src/server/server_utils.c:235 - config->Map.MaxEntities.Obstacles: 15
+[Sat Feb  8 15:03:25 2025] src/server/server_utils.c:281 - Grid initialized successfully
+[Sat Feb  8 15:10:42 2025] src/server/server.c:6 - program started!
+[Sat Feb  8 15:10:42 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Sat Feb  8 15:10:42 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Sat Feb  8 15:10:42 2025] src/server/server_utils.c:235 - config->Map.MaxEntities.Obstacles: 15
+[Sat Feb  8 15:10:42 2025] src/server/server_utils.c:281 - Grid initialized successfully
+[Sat Feb  8 15:10:57 2025] src/server/server.c:6 - program started!
+[Sat Feb  8 15:10:57 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Sat Feb  8 15:10:57 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Sat Feb  8 15:10:57 2025] src/server/server_utils.c:235 - config->Map.MaxEntities.Obstacles: 15
+[Sat Feb  8 15:10:57 2025] src/server/server_utils.c:281 - Grid initialized successfully
+[Sat Feb  8 15:13:45 2025] src/server/server.c:6 - program started!
+[Sat Feb  8 15:13:45 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Sat Feb  8 15:13:45 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Sat Feb  8 15:13:45 2025] src/server/server_utils.c:235 - config->Map.MaxEntities.Obstacles: 15
+[Sat Feb  8 15:13:45 2025] src/server/server_utils.c:281 - Grid initialized successfully
+[Sat Feb  8 15:19:11 2025] src/server/server.c:6 - program started!
+[Sat Feb  8 15:19:11 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Sat Feb  8 15:19:11 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Sat Feb  8 15:19:11 2025] src/server/server_utils.c:235 - config->Map.MaxEntities.Obstacles: 15
+[Sat Feb  8 15:19:11 2025] src/server/server_utils.c:281 - Grid initialized successfully
+[Sat Feb  8 15:22:51 2025] src/server/server.c:6 - program started!
+[Sat Feb  8 15:22:51 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Sat Feb  8 15:22:51 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Sat Feb  8 15:22:51 2025] src/server/server_utils.c:235 - config->Map.MaxEntities.Obstacles: 15
+[Sat Feb  8 15:22:51 2025] src/server/server_utils.c:281 - Grid initialized successfully
+[Sat Feb  8 15:24:03 2025] src/server/server.c:6 - program started!
+[Sat Feb  8 15:24:03 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Sat Feb  8 15:24:03 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Sat Feb  8 15:24:03 2025] src/server/server_utils.c:235 - config->Map.MaxEntities.Obstacles: 15
+[Sat Feb  8 15:24:03 2025] src/server/server_utils.c:281 - Grid initialized successfully
+[Sat Feb  8 15:26:00 2025] src/server/server.c:6 - program started!
+[Sat Feb  8 15:26:00 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Sat Feb  8 15:26:00 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Sat Feb  8 15:26:00 2025] src/server/server_utils.c:235 - config->Map.MaxEntities.Obstacles: 15
+[Sat Feb  8 15:26:00 2025] src/server/server_utils.c:281 - Grid initialized successfully
