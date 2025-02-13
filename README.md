@@ -1,10 +1,14 @@
 
 # Drone Simulation Game
 ## Table of Contents
-[Overview](#Overview).
-[Tools Used in This Project](#Tools Used in This Project:).
+[Overview](#Overview)
+
+[Tools Used in This Project](#Tools-Used-in-This-Project).
+
 [Components](#Components)
+
 [Gameplay](#Gameplay).
+
 [Logging](#Logging).
 ## Overview
 
