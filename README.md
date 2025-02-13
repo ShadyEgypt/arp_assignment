@@ -1,11 +1,16 @@
 
 # Drone Simulation Game
-
+## Table of Contents
+[Overview](#Overview).
+[Tools Used in This Project](#Tools Used in This Project:).
+[Components](#Components)
+[Gameplay](#Gameplay).
+[Logging](#Logging).
 ## Overview
 
 This project simulates the operation of a drone in a dynamic environment. The drone can move in any direction, reach targets, and be deflected by obstacles. The objective is to provide a working simulation that demonstrates the drone's dynamics and its interaction with various environmental factors.
 
-## Tools Used in This Project:
+## Tools Used in This Project
 
 - **VSCode**: Used as the main development environment since our project is coded in C.
 - **Ubuntu 20.04**: Recommended by the professor to enhance the experience with POSIX (Portable Operating System Interface).
@@ -16,22 +21,22 @@ This project simulates the operation of a drone in a dynamic environment. The dr
 
 The system consists of several components, each responsible for specific tasks within the simulation:
 
-### 1. **Server**
+ 1. **Server**
    - The server acts as the central hub for managing communication between different components of the system, such as the drone, obstacles, and the player interface...
 
-### 2. **Drone Dynamics**
+ 2. **Drone Dynamics**
    - This component is responsible for simulating the movement of the drone. It processes player input to control the drone's movement and handles interactions with obstacles and targets.
 
-### 3. **Obstacle and Target Generator**
+3. **Obstacle and Target Generator**
    - Regularly generates new obstacles and targets within the game environment. This ensures that the player faces new challenges as they move the drone. The game remains dynamic and engaging with the continuous appearance of obstacles and targets.
 
-### 4. **Watchdog**
+ 4. **Watchdog**
    - The watchdog monitors the system to ensure that all processes are running smoothly. In case of errors or failures within any component, it logs the issue and terminate all the processes in the most secure way.
 
-### 5. **Map**
+ 5. **Map**
    - Defines the environment in which the drone operates. It includes a grid or coordinate system that determines the drone's position, the placement of obstacles, and the targets. The map also helps in determining valid movement directions and boundaries for the drone.
 
-### 6. **Display**
+ 6. **Display**
    - The display updates in real-time to show the current state of the game. It visualizes the drone's position, the obstacles, the targets, the player's score and the interactive keyboard.
 
 ## Add how to run the code!
