@@ -24,12 +24,12 @@ void handle_sigint(int sig)
 void reset_obstacles_handler(int sig)
 {
     // Lock semaphore before accessing shared memory
-    // acquire_semaphore(s1);
+    acquire_semaphore(s1);
     printf("Semaphore locked!\n");
     reset_obstacles(grid);
     set_obstacles_randomly(grid, log_file);
     // Unlock semaphore after operation
-    // release_semaphore(s1);
+    release_semaphore(s1);
     printf("Semaphore unlocked!\n");
 }
 

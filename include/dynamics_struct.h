@@ -79,30 +79,4 @@ typedef struct
     unsigned char obstacle_count;
 } Grid;
 
-// Grid *create_grid(int height, int width) {
-//     Grid *grid = malloc(sizeof(Grid));
-//     grid->grid_actual_height = height;
-//     grid->grid_actual_width = width;
-
-//     grid->grid = malloc(height * sizeof(int *));
-//     for (int i = 0; i < height; i++) {
-//         grid->grid[i] = malloc(width * sizeof(int));
-//     }
-
-//     grid->targets = malloc(MAX_TARGETS * sizeof(Target));
-//     grid->obstacles = malloc(MAX_OBSTACLES * sizeof(Obstacle));
-
-//     return grid;
-// }
-
-// void free_grid(Grid *grid) {
-//     for (int i = 0; i < grid->grid_actual_height; i++) {
-//         free(grid->grid[i]);
-//     }
-//     free(grid->grid);
-//     free(grid->targets);
-//     free(grid->obstacles);
-//     free(grid);
-// }
-
 #endif // DYNAMICS_STRUCT_H

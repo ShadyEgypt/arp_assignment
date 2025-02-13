@@ -321,7 +321,7 @@ void child3_task()
         sleep(2);
     }
 
-    while (!globals->targets_pid || !globals->obstacles_pid || !globals->map_pid)
+    while (!globals->targets_pid || !globals->obstacles_pid || !globals->map_pid || !globals->pub)
     {
         printf("Waiting for PIDs...\n");
         printf("targets_pid: %d, obstacles_pid: %d, map_pid: %d\n",

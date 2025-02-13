@@ -1,0 +1,6 @@
+struct TargetMessage {
+    unsigned long id;
+    double x;
+    double y;
+};
+

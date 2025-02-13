@@ -1,0 +1,65 @@
+# Compiler and flags
+CXX = /usr/bin/g++
+CXXFLAGS = -g -std=c++11 -I. \
+           -I$(HOME)/Fast-DDS/include -I$(INCLUDE_DIR) -IGenerated/src/map
+LDFLAGS = -L$(HOME)/Fast-DDS/lib -lfastcdr -lfastdds -Wl,-rpath,$(HOME)/Fast-DDS/lib
+
+# Directories
+BUILD_DIR = build
+BINARY_DIR = Binary
+GENERATED_DIR = Generated
+INCLUDE_DIR = include/map
+INCLUDE_MAP = include/map
+MAP = map
+LOG_DIR = logs
+SRC_DIR = src
+
+# IDL File and Generation
+IDL_SRC = $(SRC_DIR)/map/TargetMessage.idl
+IDL_GENERATOR = fastddsgen
+GENERATE_OPTS = -d $(GENERATED_DIR) -example CMake
+
+# Executables
+TARGETS_PUB_BINARY = $(BINARY_DIR)/targets_publisher
+TARGETS_SUB_BINARY = $(BINARY_DIR)/targets_subscriber
+
+# Source files
+TARGETS_PUB_SRC = $(SRC_DIR)/map/targets_publisher.cpp \
+                  $(GENERATED_DIR)/src/map/TargetMessagePubSubTypes.cxx \
+                  $(GENERATED_DIR)/src/map/TargetMessagePublisherApp.cxx \
+                  $(GENERATED_DIR)/src/map/TargetMessageTypeObjectSupport.cxx
+
+TARGETS_SUB_SRC = $(SRC_DIR)/map/targets_subscriber.cpp \
+                  $(GENERATED_DIR)/src/map/TargetMessagePubSubTypes.cxx \
+                  $(GENERATED_DIR)/src/map/TargetMessageSubscriberApp.cxx \
+                  $(GENERATED_DIR)/src/map/TargetMessageTypeObjectSupport.cxx
+
+# Default target builds the executable
+all: $(GENERATED_DIR) $(BUILD_DIR) $(LOG_DIR) clean idl_generation $(TARGETS_PUB_BINARY) $(TARGETS_SUB_BINARY)
+
+# Ensure directories exist
+$(BUILD_DIR) $(BINARY_DIR) $(GENERATED_DIR) $(LOG_DIR):
+	@echo "Creating directories..."
+	@mkdir -p $@
+
+# IDL Generation
+idl_generation:
+	@echo "Generating DDS source files from IDL..."
+	$(IDL_GENERATOR) $(GENERATE_OPTS) $(IDL_SRC)
+
+# Compile Targets Publisher
+$(TARGETS_PUB_BINARY): $(TARGETS_PUB_SRC) | $(BINARY_DIR)
+	@echo "Building $(TARGETS_PUB_BINARY)..."
+	$(CXX) $(CXXFLAGS) $^ -o $@ $(LDFLAGS)
+
+# Compile Targets Subscriber
+$(TARGETS_SUB_BINARY): $(TARGETS_SUB_SRC) | $(BINARY_DIR)
+	@echo "Building $(TARGETS_SUB_BINARY)..."
+	$(CXX) $(CXXFLAGS) $^ -o $@ $(LDFLAGS)
+
+.PHONY: all clean
+
+# # Cleaning up
+# clean:
+# 	@echo "Cleaning..."
+# 	@rm -rf $(BUILD_DIR) $(BINARY_DIR) $(LOG_DIR)

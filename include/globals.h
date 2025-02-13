@@ -14,6 +14,8 @@ extern FILE *log_file;
 
 typedef struct
 {
+    pid_t pub;
+    pid_t sub;
     pid_t display_pid;
     pid_t server_pid;
     pid_t drone_pid;

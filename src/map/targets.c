@@ -24,11 +24,12 @@ void handle_sigint(int sig)
 void reset_targets_handler(int sig)
 {
     // Lock semaphore before accessing shared memory
-    // acquire_semaphore(s1);
+    acquire_semaphore(s1);
     printf("Semaphore locked!\n");
     reset_targets(grid);
     set_targets_randomly(grid, log_file);
-    // release_semaphore(s1);
+    release_semaphore(s1);
+    kill(globals->pub, SIGUSR1);
     printf("Semaphore unlocked!\n");
 }
 
