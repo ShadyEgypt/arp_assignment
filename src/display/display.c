@@ -72,6 +72,12 @@ int main(int argc, char *argv[])
     }
     LOG_MESSAGE(log_file, "opened fd in write mode!");
 
+    display_fd = open(DISPLAY_FIFO, O_RDONLY | O_NONBLOCK);
+    if (display_fd == -1)
+    {
+        perror("Failed to open display pipe");
+    }
+
     grid_height = config->Keyboard.Box.Height;
     grid_width = config->Keyboard.Box.Width;
     cell_height = config->Keyboard.Key.Height;
@@ -104,6 +110,14 @@ int main(int argc, char *argv[])
         // Refreshing all the windows
         wrefresh(layout.right_split);
         refresh_left_win(layout);
+
+        char message[100];
+        snprintf(message, sizeof(message), "%s is alive at %ld\n", "display", time(NULL));
+
+        if (write(display_fd, message, strlen(message) + 1) == -1)
+        {
+            fprintf(stderr, "Error writing to %s: %s\n", DISPLAY_FIFO, strerror(errno));
+        }
 
         // Getting user input if present
         input = getch();

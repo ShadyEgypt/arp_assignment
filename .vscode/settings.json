@@ -16,7 +16,8 @@
         "time.h": "c",
         "display_utils.h": "c",
         "globals.h": "c",
-        "server_utils.h": "c"
+        "server_utils.h": "c",
+        "string.h": "c"
     },
     "ros.distro": "humble"
 }

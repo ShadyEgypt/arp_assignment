@@ -14,16 +14,17 @@ DRONE_SRC = $(SRC_DIR)/drone
 MAP_SRC = $(SRC_DIR)/map
 SERVER_SRC = $(SRC_DIR)/server
 UTILS_SRC = $(SRC_DIR)
+WATCHDOG_SRC = $(SRC_DIR)/watchdog
 
 # Targets
-all: $(LOG_DIR) $(BUILD_DIR) $(BINARY_DIR) display server targets obstacles map drone
+all: $(LOG_DIR) $(BUILD_DIR) $(BINARY_DIR) display server targets obstacles map drone watchdog
 
 # Ensure necessary directories exist
 $(LOG_DIR):
 	mkdir -p $(LOG_DIR)
 
 $(BUILD_DIR):
-	mkdir -p $(BUILD_DIR)/display $(BUILD_DIR)/drone $(BUILD_DIR)/map $(BUILD_DIR)/server
+	mkdir -p $(BUILD_DIR)/display $(BUILD_DIR)/drone $(BUILD_DIR)/map $(BUILD_DIR)/server $(BUILD_DIR)/watchdog
 
 $(BINARY_DIR):
 	mkdir -p $(BINARY_DIR)
@@ -40,6 +41,9 @@ $(BUILD_DIR)/map:
 
 $(BUILD_DIR)/server:
 	mkdir -p $(BUILD_DIR)/server
+
+$(BUILD_DIR)/watchdog:
+	mkdir -p $(BUILD_DIR)/watchdog
 
 # Build the executables
 display: $(BUILD_DIR)/display/display.o $(BUILD_DIR)/display/display_utils.o $(BUILD_DIR)/utils.o
@@ -60,8 +64,51 @@ obstacles: $(BUILD_DIR)/map/obstacles.o $(BUILD_DIR)/utils.o $(BUILD_DIR)/map/ma
 drone: $(BUILD_DIR)/drone/drone.o $(BUILD_DIR)/drone/drone_utils.o $(BUILD_DIR)/utils.o
 	$(CC) -o $(BINARY_DIR)/drone $^ $(CFLAGS) $(LDFLAGS)
 
+watchdog: $(BUILD_DIR)/watchdog/watchdog.o $(BUILD_DIR)/utils.o
+	$(CC) -o $(BINARY_DIR)/watchdog $^ $(CFLAGS) $(LDFLAGS)
+
 # Compile object files for each module
-# Add here your object file compilation rules as before...
+# DISPLAY MODULE
+$(BUILD_DIR)/display/display.o: $(DISPLAY_SRC)/display.c $(INCLUDE_DIR)/display/display_utils.h $(INCLUDE_DIR)/utils.h $(INCLUDE_DIR)/globals.h | $(BUILD_DIR)/display
+	$(CC) -c $< -o $@ -I$(INCLUDE_DIR)/display -I$(INCLUDE_DIR)
+
+$(BUILD_DIR)/display/display_utils.o: $(DISPLAY_SRC)/display_utils.c $(INCLUDE_DIR)/display/display_utils.h $(INCLUDE_DIR)/globals.h | $(BUILD_DIR)/display
+	$(CC) -c $< -o $@ -I$(INCLUDE_DIR)/display -I$(INCLUDE_DIR)
+
+# DRONE MODULE
+$(BUILD_DIR)/drone/drone.o: $(DRONE_SRC)/drone.c $(INCLUDE_DIR)/drone/drone_utils.h $(INCLUDE_DIR)/globals.h | $(BUILD_DIR)/drone
+	$(CC) -c $< -o $@ -I$(INCLUDE_DIR)/drone -I$(INCLUDE_DIR)
+
+$(BUILD_DIR)/drone/drone_utils.o: $(DRONE_SRC)/drone_utils.c $(INCLUDE_DIR)/drone/drone_utils.h $(INCLUDE_DIR)/globals.h | $(BUILD_DIR)/drone
+	$(CC) -c $< -o $@ -I$(INCLUDE_DIR)/drone -I$(INCLUDE_DIR)
+
+# MAP MODULE
+$(BUILD_DIR)/map/map.o: $(MAP_SRC)/map.c $(INCLUDE_DIR)/map/map_utils.h $(INCLUDE_DIR)/utils.h $(INCLUDE_DIR)/globals.h | $(BUILD_DIR)/map
+	$(CC) -c $< -o $@ -I$(INCLUDE_DIR)/map -I$(INCLUDE_DIR)
+
+$(BUILD_DIR)/map/obstacles.o: $(MAP_SRC)/obstacles.c $(INCLUDE_DIR)/map/map_utils.h $(INCLUDE_DIR)/utils.h $(INCLUDE_DIR)/globals.h | $(BUILD_DIR)/map
+	$(CC) -c $< -o $@ -I$(INCLUDE_DIR)/map -I$(INCLUDE_DIR)
+
+$(BUILD_DIR)/map/targets.o: $(MAP_SRC)/targets.c $(INCLUDE_DIR)/map/map_utils.h $(INCLUDE_DIR)/utils.h $(INCLUDE_DIR)/globals.h | $(BUILD_DIR)/map
+	$(CC) -c $< -o $@ -I$(INCLUDE_DIR)/map -I$(INCLUDE_DIR)
+
+$(BUILD_DIR)/map/map_utils.o: $(MAP_SRC)/map_utils.c $(INCLUDE_DIR)/map/map_utils.h $(INCLUDE_DIR)/utils.h $(INCLUDE_DIR)/globals.h | $(BUILD_DIR)/map
+	$(CC) -c $< -o $@ -I$(INCLUDE_DIR)/map -I$(INCLUDE_DIR)
+
+# SERVER MODULE
+$(BUILD_DIR)/server/server.o: $(SERVER_SRC)/server.c $(INCLUDE_DIR)/server/server_utils.h $(INCLUDE_DIR)/utils.h $(INCLUDE_DIR)/globals.h | $(BUILD_DIR)/server
+	$(CC) -c $< -o $@ -I$(INCLUDE_DIR)/server -I$(INCLUDE_DIR) 
+
+$(BUILD_DIR)/server/server_utils.o: $(SERVER_SRC)/server_utils.c $(INCLUDE_DIR)/server/server_utils.h $(INCLUDE_DIR)/utils.h $(INCLUDE_DIR)/globals.h | $(BUILD_DIR)/server
+	$(CC) -c $< -o $@ -I$(INCLUDE_DIR)/server -I$(INCLUDE_DIR) 
+
+# UTILS MODULE
+$(BUILD_DIR)/utils.o: $(UTILS_SRC)/utils.c $(INCLUDE_DIR)/utils.h $(INCLUDE_DIR)/globals.h | $(BUILD_DIR)
+	$(CC) -c $< -o $@ -I$(INCLUDE_DIR)
+
+# WATCHDOG MODULE
+$(BUILD_DIR)/watchdog/watchdog.o: $(WATCHDOG_SRC)/watchdog.c $(INCLUDE_DIR)
+	$(CC) -c $< -o $@ $(CFLAGS)
 
 # Clean up build and log files
 clean:

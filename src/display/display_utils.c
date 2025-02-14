@@ -5,6 +5,7 @@ sem_t *sem_g = NULL;
 sem_t *sem_drone = NULL;
 
 bool resources_exist = false;
+int display_fd = -1;
 int fd = 0;
 int input = 0;
 int parent_height = 0, parent_width = 0;

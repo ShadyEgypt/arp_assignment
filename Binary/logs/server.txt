@@ -1,0 +1,15 @@
+[Fri Feb 14 22:03:56 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 22:03:56 2025] src/server/server_utils.c:23 - Parent: create the shared memories!
+
+[Fri Feb 14 22:03:56 2025] src/server/server_utils.c:45 - Parent: extract the parameters!
+
+[Fri Feb 14 22:05:58 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 22:05:58 2025] src/server/server_utils.c:23 - Parent: create the shared memories!
+
+[Fri Feb 14 22:05:58 2025] src/server/server_utils.c:45 - Parent: extract the parameters!
+
+[Fri Feb 14 22:07:42 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 22:07:42 2025] src/server/server_utils.c:23 - Parent: create the shared memories!
+
+[Fri Feb 14 22:07:42 2025] src/server/server_utils.c:45 - Parent: extract the parameters!
+

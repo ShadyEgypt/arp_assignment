@@ -1,0 +1,2 @@
+[Fri Feb 14 22:03:57 2025] src/map/map.c:13 - program started!
+[Fri Feb 14 22:06:02 2025] src/map/map.c:13 - program started!

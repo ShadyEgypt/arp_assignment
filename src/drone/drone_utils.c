@@ -8,6 +8,8 @@ sem_t *sem_g = NULL;
 sem_t *sem_drone = NULL;
 
 bool resources_exist = false;
+int drone_fd = -1;
+
 Grid *grid = NULL;
 Globals *globals = NULL;
 Drone *drone = NULL;
@@ -50,6 +52,12 @@ void setup_resources()
     sem_drone = open_semaphore(SEM_DRONE_NAME);
 
     LOG_MESSAGE(log_file, "shared memories got attached!");
+
+    drone_fd = open(DRONE_FIFO, O_RDONLY | O_NONBLOCK);
+    if (drone_fd == -1)
+    {
+        perror("Failed to open drone pipe");
+    }
 
     resources_exist = true;
 
@@ -604,9 +612,15 @@ void child1_task()
             LOG_MESSAGE(log_file, "Input '%c' received from the pipe", input);
             input = '\0';
         }
+        char message[100];
+        snprintf(message, sizeof(message), "%s is alive at %ld\n", "drone", time(NULL));
 
+        if (write(drone_fd, message, strlen(message) + 1) == -1)
+        {
+            fprintf(stderr, "Error writing to %s: %s\n", DRONE_FIFO, strerror(errno));
+        }
         // sleep to prevent overloading
-        usleep(1000000 * config->Physics.IntegrationInterval);
+        usleep(1000000);
     }
 }
 

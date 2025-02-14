@@ -1,0 +1,8 @@
+[Fri Feb 14 22:03:59 2025] src/drone/drone.c:7 - program started!
+[Fri Feb 14 22:03:59 2025] src/drone/drone_utils.c:54 - shared memories got attached!
+[Fri Feb 14 22:03:59 2025] src/drone/drone_utils.c:73 - opened fd in read mode!
+[Fri Feb 14 22:03:59 2025] src/drone/drone_utils.c:84 - Parent: All resources are initialized successfully.
+[Fri Feb 14 22:06:08 2025] src/drone/drone.c:7 - program started!
+[Fri Feb 14 22:06:08 2025] src/drone/drone_utils.c:54 - shared memories got attached!
+[Fri Feb 14 22:06:08 2025] src/drone/drone_utils.c:73 - opened fd in read mode!
+[Fri Feb 14 22:06:08 2025] src/drone/drone_utils.c:84 - Parent: All resources are initialized successfully.

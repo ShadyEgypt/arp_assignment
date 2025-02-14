@@ -6,6 +6,8 @@ sem_t *sem_g = NULL;
 sem_t *sem_drone = NULL;
 
 bool resources_exist = false;
+int map_fd = -1;
+
 Grid *grid = NULL;
 Globals *globals = NULL;
 Drone *drone = NULL;
@@ -54,6 +56,12 @@ void setup_resources()
     // g1 = sem_grid;
     // g2 = sem_g;
     // g_grid = grid;
+
+    map_fd = open(MAP_FIFO, O_RDONLY | O_NONBLOCK);
+    if (map_fd == -1)
+    {
+        perror("Failed to open map pipe");
+    }
 
     resources_exist = true;
 
@@ -178,7 +186,14 @@ void child1_task()
                 destroy_win(instruction_window);
                 instruction_window = NULL;
             }
-            draw_game(); // Draw game if enough space and instruction window is not needed
+            draw_game();
+            char message[100];
+            snprintf(message, sizeof(message), "%s is alive at %ld\n", "map", time(NULL));
+
+            if (write(map_fd, message, strlen(message) + 1) == -1)
+            {
+                fprintf(stderr, "Error writing to %s: %s\n", MAP_FIFO, strerror(errno));
+            }
         }
         usleep(100000); // Reduce CPU usage
     }
@@ -218,7 +233,7 @@ void handle_sigint_map(int sig)
     delwin(game_window);
     delwin(game_window);
     endwin();
-
+    close(map_fd);
     exit(0); // Exit the program
 }
 // targets and obstacles

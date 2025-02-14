@@ -6,14 +6,23 @@
 #include <sys/types.h>
 #include <config_struct.h>
 #include <dynamics_struct.h>
+#include <errno.h>
 
 extern WINDOW *win;
 extern FILE *log_file;
 
+extern int wd_fd;
+extern int server_fd;
+extern int map_fd;
+extern int display_fd;
+extern int targets_fd;
+extern int obstacles_fd;
+extern int drone_fd;
 #define CEIL_TO_INT(x) ((int)ceil(x))
 
 typedef struct
 {
+    pid_t watchdog_pid;
     pid_t display_pid;
     pid_t server_pid;
     pid_t drone_pid;
@@ -25,6 +34,14 @@ typedef struct
 
 #define MAX_FILE_SIZE 8192
 #define uint unsigned char
+
+#define WATCHDOG_FIFO "/tmp/watchdog_pipe"
+#define SERVER_FIFO "/tmp/server_pipe"
+#define MAP_FIFO "/tmp/map_pipe"
+#define DISPLAY_FIFO "/tmp/display_pipe"
+#define TARGETS_FIFO "/tmp/targets_pipe"
+#define OBSTACLES_FIFO "/tmp/obstacles_pipe"
+#define DRONE_FIFO "/tmp/drone_pipe"
 
 // Shared memory object name (used with shm_open)
 #define SHM_GRID_NAME "/shared_memory_grid"

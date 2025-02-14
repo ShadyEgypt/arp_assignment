@@ -4,6 +4,7 @@
 bool targets_resources_exist = false;
 sem_t *s1;
 sem_t *s2;
+int targets_fd = -1;
 
 // Signal handler function for SIGINT
 void handle_sigint(int sig)
@@ -17,6 +18,7 @@ void handle_sigint(int sig)
         detach_shared_memory(config, SHM_CONFIG_SIZE);
         printf("Shared memory detached and destroyed.\n");
     }
+    close(targets_fd);
 
     exit(0); // Exit the program
 }
@@ -62,6 +64,12 @@ int main()
     s1 = sem_grid;
     s2 = sem_g;
 
+    targets_fd = open(TARGETS_FIFO, O_RDONLY | O_NONBLOCK);
+    if (targets_fd == -1)
+    {
+        perror("Failed to open map pipe");
+    }
+
     targets_resources_exist = true;
 
     acquire_semaphore(s2);
@@ -71,7 +79,14 @@ int main()
 
     while (1)
     {
-        sleep(20);
+        sleep(10);
+        char message[100];
+        snprintf(message, sizeof(message), "%s is alive at %ld\n", "targets", time(NULL));
+
+        if (write(targets_fd, message, strlen(message) + 1) == -1)
+        {
+            fprintf(stderr, "Error writing to %s: %s\n", TARGETS_FIFO, strerror(errno));
+        }
     }
     return 0;
 }
