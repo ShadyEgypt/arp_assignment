@@ -11,7 +11,7 @@ GENERATED_DIR = Generated
 INCLUDE_DIR = include/map
 INCLUDE_MAP = include/map
 MAP = map
-LOG_DIR = logs
+LOG_DIR = ../logs
 SRC_DIR = src
 
 # IDL File and Generation

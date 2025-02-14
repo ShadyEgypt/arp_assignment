@@ -2,7 +2,7 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -I/usr/include/cjson -I$(INCLUDE_DIR) -I$(INCLUDE_DIR)/display -I$(INCLUDE_DIR)/drone -I$(INCLUDE_DIR)/map
 LDFLAGS = -lncurses -lrt -pthread -lm -lcjson
-LOG_DIR = logs
+LOG_DIR = ../logs
 BUILD_DIR = build
 BINARY_DIR = Binary
 SRC_DIR = src
