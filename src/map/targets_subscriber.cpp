@@ -134,8 +134,9 @@ private:
                     std::cout << "Index: " << my_message_.id()
                               << " X: " << my_message_.x()
                               << " Y: " << my_message_.y() << std::endl;
-                    grid_->obstacles[my_message_.id()].x = my_message_.x();
-                    grid_->obstacles[my_message_.id()].y = my_message_.y();
+                    grid_->targets[my_message_.id()].id = my_message_.id();
+                    grid_->targets[my_message_.id()].x = my_message_.x();
+                    grid_->targets[my_message_.id()].y = my_message_.y();
                 }
             }
         }
