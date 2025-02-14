@@ -1,7 +1,73 @@
 #include "targets_subscriber.h"
 
+Grid *grid_;
+Globals *globals_;
+int shm_grid_fd;
+int shm_globals_fd;
 volatile std::sig_atomic_t shutdown_flag = 0;
-void signal_handler(int signal)
+
+std::shared_ptr<void> map_shared_memory(int shm_fd, size_t size)
+{
+    void *addr = mmap(nullptr, size, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
+    if (addr == MAP_FAILED)
+    {
+        throw std::system_error(errno, std::system_category(), "mmap failed");
+    }
+    return std::shared_ptr<void>(addr, [size](void *ptr)
+                                 { munmap(ptr, size); });
+}
+
+class SharedMemoryHandle
+{
+public:
+    SharedMemoryHandle(const std::string &shm_name, int oflag, mode_t mode)
+    {
+        shm_fd = shm_open(shm_name.c_str(), oflag, mode);
+        if (shm_fd == -1)
+        {
+            throw std::system_error(errno, std::system_category(), "shm_open (attach) failed");
+        }
+    }
+
+    ~SharedMemoryHandle()
+    {
+        if (shm_fd != -1)
+        {
+            close(shm_fd);
+        }
+    }
+
+    // Delete copy constructor and copy assignment operator
+    SharedMemoryHandle(const SharedMemoryHandle &) = delete;
+    SharedMemoryHandle &operator=(const SharedMemoryHandle &) = delete;
+
+    // Allow moving of the handle
+    SharedMemoryHandle(SharedMemoryHandle &&other) noexcept : shm_fd(other.shm_fd)
+    {
+        other.shm_fd = -1; // Do not close the file descriptor twice
+    }
+
+    SharedMemoryHandle &operator=(SharedMemoryHandle &&other) noexcept
+    {
+        if (this != &other)
+        {
+            if (shm_fd != -1)
+            {
+                close(shm_fd);
+            }
+            shm_fd = other.shm_fd;
+            other.shm_fd = -1;
+        }
+        return *this;
+    }
+
+    int get_fd() const { return shm_fd; }
+
+private:
+    int shm_fd;
+};
+
+void sigint_handler(int signal)
 {
     shutdown_flag = 1;
 }
@@ -68,6 +134,8 @@ private:
                     std::cout << "Index: " << my_message_.id()
                               << " X: " << my_message_.x()
                               << " Y: " << my_message_.y() << std::endl;
+                    grid_->obstacles[my_message_.id()].x = my_message_.x();
+                    grid_->obstacles[my_message_.id()].y = my_message_.y();
                 }
             }
         }
@@ -181,18 +249,45 @@ public:
     }
 };
 
+TargetsSubscriber *subscriber;
+
 int main()
 {
-    std::cout << "Starting subscriber." << std::endl;
-    std::signal(SIGINT, signal_handler); // Register signal handler
-
-    TargetsSubscriber *mysub = new TargetsSubscriber();
-    if (mysub->init())
+    SharedMemoryHandle shm_grid_fd(SHM_GRID_NAME, O_RDWR, 0666);
+    auto grid_ptr = std::static_pointer_cast<Grid>(map_shared_memory(shm_grid_fd.get_fd(), SHM_GRID_SIZE));
+    if (!grid_ptr)
     {
-        mysub->run();
+        std::cerr << "Failed to map Grid shared memory." << std::endl;
+        return false;
+    }
+    grid_ = grid_ptr.get();
+
+    SharedMemoryHandle shm_globals_fd(SHM_G_NAME, O_RDWR, 0666);
+    auto globals_ptr = std::static_pointer_cast<Globals>(map_shared_memory(shm_globals_fd.get_fd(), SHM_G_SIZE));
+    if (!globals_ptr)
+    {
+        std::cerr << "Failed to map Globals shared memory." << std::endl;
+        return false;
+    }
+    globals_ = globals_ptr.get();
+    // Initialize the global publisher
+    if (subscriber->init())
+    {
+        std::cout << "Publisher initialized successfully." << std::endl;
+    }
+    else
+    {
+        std::cerr << "Failed to initialize publisher." << std::endl;
+        return 1; // Return an error code
+    }
+    std::signal(SIGINT, sigint_handler); // Register signal handler
+
+    while (!shutdown_flag)
+    {
+        pause();
     }
 
-    delete mysub;
+    delete subscriber;
     std::cout << "Subscriber shutdown." << std::endl;
     return 0;
 }

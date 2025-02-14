@@ -1,0 +1,6 @@
+struct ObstacleMessage {
+    unsigned long id;
+    double x;
+    double y;
+};
+

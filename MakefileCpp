@@ -15,19 +15,20 @@ LOG_DIR = ../logs
 SRC_DIR = src
 
 # IDL File and Generation
-IDL_SRC = $(SRC_DIR)/map/TargetMessage.idl
+TARGET_IDL_SRC = $(SRC_DIR)/map/TargetMessage.idl
+OBSTACLE_IDL_SRC = $(SRC_DIR)/map/ObstacleMessage.idl
 IDL_GENERATOR = fastddsgen
 GENERATE_OPTS = -d $(GENERATED_DIR) -example CMake
 
 # Executables
-TARGETS_PUB_BINARY = $(BINARY_DIR)/targets_publisher
+OBSTACLES_PUB_BINARY = $(BINARY_DIR)/obstacles_publisher
 TARGETS_SUB_BINARY = $(BINARY_DIR)/targets_subscriber
 
 # Source files
-TARGETS_PUB_SRC = $(SRC_DIR)/map/targets_publisher.cpp \
-                  $(GENERATED_DIR)/src/map/TargetMessagePubSubTypes.cxx \
-                  $(GENERATED_DIR)/src/map/TargetMessagePublisherApp.cxx \
-                  $(GENERATED_DIR)/src/map/TargetMessageTypeObjectSupport.cxx
+OBSTACLES_PUB_SRC = $(SRC_DIR)/map/obstacles_publisher.cpp \
+                  $(GENERATED_DIR)/src/map/ObstacleMessagePubSubTypes.cxx \
+                  $(GENERATED_DIR)/src/map/ObstacleMessagePublisherApp.cxx \
+                  $(GENERATED_DIR)/src/map/ObstacleMessageTypeObjectSupport.cxx
 
 TARGETS_SUB_SRC = $(SRC_DIR)/map/targets_subscriber.cpp \
                   $(GENERATED_DIR)/src/map/TargetMessagePubSubTypes.cxx \
@@ -45,11 +46,12 @@ $(BUILD_DIR) $(BINARY_DIR) $(GENERATED_DIR) $(LOG_DIR):
 # IDL Generation
 idl_generation:
 	@echo "Generating DDS source files from IDL..."
-	$(IDL_GENERATOR) $(GENERATE_OPTS) $(IDL_SRC)
+	$(IDL_GENERATOR) $(GENERATE_OPTS) $(TARGET_IDL_SRC)
+	$(IDL_GENERATOR) $(GENERATE_OPTS) $(OBSTACLE_IDL_SRC)
 
-# Compile Targets Publisher
-$(TARGETS_PUB_BINARY): $(TARGETS_PUB_SRC) | $(BINARY_DIR)
-	@echo "Building $(TARGETS_PUB_BINARY)..."
+# Compile Obstacles Publisher
+$(OBSTACLES_PUB_BINARY): $(OBSTACLES_PUB_SRC) | $(BINARY_DIR)
+	@echo "Building $(OBSTACLES_PUB_BINARY)..."
 	$(CXX) $(CXXFLAGS) $^ -o $@ $(LDFLAGS)
 
 # Compile Targets Subscriber

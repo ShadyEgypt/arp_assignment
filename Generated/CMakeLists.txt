@@ -11,13 +11,13 @@ find_package(fastcdr REQUIRED)
 find_package(fastdds 3 REQUIRED)
 
 
-message(STATUS "Configuring Target...")
-add_library(Target_lib src/map/TargetTypeObjectSupport.cxx src/map/TargetPubSubTypes.cxx)
-target_link_libraries(Target_lib fastcdr fastdds)
+message(STATUS "Configuring TargetMessage...")
+add_library(TargetMessage_lib src/map/TargetMessageTypeObjectSupport.cxx src/map/TargetMessagePubSubTypes.cxx)
+target_link_libraries(TargetMessage_lib fastcdr fastdds)
 
-add_executable(Target src/map/TargetApplication.cxx src/map/TargetPublisherApp.cxx src/map/TargetSubscriberApp.cxx src/map/Targetmain.cxx)
-target_link_libraries(Target fastcdr fastdds
-        Target_lib 
+add_executable(TargetMessage src/map/TargetMessageApplication.cxx src/map/TargetMessagePublisherApp.cxx src/map/TargetMessageSubscriberApp.cxx src/map/TargetMessagemain.cxx)
+target_link_libraries(TargetMessage fastcdr fastdds
+        TargetMessage_lib 
         )
 
 
