@@ -16,7 +16,7 @@ In the DDS system, communication is organized around a **Topic**. Both the publi
 - The Publisher sends data related to obstacles and target generators.
 
 ### Subscriber
-- The Subscriber receives data from the Publisher, specifically the **BlackBoard** which is a shared resource.
+- The Subscriber receives data from the Publisher.
 
 Both Publisher and Subscriber communicate over a Topic, which defines the type of data being exchanged (e.g., the position of obstacles and targets).
 
@@ -35,10 +35,22 @@ The system is divided into several key components, as outlined below:
 ## How to Run the Project
 To start the game run this commands on the terminal:
 ```
-git status
-git add
-git commit
+./run.sh
 ```
+it's better to run each process in a separate terminal.
+```
+cd Binary/
+./server
+./map
+./display
+./drone
+./targets
+./obstacles
+./targets_publisher
+./obstacles_subscriber
+```
+## Results
+![results](./res.jpg "DDS Results")
 
 
 
