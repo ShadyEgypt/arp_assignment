@@ -21,22 +21,22 @@ IDL_GENERATOR = fastddsgen
 GENERATE_OPTS = -d $(GENERATED_DIR) -example CMake
 
 # Executables
-OBSTACLES_PUB_BINARY = $(BINARY_DIR)/obstacles_publisher
-TARGETS_SUB_BINARY = $(BINARY_DIR)/targets_subscriber
+TARGETS_PUB_BINARY = $(BINARY_DIR)/targets_publisher
+OBSTACLES_SUB_BINARY = $(BINARY_DIR)/obstacles_subscriber
 
 # Source files
-OBSTACLES_PUB_SRC = $(SRC_DIR)/map/obstacles_publisher.cpp \
-                  $(GENERATED_DIR)/src/map/ObstacleMessagePubSubTypes.cxx \
-                  $(GENERATED_DIR)/src/map/ObstacleMessagePublisherApp.cxx \
-                  $(GENERATED_DIR)/src/map/ObstacleMessageTypeObjectSupport.cxx
-
-TARGETS_SUB_SRC = $(SRC_DIR)/map/targets_subscriber.cpp \
+TARGETS_PUB_SRC = $(SRC_DIR)/map/targets_publisher.cpp \
                   $(GENERATED_DIR)/src/map/TargetMessagePubSubTypes.cxx \
-                  $(GENERATED_DIR)/src/map/TargetMessageSubscriberApp.cxx \
+                  $(GENERATED_DIR)/src/map/TargetMessagePublisherApp.cxx \
                   $(GENERATED_DIR)/src/map/TargetMessageTypeObjectSupport.cxx
 
+OBSTACLES_SUB_SRC = $(SRC_DIR)/map/obstacles_subscriber.cpp \
+                  $(GENERATED_DIR)/src/map/ObstacleMessagePubSubTypes.cxx \
+                  $(GENERATED_DIR)/src/map/ObstacleMessageSubscriberApp.cxx \
+                  $(GENERATED_DIR)/src/map/ObstacleMessageTypeObjectSupport.cxx
+
 # Default target builds the executable
-all: $(GENERATED_DIR) $(BUILD_DIR) $(LOG_DIR) clean idl_generation $(TARGETS_PUB_BINARY) $(TARGETS_SUB_BINARY)
+all: $(GENERATED_DIR) $(BUILD_DIR) $(LOG_DIR) clean idl_generation $(TARGETS_PUB_BINARY) $(OBSTACLES_SUB_BINARY)
 
 # Ensure directories exist
 $(BUILD_DIR) $(BINARY_DIR) $(GENERATED_DIR) $(LOG_DIR):
@@ -50,13 +50,13 @@ idl_generation:
 	$(IDL_GENERATOR) $(GENERATE_OPTS) $(OBSTACLE_IDL_SRC)
 
 # Compile Obstacles Publisher
-$(OBSTACLES_PUB_BINARY): $(OBSTACLES_PUB_SRC) | $(BINARY_DIR)
-	@echo "Building $(OBSTACLES_PUB_BINARY)..."
+$(TARGETS_PUB_BINARY): $(TARGETS_PUB_SRC) | $(BINARY_DIR)
+	@echo "Building $(TARGETS_PUB_BINARY)..."
 	$(CXX) $(CXXFLAGS) $^ -o $@ $(LDFLAGS)
 
 # Compile Targets Subscriber
-$(TARGETS_SUB_BINARY): $(TARGETS_SUB_SRC) | $(BINARY_DIR)
-	@echo "Building $(TARGETS_SUB_BINARY)..."
+$(OBSTACLES_SUB_BINARY): $(OBSTACLES_SUB_SRC) | $(BINARY_DIR)
+	@echo "Building $(OBSTACLES_SUB_BINARY)..."
 	$(CXX) $(CXXFLAGS) $^ -o $@ $(LDFLAGS)
 
 .PHONY: all clean

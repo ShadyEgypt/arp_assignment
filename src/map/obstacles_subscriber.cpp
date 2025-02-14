@@ -1,4 +1,4 @@
-#include "targets_subscriber.h"
+#include "obstacles_subscriber.h"
 
 Grid *grid_;
 Globals *globals_;
@@ -72,7 +72,7 @@ void sigint_handler(int signal)
     shutdown_flag = 1;
 }
 
-class TargetsSubscriber
+class ObstaclesSubscriber
 {
 private:
     DomainParticipant *participant_;
@@ -141,7 +141,7 @@ private:
         }
 
     public:
-        TargetMessage my_message_;
+        ObstacleMessage my_message_;
 
         std::atomic_int samples_;
 
@@ -168,12 +168,12 @@ private:
     } listener_;
 
 public:
-    TargetsSubscriber()
-        : participant_(nullptr), subscriber_(nullptr), topic_(nullptr), reader_(nullptr), type_(new TargetMessagePubSubType())
+    ObstaclesSubscriber()
+        : participant_(nullptr), subscriber_(nullptr), topic_(nullptr), reader_(nullptr), type_(new ObstacleMessagePubSubType())
     {
     }
 
-    virtual ~TargetsSubscriber()
+    virtual ~ObstaclesSubscriber()
     {
         if (reader_ != nullptr)
         {
@@ -194,7 +194,7 @@ public:
     bool init()
     {
         DomainParticipantQos participantQos;
-        participantQos.name("target_subscriber");
+        participantQos.name("obstacle_subscriber");
 
         //  // Explicit configuration of shm transport
         // participantQos.transport().use_builtin_transports = false;
@@ -213,7 +213,7 @@ public:
         type_.register_type(participant_);
 
         // Create the subscriptions Topic
-        topic_ = participant_->create_topic("targets", type_.get_type_name(), TOPIC_QOS_DEFAULT);
+        topic_ = participant_->create_topic("obstacles", type_.get_type_name(), TOPIC_QOS_DEFAULT);
 
         if (topic_ == nullptr)
         {
@@ -249,7 +249,7 @@ public:
     }
 };
 
-TargetsSubscriber *subscriber;
+ObstaclesSubscriber *subscriber;
 
 int main()
 {

@@ -1,8 +1,8 @@
 #ifndef TARGETS_PUBLISHER_H
 #define TARGETS_PUBLISHER_H
 
-#include "Generated/src/map/ObstacleMessagePubSubTypes.hpp"
-#include "Generated/src/map/ObstacleMessage.hpp"
+#include "Generated/src/map/TargetMessagePubSubTypes.hpp"
+#include "Generated/src/map/TargetMessage.hpp"
 #include <fastdds/dds/domain/DomainParticipant.hpp>
 #include <fastdds/dds/domain/DomainParticipantFactory.hpp>
 #include <fastdds/dds/publisher/DataWriter.hpp>

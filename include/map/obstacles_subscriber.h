@@ -1,7 +1,7 @@
 #ifndef TARGETS_SUBSCRIBER_H
 #define TARGETS_SUBSCRIBER_H
 
-#include "Generated/src/map/TargetMessagePubSubTypes.hpp"
+#include "Generated/src/map/ObstacleMessagePubSubTypes.hpp"
 #include <fastdds/dds/domain/DomainParticipant.hpp>
 #include <fastdds/dds/domain/DomainParticipantFactory.hpp>
 #include <fastdds/dds/subscriber/DataReader.hpp>
