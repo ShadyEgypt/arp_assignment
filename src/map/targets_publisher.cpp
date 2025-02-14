@@ -9,6 +9,34 @@ volatile std::sig_atomic_t shutdown_flag = 0;
 void sigint_handler(int signal)
 {
     shutdown_flag = 1;
+
+    // Detach shared memory for Grid
+    if (grid_ != nullptr)
+    {
+        munmap((void *)grid_, sizeof(Grid));
+        std::cout << "Detached grid shared memory." << std::endl;
+    }
+
+    // Detach shared memory for Globals
+    if (globals_ != nullptr)
+    {
+        munmap((void *)globals_, sizeof(Globals));
+        std::cout << "Detached globals shared memory." << std::endl;
+    }
+
+    // Optionally close shared memory file descriptors if they are stored globally
+    if (shm_grid_fd != -1)
+    {
+        close(shm_grid_fd);
+        shm_grid_fd = -1;
+        std::cout << "Closed grid shared memory file descriptor." << std::endl;
+    }
+    if (shm_globals_fd != -1)
+    {
+        close(shm_globals_fd);
+        shm_globals_fd = -1;
+        std::cout << "Closed globals shared memory file descriptor." << std::endl;
+    }
 }
 
 std::shared_ptr<void> map_shared_memory(int shm_fd, size_t size)
@@ -146,8 +174,6 @@ public:
         if (!writer_)
             return false;
 
-        globals_->pub = getpid();
-        std::cout << "Set PID in SHM: " << globals_->pub << std::endl;
         return true;
     }
 };
@@ -155,7 +181,8 @@ public:
 bool TargetsPublisher::publish()
 {
     std::cout << "Targets: " << grid_->target_count << std::endl;
-    if (listener_.matched_ > 0 && grid_ != nullptr)
+    // listener_.matched_ > 0 &&
+    if (grid_ != nullptr)
     {
         for (int i = 0; i < grid_->target_count; ++i)
         {
@@ -207,6 +234,10 @@ int main()
         return false;
     }
     globals_ = globals_ptr.get();
+
+    globals_->pub = getpid();
+    std::cout << "Set PID in SHM: " << globals_->pub << std::endl;
+
     // Initialize the global publisher
     if (publisher.init())
     {

@@ -130,6 +130,8 @@ void setup_resources()
     printf("server pipe extracted %s\n", config->Pipes.ServerPipe);
     create_fifo(config->Pipes.ServerPipe);
     create_fifo(config->Pipes.DronePipe);
+    char *fifoPath = "/tmp/obstacles";
+    create_fifo(fifoPath);
     grid->score = 0;
 
     // Set the drone in the shared memory to be (1,1)
@@ -216,9 +218,11 @@ void handle_sigint(int sig)
 
         kill(globals->display_pid, SIGINT);
         kill(globals->map_pid, SIGINT);
-        kill(globals->obstacles_pid, SIGINT);
         kill(globals->targets_pid, SIGINT);
+        kill(globals->obstacles_pid, SIGINT);
         kill(globals->drone_pid, SIGINT);
+        kill(globals->pub, SIGINT);
+        kill(globals->sub, SIGINT);
         printf("All child processes terminated, resources cleaned up. Exiting.\n");
         exit(0);
     }
@@ -321,19 +325,18 @@ void child3_task()
         sleep(2);
     }
 
-    while (!globals->targets_pid || !globals->obstacles_pid || !globals->map_pid || !globals->pub)
+    while (!globals->targets_pid || !globals->map_pid || !globals->pub)
     {
         printf("Waiting for PIDs...\n");
-        printf("targets_pid: %d, obstacles_pid: %d, map_pid: %d\n",
-               globals->targets_pid, globals->obstacles_pid, globals->map_pid);
+        printf("targets_pid: %d,  map_pid: %d\n",
+               globals->targets_pid, globals->map_pid);
         sleep(2); // Pause for 2 seconds
     }
-    printf("Child 3: display_pid: %d, drone_pid: %d, targets_pid: %d, obstacles_pid: %d, map_pid: %d\n",
-           globals->display_pid, globals->drone_pid, globals->targets_pid, globals->obstacles_pid, globals->map_pid);
+    printf("Child 3: display_pid: %d, drone_pid: %d, targets_pid: %d,  map_pid: %d\n",
+           globals->display_pid, globals->drone_pid, globals->targets_pid, globals->map_pid);
     while (1)
     {
         kill(globals->targets_pid, SIGUSR1);
-        kill(globals->obstacles_pid, SIGUSR1);
 
         printf("Child 3: Grid reset, sleeping...\n");
         sleep(60);

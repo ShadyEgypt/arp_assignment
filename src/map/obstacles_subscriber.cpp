@@ -5,6 +5,21 @@ Globals *globals_;
 int shm_grid_fd;
 int shm_globals_fd;
 volatile std::sig_atomic_t shutdown_flag = 0;
+int fd;
+
+void writeToPipe(int fd, const Obstacle &obstacle)
+{
+    if (fd == -1)
+    {
+        throw std::system_error(EINVAL, std::system_category(), "Invalid file descriptor");
+    }
+
+    ssize_t bytes_written = write(fd, &obstacle, sizeof(Obstacle));
+    if (bytes_written == -1)
+    {
+        throw std::system_error(errno, std::system_category(), "Failed to write to FIFO");
+    }
+}
 
 std::shared_ptr<void> map_shared_memory(int shm_fd, size_t size)
 {
@@ -70,6 +85,35 @@ private:
 void sigint_handler(int signal)
 {
     shutdown_flag = 1;
+
+    // Detach shared memory for Grid
+    if (grid_ != nullptr)
+    {
+        munmap((void *)grid_, sizeof(Grid));
+        std::cout << "Detached grid shared memory." << std::endl;
+    }
+
+    // Detach shared memory for Globals
+    if (globals_ != nullptr)
+    {
+        munmap((void *)globals_, sizeof(Globals));
+        std::cout << "Detached globals shared memory." << std::endl;
+    }
+
+    // Optionally close shared memory file descriptors if they are stored globally
+    if (shm_grid_fd != -1)
+    {
+        close(shm_grid_fd);
+        shm_grid_fd = -1;
+        std::cout << "Closed grid shared memory file descriptor." << std::endl;
+    }
+    if (shm_globals_fd != -1)
+    {
+        close(shm_globals_fd);
+        shm_globals_fd = -1;
+        std::cout << "Closed globals shared memory file descriptor." << std::endl;
+    }
+    close(fd);
 }
 
 class ObstaclesSubscriber
@@ -88,14 +132,9 @@ private:
     class SubListener : public DataReaderListener
     {
     public:
-        SubListener()
-            : samples_(0)
-        {
-        }
+        SubListener() : samples_(0) {}
 
-        ~SubListener() override
-        {
-        }
+        ~SubListener() override {}
 
         void on_subscription_matched(
             DataReader *reader,
@@ -130,12 +169,15 @@ private:
             {
                 if (info.valid_data)
                 {
+                    Obstacle obstacle;
+                    obstacle.x = static_cast<unsigned char>(my_message_.x());
+                    obstacle.y = static_cast<unsigned char>(my_message_.y());
+                    unsigned char id = static_cast<unsigned char>(my_message_.id());
                     samples_++;
-                    std::cout << "Index: " << my_message_.id()
-                              << " X: " << my_message_.x()
-                              << " Y: " << my_message_.y() << std::endl;
-                    grid_->obstacles[my_message_.id()].x = my_message_.x();
-                    grid_->obstacles[my_message_.id()].y = my_message_.y();
+                    std::cout << "Index: " << static_cast<unsigned int>(id)
+                              << " X: " << static_cast<unsigned int>(obstacle.x)
+                              << " Y: " << static_cast<unsigned int>(obstacle.y) << std::endl;
+                    writeToPipe(fd, obstacle);
                 }
             }
         }
@@ -164,7 +206,6 @@ private:
                 break;
             }
         }
-
     } listener_;
 
 public:
@@ -249,10 +290,12 @@ public:
     }
 };
 
-ObstaclesSubscriber *subscriber;
+ObstaclesSubscriber *subscriber = new ObstaclesSubscriber();
 
 int main()
 {
+    std::string fifoPath = "/tmp/obstacles";
+    fd = open(fifoPath.c_str(), O_WRONLY);
     SharedMemoryHandle shm_grid_fd(SHM_GRID_NAME, O_RDWR, 0666);
     auto grid_ptr = std::static_pointer_cast<Grid>(map_shared_memory(shm_grid_fd.get_fd(), SHM_GRID_SIZE));
     if (!grid_ptr)
@@ -270,14 +313,18 @@ int main()
         return false;
     }
     globals_ = globals_ptr.get();
-    // Initialize the global publisher
+
+    globals_->sub = getpid();
+    std::cout << "Set PID in SHM: " << globals_->sub << std::endl;
+
+    // Initialize the global subscriber
     if (subscriber->init())
     {
-        std::cout << "Publisher initialized successfully." << std::endl;
+        std::cout << "Subscriber initialized successfully." << std::endl;
     }
     else
     {
-        std::cerr << "Failed to initialize publisher." << std::endl;
+        std::cerr << "Failed to initialize subscriber." << std::endl;
         return 1; // Return an error code
     }
     std::signal(SIGINT, sigint_handler); // Register signal handler

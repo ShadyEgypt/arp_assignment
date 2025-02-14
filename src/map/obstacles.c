@@ -4,6 +4,8 @@
 bool obstacles_resources_exist = false;
 sem_t *s1;
 sem_t *s2;
+int fd;
+uint placed_obstacles = 0;
 
 // Signal handler function for SIGINT
 void handle_sigint(int sig)
@@ -16,21 +18,22 @@ void handle_sigint(int sig)
         detach_shared_memory(globals, SHM_G_SIZE);
         detach_shared_memory(config, SHM_CONFIG_SIZE);
         printf("Shared memory detached and destroyed.\n");
+        close(fd);
     }
 
     exit(0); // Exit the program
 }
 
-void reset_obstacles_handler(int sig)
+void readFromPipe(int fd)
 {
-    // Lock semaphore before accessing shared memory
-    acquire_semaphore(s1);
-    printf("Semaphore locked!\n");
-    reset_obstacles(grid);
-    set_obstacles_randomly(grid, log_file);
-    // Unlock semaphore after operation
-    release_semaphore(s1);
-    printf("Semaphore unlocked!\n");
+    Obstacle obstacle;
+
+    while (read(fd, &obstacle, sizeof(Obstacle)) > 0)
+    {
+        printf("Received - ID: %d, X: %d, Y: %d\n", placed_obstacles, obstacle.x, obstacle.y);
+        grid->obstacles[placed_obstacles] = obstacle;
+        placed_obstacles++;
+    }
 }
 
 int main()
@@ -39,7 +42,6 @@ int main()
     LOG_MESSAGE(log_file, "Obstacles process started.");
     // Register signal handlers
     signal(SIGINT, handle_sigint);
-    signal(SIGUSR1, reset_obstacles_handler);
 
     // Attach and map shared memory
     int shm_grid_fd = attach_shared_memory(SHM_GRID_NAME, SHM_GRID_SIZE);
@@ -65,15 +67,22 @@ int main()
 
     obstacles_resources_exist = true;
 
-    acquire_semaphore(sem_g);
+    acquire_semaphore(s2);
     pid_t obstacles_pid = getpid();
     globals->obstacles_pid = obstacles_pid;
-    release_semaphore(sem_g);
+    release_semaphore(s2);
 
+    char *fifoPath = "/tmp/obstacles";
+    fd = open(fifoPath, O_RDONLY);
+    if (fd == -1)
+    {
+        perror("Open FIFO for Reading");
+        return 1;
+    }
     while (1)
     {
-        sleep(20);
+        readFromPipe(fd);
+        usleep(100000);
     }
-
     return 0;
 }

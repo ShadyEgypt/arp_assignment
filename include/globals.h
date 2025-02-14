@@ -29,20 +29,20 @@ typedef struct
 #define uint unsigned char
 
 // Shared memory object name (used with shm_open)
-#define SHM_GRID_NAME "/shared_memory_grid"
-#define SEM_GRID_NAME "/shared_semaphore_grid"
+#define SHM_GRID_NAME "/shared_memory_grid_a"
+#define SEM_GRID_NAME "/shared_semaphore_grid_a"
 #define SHM_GRID_SIZE sizeof(Grid)
 
-#define SHM_G_NAME "/shared_memory_general"
-#define SEM_G_NAME "/shared_semaphore_general"
+#define SHM_G_NAME "/shared_memory_general_a"
+#define SEM_G_NAME "/shared_semaphore_general_a"
 #define SHM_G_SIZE sizeof(Globals)
 
-#define SHM_DRONE_NAME "/shared_memory_drone"
-#define SEM_DRONE_NAME "/shared_semaphore_drone"
+#define SHM_DRONE_NAME "/shared_memory_drone_a"
+#define SEM_DRONE_NAME "/shared_semaphore_drone_a"
 #define SHM_DRONE_SIZE sizeof(Drone)
 
-#define SHM_CONFIG_NAME "/shared_memory_config"
-#define SEM_CONFIG_NAME "/shared_semaphore_config"
+#define SHM_CONFIG_NAME "/shared_memory_config_a"
+#define SEM_CONFIG_NAME "/shared_semaphore_config_a"
 #define SHM_CONFIG_SIZE sizeof(Config)
 
 #endif // GLOBALS_H
