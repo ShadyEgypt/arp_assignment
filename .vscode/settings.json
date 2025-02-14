@@ -93,5 +93,6 @@
         "valarray": "cpp",
         "variant": "cpp"
     },
-    "ros.distro": "humble"
+    "ros.distro": "humble",
+    "C_Cpp.errorSquiggles": "disabled"
 }

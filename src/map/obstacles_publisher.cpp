@@ -1,9 +1,16 @@
-#include "targets_publisher.h"
+#include "obstacles_publisher.h"
 
 Grid *grid_;
 Globals *globals_;
 int shm_grid_fd;
 int shm_globals_fd;
+volatile std::sig_atomic_t shutdown_flag = 0;
+
+void sigint_handler(int signal)
+{
+    shutdown_flag = 1;
+}
+
 std::shared_ptr<void> map_shared_memory(int shm_fd, size_t size)
 {
     void *addr = mmap(nullptr, size, PROT_READ | PROT_WRITE, MAP_SHARED, shm_fd, 0);
@@ -65,7 +72,7 @@ private:
     int shm_fd;
 };
 
-class TargetsPublisher
+class ObstaclesPublisher
 {
 private:
     DomainParticipant *participant_;
@@ -103,8 +110,8 @@ private:
 
 public:
     bool publish();
-    TargetsPublisher() : participant_(nullptr), publisher_(nullptr), topic_(nullptr), writer_(nullptr), type_(new TargetMessagePubSubType) {}
-    ~TargetsPublisher()
+    ObstaclesPublisher() : participant_(nullptr), publisher_(nullptr), topic_(nullptr), writer_(nullptr), type_(new ObstacleMessagePubSubType) {}
+    ~ObstaclesPublisher()
     {
         if (participant_)
         {
@@ -127,7 +134,7 @@ public:
         // Initialize other components like topic, publisher, writer, etc.
         type_.register_type(participant_);
 
-        topic_ = participant_->create_topic("targets", type_.get_type_name(), TOPIC_QOS_DEFAULT);
+        topic_ = participant_->create_topic("obstacles", type_.get_type_name(), TOPIC_QOS_DEFAULT);
         if (!topic_)
             return false;
 
@@ -145,17 +152,17 @@ public:
     }
 };
 
-bool TargetsPublisher::publish()
+bool ObstaclesPublisher::publish()
 {
-    std::cout << "Targets: " << grid_->target_count << std::endl;
+    std::cout << "Obstacles: " << grid_->target_count << std::endl;
     if (listener_.matched_ > 0 && grid_ != nullptr)
     {
         for (int i = 0; i < grid_->target_count; ++i)
         {
-            TargetMessage msg;
-            msg.id(grid_->targets[i].id); // Assuming `id`, `x`, and `y` are setter methods
-            msg.x(static_cast<unsigned long>(grid_->targets[i].x));
-            msg.y(static_cast<unsigned long>(grid_->targets[i].y));
+            ObstacleMessage msg;
+            msg.id(i); // Assuming `id`, `x`, and `y` are setter methods
+            msg.x(static_cast<unsigned long>(grid_->obstacles[i].x));
+            msg.y(static_cast<unsigned long>(grid_->obstacles[i].y));
             writer_->write(&msg); // Assuming `write` requires a pointer to the data
             std::cout << "Published target ID: " << msg.id() << " at position (" << msg.x() << ", " << msg.y() << ")" << std::endl;
             std::this_thread::sleep_for(std::chrono::milliseconds(100));
@@ -164,19 +171,19 @@ bool TargetsPublisher::publish()
     }
     else
     {
-        std::cout << "No targets to publish or grid pointer is null." << std::endl;
+        std::cout << "No obstacles to publish or grid pointer is null." << std::endl;
     }
     return false;
 }
 
-TargetsPublisher publisher;
+ObstaclesPublisher publisher;
 
 void signal_handler(int sig)
 {
     if (sig == SIGUSR1)
     {
         std::cout << "SIGUSR1 received, starting publishing..." << std::endl;
-        // TargetsPublisher should be a globally accessible object or managed differently
+        // ObstaclesPublisher should be a globally accessible object or managed differently
         publisher.publish();
     }
 }
@@ -211,7 +218,9 @@ int main()
         return 1; // Return an error code
     }
     signal(SIGUSR1, signal_handler);
-    while (1)
+    std::signal(SIGINT, sigint_handler); // Register signal handler
+
+    while (!shutdown_flag)
     {
         pause();
     }
