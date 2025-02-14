@@ -237,6 +237,13 @@ public:
         DomainParticipantQos participantQos;
         participantQos.name("obstacle_subscriber");
 
+        participantQos.wire_protocol().builtin.discovery_config.use_SIMPLE_EndpointDiscoveryProtocol = false;
+        participantQos.wire_protocol().builtin.discovery_config.discoveryProtocol = DiscoveryProtocol::CLIENT;
+        Locator_t server_locator;
+        IPLocator::setIPv4(server_locator, 127, 0, 0, 1);
+        server_locator.port = 11812;
+        participantQos.wire_protocol().builtin.discovery_config.m_DiscoveryServers.push_back(server_locator);
+
         //  // Explicit configuration of shm transport
         // participantQos.transport().use_builtin_transports = false;
         // auto shm_transport = std::make_shared<SharedMemTransportDescriptor>();
