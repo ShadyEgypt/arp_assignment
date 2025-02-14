@@ -36,7 +36,7 @@ TARGETS_SUB_SRC = $(SRC_DIR)/map/targets_subscriber.cpp \
                   $(GENERATED_DIR)/src/map/TargetMessageTypeObjectSupport.cxx
 
 # Default target builds the executable
-all: $(GENERATED_DIR) $(BUILD_DIR) $(LOG_DIR) clean idl_generation $(TARGETS_PUB_BINARY) $(TARGETS_SUB_BINARY)
+all: $(GENERATED_DIR) $(BUILD_DIR) $(LOG_DIR) clean idl_generation $(OBSTACLES_PUB_BINARY) $(TARGETS_SUB_BINARY)
 
 # Ensure directories exist
 $(BUILD_DIR) $(BINARY_DIR) $(GENERATED_DIR) $(LOG_DIR):

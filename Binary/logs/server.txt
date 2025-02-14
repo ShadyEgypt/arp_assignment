@@ -19,3 +19,136 @@
 
 [Thu Feb 13 17:45:36 2025] src/server/server_utils.c:235 - config->Map.MaxEntities.Obstacles: 15
 [Thu Feb 13 17:45:36 2025] src/server/server_utils.c:256 - Grid dimensions exceed static allocation size
+[Fri Feb 14 15:09:16 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 15:09:16 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 15:09:16 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 15:09:16 2025] src/server/server_utils.c:237 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 15:09:16 2025] src/server/server_utils.c:258 - Grid dimensions exceed static allocation size
+[Fri Feb 14 15:12:06 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 15:12:06 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 15:12:06 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 15:12:06 2025] src/server/server_utils.c:237 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 15:12:06 2025] src/server/server_utils.c:258 - Grid dimensions exceed static allocation size
+[Fri Feb 14 15:24:13 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 15:24:13 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 15:24:13 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 15:24:13 2025] src/server/server_utils.c:237 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 15:24:13 2025] src/server/server_utils.c:258 - Grid dimensions exceed static allocation size
+[Fri Feb 14 15:26:52 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 15:26:52 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 15:26:52 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 15:26:52 2025] src/server/server_utils.c:237 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 15:26:52 2025] src/server/server_utils.c:258 - Grid dimensions exceed static allocation size
+[Fri Feb 14 15:29:44 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 15:29:44 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 15:29:44 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 15:29:44 2025] src/server/server_utils.c:237 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 15:29:44 2025] src/server/server_utils.c:258 - Grid dimensions exceed static allocation size
+[Fri Feb 14 15:32:20 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 15:32:20 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 15:32:20 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 15:32:20 2025] src/server/server_utils.c:237 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 15:32:20 2025] src/server/server_utils.c:258 - Grid dimensions exceed static allocation size
+[Fri Feb 14 15:36:27 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 15:36:27 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 15:36:27 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 15:36:27 2025] src/server/server_utils.c:237 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 15:36:27 2025] src/server/server_utils.c:258 - Grid dimensions exceed static allocation size
+[Fri Feb 14 15:40:43 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 15:40:43 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 15:40:43 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 15:40:43 2025] src/server/server_utils.c:237 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 15:40:43 2025] src/server/server_utils.c:258 - Grid dimensions exceed static allocation size
+[Fri Feb 14 16:07:31 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 16:07:31 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 16:07:31 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 16:07:31 2025] src/server/server_utils.c:237 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 16:07:31 2025] src/server/server_utils.c:258 - Grid dimensions exceed static allocation size
+[Fri Feb 14 16:20:30 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 16:20:30 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 16:20:30 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 16:20:30 2025] src/server/server_utils.c:236 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 16:20:30 2025] src/server/server_utils.c:257 - Grid dimensions exceed static allocation size
+[Fri Feb 14 16:30:15 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 16:30:15 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 16:30:15 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 16:30:15 2025] src/server/server_utils.c:236 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 16:30:15 2025] src/server/server_utils.c:257 - Grid dimensions exceed static allocation size
+[Fri Feb 14 16:39:52 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 16:39:52 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 16:39:52 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 16:39:52 2025] src/server/server_utils.c:236 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 16:39:52 2025] src/server/server_utils.c:257 - Grid dimensions exceed static allocation size
+[Fri Feb 14 16:58:56 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 16:58:56 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 16:58:56 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 16:58:56 2025] src/server/server_utils.c:236 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 16:58:56 2025] src/server/server_utils.c:257 - Grid dimensions exceed static allocation size
+[Fri Feb 14 17:06:16 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 17:06:16 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 17:06:16 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 17:06:16 2025] src/server/server_utils.c:236 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 17:06:16 2025] src/server/server_utils.c:257 - Grid dimensions exceed static allocation size
+[Fri Feb 14 17:12:19 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 17:12:19 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 17:12:19 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 17:12:19 2025] src/server/server_utils.c:236 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 17:12:19 2025] src/server/server_utils.c:257 - Grid dimensions exceed static allocation size
+[Fri Feb 14 18:07:22 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 18:07:22 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 18:07:22 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 18:07:22 2025] src/server/server_utils.c:236 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 18:07:22 2025] src/server/server_utils.c:257 - Grid dimensions exceed static allocation size
+[Fri Feb 14 18:37:05 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 18:37:05 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 18:37:05 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 18:37:05 2025] src/server/server_utils.c:240 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 18:37:05 2025] src/server/server_utils.c:261 - Grid dimensions exceed static allocation size
+[Fri Feb 14 18:52:50 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 18:52:50 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 18:52:50 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 18:52:50 2025] src/server/server_utils.c:240 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 18:52:50 2025] src/server/server_utils.c:261 - Grid dimensions exceed static allocation size
+[Fri Feb 14 18:57:43 2025] src/server/server.c:6 - program started!
+[Fri Feb 14 18:57:43 2025] src/server/server_utils.c:22 - Parent: create the shared memories!
+
+[Fri Feb 14 18:57:43 2025] src/server/server_utils.c:44 - Parent: extract the parameters!
+
+[Fri Feb 14 18:57:43 2025] src/server/server_utils.c:240 - config->Map.MaxEntities.Obstacles: 15
+[Fri Feb 14 18:57:43 2025] src/server/server_utils.c:261 - Grid dimensions exceed static allocation size

@@ -4,6 +4,8 @@
 bool targets_resources_exist = false;
 sem_t *s1;
 sem_t *s2;
+int fd;
+uint placed_targets = 0;
 
 // Signal handler function for SIGINT
 void handle_sigint(int sig)
@@ -16,21 +18,22 @@ void handle_sigint(int sig)
         detach_shared_memory(globals, SHM_G_SIZE);
         detach_shared_memory(config, SHM_CONFIG_SIZE);
         printf("Shared memory detached and destroyed.\n");
+        close(fd);
     }
 
     exit(0); // Exit the program
 }
 
-void reset_targets_handler(int sig)
+void readFromPipe(int fd)
 {
-    // Lock semaphore before accessing shared memory
-    acquire_semaphore(s1);
-    printf("Semaphore locked!\n");
-    reset_targets(grid);
-    set_targets_randomly(grid, log_file);
-    release_semaphore(s1);
-    kill(globals->pub, SIGUSR1);
-    printf("Semaphore unlocked!\n");
+    Target target;
+
+    while (read(fd, &target, sizeof(Target)) > 0)
+    {
+        printf("Received - ID: %d, X: %d, Y: %d\n", placed_targets, target.x, target.y);
+        grid->targets[placed_targets] = target;
+        placed_targets++;
+    }
 }
 
 int main()
@@ -39,7 +42,6 @@ int main()
     LOG_MESSAGE(log_file, "Targets process started.");
     // Register signal handlers
     signal(SIGINT, handle_sigint);
-    signal(SIGUSR1, reset_targets_handler);
 
     // Attach and map shared memory
     int shm_grid_fd = attach_shared_memory(SHM_GRID_NAME, SHM_GRID_SIZE);
@@ -70,9 +72,17 @@ int main()
     globals->targets_pid = targets_pid;
     release_semaphore(s2);
 
+    char *fifoPath = "/tmp/targets";
+    fd = open(fifoPath, O_RDONLY);
+    if (fd == -1)
+    {
+        perror("Open FIFO for Reading");
+        return 1;
+    }
     while (1)
     {
-        sleep(20);
+        readFromPipe(fd);
+        usleep(100000);
     }
     return 0;
 }
