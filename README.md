@@ -3,13 +3,15 @@
 ## Table of Contents
 [Overview](#Overview)
 
-[Tools Used in This Project](#Tools-Used-in-This-Project).
+[Tools Used in This Project](#Tools-Used-in-This-Project)
 
 [Components](#Components)
 
-[Gameplay](#Gameplay).
+[How to run the doce](#How-to-run-the-code)
 
-[Logging](#Logging).
+[Gameplay](#Gameplay)
+
+[Logging](#Logging)
 ## Overview
 
 This project simulates the operation of a drone in a dynamic environment. The drone can move in any direction, reach targets, and be deflected by obstacles. The objective is to provide a working simulation that demonstrates the drone's dynamics and its interaction with various environmental factors.
@@ -43,7 +45,12 @@ The system consists of several components, each responsible for specific tasks w
  6. **Display**
    - The display updates in real-time to show the current state of the game. It visualizes the drone's position, the obstacles, the targets, the player's score and the interactive keyboard.
 
-## Add how to run the code!
+## How to run the code
+To run the project on the terminal run the following command:
+_Write down here the command to run on the terminal._
+```
+
+```
 
 ## Gameplay
 
