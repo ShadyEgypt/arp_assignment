@@ -107,12 +107,12 @@ typedef struct
 // Signal Handling
 void signal_handler(int sig);
 
-#define SHM_GRID_NAME "/shared_memory_grid"
-#define SEM_GRID_NAME "/shared_semaphore_grid"
+#define SHM_GRID_NAME "/shared_memory_grid_a"
+#define SEM_GRID_NAME "/shared_semaphore_grid_a"
 #define SHM_GRID_SIZE sizeof(Grid)
 
-#define SHM_G_NAME "/shared_memory_general"
-#define SEM_G_NAME "/shared_semaphore_general"
+#define SHM_G_NAME "/shared_memory_general_a"
+#define SEM_G_NAME "/shared_semaphore_general_a"
 #define SHM_G_SIZE sizeof(Globals)
 
 #endif // TARGETS_PUBLISHER_H

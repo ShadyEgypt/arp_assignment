@@ -1,5 +1,5 @@
-#ifndef TARGETS_SUBSCRIBER_H
-#define TARGETS_SUBSCRIBER_H
+#ifndef OBSTACLES_SUBSCRIBER_H
+#define OBSTACLES_SUBSCRIBER_H
 
 #include "Generated/src/map/ObstacleMessagePubSubTypes.hpp"
 #include <fastdds/dds/domain/DomainParticipant.hpp>
@@ -106,11 +106,12 @@ typedef struct
 // Signal Handling
 void signal_handler(int sig);
 
-#define SHM_GRID_NAME "/shared_memory_grid"
-#define SEM_GRID_NAME "/shared_semaphore_grid"
+#define SHM_GRID_NAME "/shared_memory_grid_a"
+#define SEM_GRID_NAME "/shared_semaphore_grid_a"
 #define SHM_GRID_SIZE sizeof(Grid)
 
-#define SHM_G_NAME "/shared_memory_general"
-#define SEM_G_NAME "/shared_semaphore_general"
+#define SHM_G_NAME "/shared_memory_general_a"
+#define SEM_G_NAME "/shared_semaphore_general_a"
 #define SHM_G_SIZE sizeof(Globals)
-#endif // TARGETS_SUBSCRIBER_H
+
+#endif // OBSTACLES_SUBSCRIBER_H
