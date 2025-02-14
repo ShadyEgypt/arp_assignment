@@ -11,6 +11,8 @@
 #include <fastdds/dds/topic/TypeSupport.hpp>
 #include <fastdds/dds/topic/Topic.hpp>
 #include <fastdds/dds/core/status/PublicationMatchedStatus.hpp>
+#include <fastdds/rtps/transport/TCPv4TransportDescriptor.hpp>
+#include <fastdds/utils/IPLocator.hpp>
 
 #include <iostream>
 #include <atomic>

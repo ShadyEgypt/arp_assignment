@@ -152,6 +152,28 @@ public:
     {
         DomainParticipantQos participantQos;
         participantQos.name("obstacle_publisher");
+
+        // * Disable built-in transports (UDP, SHM, ecc.)
+        participantQos.transport().use_builtin_transports = false;
+        // * Disable Simple Server mode
+        participantQos.wire_protocol().builtin.discovery_config.use_SIMPLE_EndpointDiscoveryProtocol = false;
+
+        // * Configure the TCP transport
+        auto tcp_transport = std::make_shared<TCPv4TransportDescriptor>();
+        tcp_transport->add_listener_port(5100);
+        tcp_transport->interfaceWhiteList.push_back("127.0.0.1");
+        tcp_transport->set_WAN_address("127.0.0.1");
+        participantQos.transport().user_transports.push_back(tcp_transport);
+        // * Configure Discovery Server mode
+        participantQos.wire_protocol().builtin.discovery_config.discoveryProtocol = DiscoveryProtocol::SERVER;
+        participantQos.wire_protocol().participant_id = 1;
+
+        // * Set the port 11811
+        Locator_t server_locator;
+        IPLocator::setIPv4(server_locator, 127, 0, 0, 1);
+        server_locator.port = 11811;
+        participantQos.wire_protocol().builtin.metatrafficUnicastLocatorList.push_back(server_locator);
+
         participant_ = DomainParticipantFactory::get_instance()->create_participant(0, participantQos);
         if (!participant_)
         {
