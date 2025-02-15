@@ -19,6 +19,10 @@ int main(int argc, char *argv[])
     void *config_addr = map_shared_memory(shm_config_fd, SHM_CONFIG_SIZE);
     config = (Config *)config_addr;
 
+    int shm_isawake_fd = attach_shared_memory(SHM_ISACTIVE_NAME, SHM_ISACTIVE_SIZE);
+    void *isawake_addr = map_shared_memory(shm_isawake_fd, SHM_ISACTIVE_SIZE);
+    isAwake = (IsAwake *)isawake_addr;
+
     sem_drone = open_semaphore(SEM_DRONE_NAME);
     sem_g = open_semaphore(SEM_G_NAME);
 
@@ -72,12 +76,6 @@ int main(int argc, char *argv[])
     }
     LOG_MESSAGE(log_file, "opened fd in write mode!");
 
-    display_fd = open(DISPLAY_FIFO, O_RDONLY | O_NONBLOCK);
-    if (display_fd == -1)
-    {
-        perror("Failed to open display pipe");
-    }
-
     grid_height = config->Keyboard.Box.Height;
     grid_width = config->Keyboard.Box.Width;
     cell_height = config->Keyboard.Key.Height;
@@ -111,14 +109,8 @@ int main(int argc, char *argv[])
         wrefresh(layout.right_split);
         refresh_left_win(layout);
 
-        char message[100];
-        snprintf(message, sizeof(message), "%s is alive at %ld\n", "display", time(NULL));
-
-        if (write(display_fd, message, strlen(message) + 1) == -1)
-        {
-            fprintf(stderr, "Error writing to %s: %s\n", DISPLAY_FIFO, strerror(errno));
-        }
-
+        time_t current_time = time(NULL);
+        isAwake->display = current_time;
         // Getting user input if present
         input = getch();
         // Check if the input is valid (not ERR and not a control character like ESC)

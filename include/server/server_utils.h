@@ -11,9 +11,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <errno.h>
 #include <sys/wait.h>
-
 // Global variable declarations (use extern)
 extern FILE *log_file;
 extern bool resources_exist;
@@ -24,6 +22,7 @@ extern Grid *grid;
 extern Globals *globals;
 extern Drone *drone;
 extern Config *config;
+extern IsAwake *isAwake;
 
 extern pid_t parent_pid;
 extern pid_t child1_pid;

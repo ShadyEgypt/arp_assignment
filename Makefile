@@ -29,22 +29,6 @@ $(BUILD_DIR):
 $(BINARY_DIR):
 	mkdir -p $(BINARY_DIR)
 
-# Create Subdirectories Explicitly Before Each Compilation
-$(BUILD_DIR)/display:
-	mkdir -p $(BUILD_DIR)/display
-
-$(BUILD_DIR)/drone:
-	mkdir -p $(BUILD_DIR)/drone
-
-$(BUILD_DIR)/map:
-	mkdir -p $(BUILD_DIR)/map
-
-$(BUILD_DIR)/server:
-	mkdir -p $(BUILD_DIR)/server
-
-$(BUILD_DIR)/watchdog:
-	mkdir -p $(BUILD_DIR)/watchdog
-
 # Build the executables
 display: $(BUILD_DIR)/display/display.o $(BUILD_DIR)/display/display_utils.o $(BUILD_DIR)/utils.o
 	$(CC) -o $(BINARY_DIR)/display $^ $(CFLAGS) $(LDFLAGS)
@@ -107,8 +91,8 @@ $(BUILD_DIR)/utils.o: $(UTILS_SRC)/utils.c $(INCLUDE_DIR)/utils.h $(INCLUDE_DIR)
 	$(CC) -c $< -o $@ -I$(INCLUDE_DIR)
 
 # WATCHDOG MODULE
-$(BUILD_DIR)/watchdog/watchdog.o: $(WATCHDOG_SRC)/watchdog.c $(INCLUDE_DIR)
-	$(CC) -c $< -o $@ $(CFLAGS)
+$(BUILD_DIR)/watchdog/watchdog.o: $(WATCHDOG_SRC)/watchdog.c $(INCLUDE_DIR)/globals.h $(INCLUDE_DIR)/utils.h | $(BUILD_DIR)/watchdog
+	$(CC) -c $< -o $@ -I$(INCLUDE_DIR)
 
 # Clean up build and log files
 clean:

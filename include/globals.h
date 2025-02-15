@@ -11,15 +11,8 @@
 extern WINDOW *win;
 extern FILE *log_file;
 
-extern int wd_fd;
-extern int server_fd;
-extern int map_fd;
-extern int display_fd;
-extern int targets_fd;
-extern int obstacles_fd;
-extern int drone_fd;
 #define CEIL_TO_INT(x) ((int)ceil(x))
-
+#define TIMEOUT 150
 typedef struct
 {
     pid_t watchdog_pid;
@@ -31,6 +24,17 @@ typedef struct
     pid_t map_pid;
     int input;
 } Globals;
+
+typedef struct
+{
+    time_t server;
+    time_t map;
+    time_t display;
+    time_t targets;
+    time_t obstacles;
+    time_t drone;
+    bool start;
+} IsAwake;
 
 #define MAX_FILE_SIZE 8192
 #define uint unsigned char
@@ -60,4 +64,7 @@ typedef struct
 #define SEM_CONFIG_NAME "/shared_semaphore_config"
 #define SHM_CONFIG_SIZE sizeof(Config)
 
+#define SHM_ISACTIVE_NAME "/shared_memory_watchdog"
+#define SEM_ISACTIVE_NAME "/shared_semaphore_watchdog"
+#define SHM_ISACTIVE_SIZE sizeof(IsAwake)
 #endif // GLOBALS_H
