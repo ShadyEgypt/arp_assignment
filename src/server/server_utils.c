@@ -3,14 +3,14 @@
 FILE *log_file = NULL;
 bool resources_exist = false;
 sem_t *grid_sem = NULL, *globals_sem = NULL, *drone_sem = NULL, *config_sem = NULL;
-
-int server_fd = -1, drone_fd = -1;
+;
+int server_drone_fd = -1, drone_server_fd = -1;
+int server_fd = -1, map_fd = -1, display_fd = -1, drone_fd = -1, targets_fd = -1, obstacles_fd = -1;
 
 Grid *grid = NULL;
 Globals *globals = NULL;
 Drone *drone = NULL;
 Config *config = NULL;
-IsAwake *isAwake = NULL;
 
 pid_t parent_pid = -1;
 pid_t child1_pid = -1;
@@ -37,9 +37,6 @@ void setup_resources()
     void *config_addr = map_shared_memory(shm_config_fd, SHM_CONFIG_SIZE);
     config = (Config *)config_addr;
 
-    int shm_isawake_fd = create_shared_memory(SHM_ISACTIVE_NAME, SHM_ISACTIVE_SIZE);
-    void *isawake_addr = map_shared_memory(shm_isawake_fd, SHM_ISACTIVE_SIZE);
-    isAwake = (IsAwake *)isawake_addr;
     // Semaphore creation
     grid_sem = create_semaphore(SEM_GRID_NAME);
     globals_sem = create_semaphore(SEM_G_NAME);
@@ -134,7 +131,13 @@ void setup_resources()
     printf("server pipe extracted %s\n", config->Pipes.ServerPipe);
     create_fifo(config->Pipes.ServerPipe);
     create_fifo(config->Pipes.DronePipe);
-
+    // create fifos for watchdog
+    create_fifo(SERVER_FIFO);
+    create_fifo(MAP_FIFO);
+    create_fifo(DISPLAY_FIFO);
+    create_fifo(TARGETS_FIFO);
+    create_fifo(OBSTACLES_FIFO);
+    create_fifo(DRONE_FIFO);
     grid->score = 0;
 
     // Set the drone in the shared memory to be (1,1)
@@ -154,23 +157,32 @@ void cleanup_resources()
 {
     if (getpid() == parent_pid)
     {
+        if (server_drone_fd)
+        {
+            close(server_drone_fd);
+            unlink(config->Pipes.ServerPipe);
+        }
+        if (drone_server_fd)
+        {
+            close(drone_server_fd);
+            unlink(config->Pipes.DronePipe);
+        }
         if (server_fd)
         {
             close(server_fd);
-            unlink(config->Pipes.ServerPipe);
         }
-        if (drone_fd)
-        {
-            close(drone_fd);
-            unlink(config->Pipes.DronePipe);
-        }
+        unlink(server_fd);
+        unlink(map_fd);
+        unlink(display_fd);
+        unlink(targets_fd);
+        unlink(obstacles_fd);
+        unlink(drone_fd);
         if (resources_exist)
         {
             destroy_shared_memory(SHM_GRID_NAME);
             destroy_shared_memory(SHM_G_NAME);
             destroy_shared_memory(SHM_DRONE_NAME);
             destroy_shared_memory(SHM_CONFIG_NAME);
-            destroy_shared_memory(SHM_ISACTIVE_NAME);
             printf("Shared memory detached and destroyed.\n");
         }
         destroy_semaphore(SEM_GRID_NAME, grid_sem);
@@ -225,7 +237,6 @@ void handle_sigint(int sig)
         kill(globals->obstacles_pid, SIGINT);
         kill(globals->targets_pid, SIGINT);
         kill(globals->drone_pid, SIGINT);
-        kill(globals->watchdog_pid, SIGINT);
         printf("All child processes terminated, resources cleaned up. Exiting.\n");
         exit(0);
     }
@@ -240,6 +251,9 @@ void child1_task()
 {
     printf("Child 1: Initializing Grid and Globals\n");
     LOG_MESSAGE(log_file, "config->Map.MaxEntities.Obstacles: %d", config->Map.MaxEntities.Obstacles);
+
+    printf("Child 1: set server pid\n");
+    globals->server_pid = getpid();
 
     printf("Child 1: set Drone\n");
     drone->drone_force = (struct force){0, 0};
@@ -289,10 +303,16 @@ void child1_task()
 void child2_task()
 {
     printf("Child 2: Reading from FIFO\n");
-    server_fd = open(config->Pipes.ServerPipe, O_RDONLY);
-    drone_fd = open(config->Pipes.DronePipe, O_WRONLY);
+    server_drone_fd = open(config->Pipes.ServerPipe, O_RDONLY);
+    drone_server_fd = open(config->Pipes.DronePipe, O_WRONLY);
 
-    if (server_fd == -1 || drone_fd == -1)
+    server_fd = open(SERVER_FIFO, O_RDONLY | O_NONBLOCK);
+    if (server_fd == -1)
+    {
+        perror("Failed to open server pipe");
+    }
+
+    if (server_drone_fd == -1 || drone_server_fd == -1)
     {
         perror("Failed to open pipes");
     }
@@ -310,9 +330,13 @@ void child2_task()
             }
             write(drone_fd, &input, sizeof(input));
         }
-        // write last time to shm
-        time_t current_time = time(NULL);
-        isAwake->server = current_time;
+        char message[100];
+        snprintf(message, sizeof(message), "%s is alive at %ld\n", "server", time(NULL));
+
+        if (write(server_fd, message, strlen(message) + 1) == -1)
+        {
+            fprintf(stderr, "Error writing to %s: %s\n", SERVER_FIFO, strerror(errno));
+        }
         usleep(10000);
     }
 }
@@ -320,26 +344,23 @@ void child2_task()
 void child3_task()
 {
     printf("Child 3: Resetting grid periodically\n");
-    while (!globals->display_pid || !globals->drone_pid || !globals->watchdog_pid)
+    while (!globals->display_pid || !globals->drone_pid)
     {
         printf("Child 3: Waiting for PIDs...\n");
+        printf("Child 3: display_pid: %d, drone_pid: %d\n",
+               globals->display_pid, globals->drone_pid);
         sleep(2);
     }
 
     while (!globals->targets_pid || !globals->obstacles_pid || !globals->map_pid)
     {
-        printf("Child 3: Waiting for PIDs...\n");
+        printf("Waiting for PIDs...\n");
+        printf("targets_pid: %d, obstacles_pid: %d, map_pid: %d\n",
+               globals->targets_pid, globals->obstacles_pid, globals->map_pid);
         sleep(2); // Pause for 2 seconds
     }
-    printf("Child 3: display_pid: %d\n", globals->display_pid);
-    printf("Child 3: drone_pid: %d\n", globals->drone_pid);
-    printf("Child 3: targets_pid: %d\n", globals->targets_pid);
-    printf("Child 3: obstacles_pid: %d\n", globals->obstacles_pid);
-    printf("Child 3: map_pid: %d\n", globals->map_pid);
-    printf("Child 3: watchdog_pid: %d\n", globals->watchdog_pid);
-    time_t current_time = time(NULL);
-    isAwake->server = current_time;
-    isAwake->start = true;
+    printf("Child 3: display_pid: %d, drone_pid: %d, targets_pid: %d, obstacles_pid: %d, map_pid: %d\n",
+           globals->display_pid, globals->drone_pid, globals->targets_pid, globals->obstacles_pid, globals->map_pid);
     while (1)
     {
         kill(globals->targets_pid, SIGUSR1);

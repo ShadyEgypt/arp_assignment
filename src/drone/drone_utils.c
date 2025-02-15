@@ -8,12 +8,12 @@ sem_t *sem_g = NULL;
 sem_t *sem_drone = NULL;
 
 bool resources_exist = false;
+int drone_fd = -1;
 
 Grid *grid = NULL;
 Globals *globals = NULL;
 Drone *drone = NULL;
 Config *config = NULL;
-IsAwake *isAwake = NULL;
 
 pid_t child1_pid = -1;
 pid_t child2_pid = -1;
@@ -44,10 +44,6 @@ void setup_resources()
     void *config_addr = map_shared_memory(shm_config_fd, SHM_CONFIG_SIZE);
     config = (Config *)config_addr;
 
-    int shm_isawake_fd = attach_shared_memory(SHM_ISACTIVE_NAME, SHM_ISACTIVE_SIZE);
-    void *isawake_addr = map_shared_memory(shm_isawake_fd, SHM_ISACTIVE_SIZE);
-    isAwake = (IsAwake *)isawake_addr;
-
     srand(time(NULL));
 
     // Open semaphore
@@ -56,6 +52,12 @@ void setup_resources()
     sem_drone = open_semaphore(SEM_DRONE_NAME);
 
     LOG_MESSAGE(log_file, "shared memories got attached!");
+
+    drone_fd = open(DRONE_FIFO, O_RDONLY | O_NONBLOCK);
+    if (drone_fd == -1)
+    {
+        perror("Failed to open drone pipe");
+    }
 
     resources_exist = true;
 
@@ -117,8 +119,6 @@ void handle_sigint(int sig)
             detach_shared_memory(globals, SHM_G_SIZE);
             detach_shared_memory(drone, SHM_DRONE_SIZE);
             detach_shared_memory(config, SHM_CONFIG_SIZE);
-            detach_shared_memory(isAwake, SHM_ISACTIVE_SIZE);
-
             printf("Shared memory detached.\n");
         }
         close(fd);
@@ -612,7 +612,13 @@ void child1_task()
             LOG_MESSAGE(log_file, "Input '%c' received from the pipe", input);
             input = '\0';
         }
+        char message[100];
+        snprintf(message, sizeof(message), "%s is alive at %ld\n", "drone", time(NULL));
 
+        if (write(drone_fd, message, strlen(message) + 1) == -1)
+        {
+            fprintf(stderr, "Error writing to %s: %s\n", DRONE_FIFO, strerror(errno));
+        }
         // sleep to prevent overloading
         usleep(1000000);
     }
@@ -639,8 +645,6 @@ void child2_task()
             // Log state after processing
             LOG_MESSAGE(log_file, "Processed input: '%c'", cmd);
         }
-        time_t current_time = time(NULL);
-        isAwake->drone = current_time;
         // sleep to prevent high CPU usage
         usleep(1000000 * config->Physics.IntegrationInterval);
     }

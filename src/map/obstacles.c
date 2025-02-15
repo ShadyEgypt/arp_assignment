@@ -2,6 +2,8 @@
 
 // Global variables for cleanup
 bool obstacles_resources_exist = false;
+int obstacles_fd = -1;
+
 sem_t *s1;
 sem_t *s2;
 
@@ -14,11 +16,10 @@ void handle_sigint(int sig)
     {
         detach_shared_memory(grid, SHM_GRID_SIZE);
         detach_shared_memory(globals, SHM_G_SIZE);
-        detach_shared_memory(drone, SHM_DRONE_SIZE);
         detach_shared_memory(config, SHM_CONFIG_SIZE);
-        detach_shared_memory(isAwake, SHM_ISACTIVE_SIZE);
         printf("Shared memory detached and destroyed.\n");
     }
+    close(obstacles_fd);
 
     exit(0); // Exit the program
 }
@@ -56,9 +57,6 @@ int main()
     void *config_addr = map_shared_memory(shm_config_fd, SHM_CONFIG_SIZE);
     config = (Config *)config_addr;
 
-    int shm_isawake_fd = attach_shared_memory(SHM_ISACTIVE_NAME, SHM_ISACTIVE_SIZE);
-    void *isawake_addr = map_shared_memory(shm_isawake_fd, SHM_ISACTIVE_SIZE);
-    isAwake = (IsAwake *)isawake_addr;
     srand(time(NULL));
 
     // Open semaphore
@@ -67,6 +65,12 @@ int main()
 
     s1 = sem_grid;
     s2 = sem_g;
+
+    obstacles_fd = open(OBSTACLES_FIFO, O_RDONLY | O_NONBLOCK);
+    if (obstacles_fd == -1)
+    {
+        perror("Failed to open map pipe");
+    }
 
     obstacles_resources_exist = true;
 
@@ -77,9 +81,14 @@ int main()
 
     while (1)
     {
-        sleep(10);
-        time_t current_time = time(NULL);
-        isAwake->obstacles = current_time;
+        sleep(5);
+        char message[100];
+        snprintf(message, sizeof(message), "%s is alive at %ld\n", "obstacles", time(NULL));
+
+        if (write(obstacles_fd, message, strlen(message) + 1) == -1)
+        {
+            fprintf(stderr, "Error writing to %s: %s\n", OBSTACLES_FIFO, strerror(errno));
+        }
     }
 
     return 0;

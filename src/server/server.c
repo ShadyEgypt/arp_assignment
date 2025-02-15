@@ -10,9 +10,6 @@ int main()
     // Shared Resources Initialization
     setup_resources();
     parent_pid = getpid();
-    globals->server_pid = parent_pid;
-    printf("Parent: set server pid\n");
-
     child1_pid = fork();
     if (child1_pid == 0)
     {

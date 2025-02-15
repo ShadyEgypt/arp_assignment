@@ -1,114 +1,585 @@
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:165 - Inputs - distance: 1.000000, function_scale: 1.000000, area_of_effect: 5.000000, vel_x: 0.000000, vel_y: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 1.000000, 1/area_of_effect: 0.200000, distance^2: 1.000000, velocity magnitude: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.800000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:165 - Inputs - distance: 1.000000, function_scale: 1.000000, area_of_effect: 5.000000, vel_x: 0.000000, vel_y: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 1.000000, 1/area_of_effect: 0.200000, distance^2: 1.000000, velocity magnitude: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.800000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:165 - Inputs - distance: 46.065170, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.021708, 1/area_of_effect: 0.020000, distance^2: 2122.000000, velocity magnitude: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.008051
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:165 - Inputs - distance: 44.944408, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.022250, 1/area_of_effect: 0.020000, distance^2: 2019.999878, velocity magnitude: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.011137
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:165 - Inputs - distance: 26.832815, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.037268, 1/area_of_effect: 0.020000, distance^2: 720.000000, velocity magnitude: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.239831
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:165 - Inputs - distance: 9.848858, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.101535, 1/area_of_effect: 0.020000, distance^2: 97.000000, velocity magnitude: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 8.405629
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:165 - Inputs - distance: 42.638012, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.023453, 1/area_of_effect: 0.020000, distance^2: 1818.000122, velocity magnitude: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.018995
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:165 - Inputs - distance: 40.112343, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.024930, 1/area_of_effect: 0.020000, distance^2: 1609.000000, velocity magnitude: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.030640
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:165 - Inputs - distance: 47.000000, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.021277, 1/area_of_effect: 0.020000, distance^2: 2209.000000, velocity magnitude: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.005779
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:165 - Inputs - distance: 41.109608, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.024325, 1/area_of_effect: 0.020000, distance^2: 1689.999878, velocity magnitude: 0.000000
-[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.025593
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:165 - Inputs - distance: 40.718548, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.024559, 1/area_of_effect: 0.020000, distance^2: 1658.000122, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.116656
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:165 - Inputs - distance: 39.849716, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.025094, 1/area_of_effect: 0.020000, distance^2: 1587.999878, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.136103
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:165 - Inputs - distance: 21.540659, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.046424, 1/area_of_effect: 0.020000, distance^2: 464.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 2.416095
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:165 - Inputs - distance: 5.000000, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.200000, 1/area_of_effect: 0.020000, distance^2: 25.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 305.470123
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:165 - Inputs - distance: 37.013512, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.027017, 1/area_of_effect: 0.020000, distance^2: 1370.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.217309
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:165 - Inputs - distance: 36.013885, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.027767, 1/area_of_effect: 0.020000, distance^2: 1297.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.254070
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:165 - Inputs - distance: 43.185646, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.023156, 1/area_of_effect: 0.020000, distance^2: 1865.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.071791
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:165 - Inputs - distance: 35.468296, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.028194, 1/area_of_effect: 0.020000, distance^2: 1258.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.276351
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:165 - Inputs - distance: 35.846897, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.027896, 1/area_of_effect: 0.020000, distance^2: 1285.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.260713
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:165 - Inputs - distance: 35.171009, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.028433, 1/area_of_effect: 0.020000, distance^2: 1236.999878, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.289217
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:165 - Inputs - distance: 17.464249, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.057260, 1/area_of_effect: 0.020000, distance^2: 304.999969, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 5.182954
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:165 - Inputs - distance: 3.162278, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.316228, 1/area_of_effect: 0.020000, distance^2: 10.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 1256.787842
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:165 - Inputs - distance: 32.015621, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.031235, 1/area_of_effect: 0.020000, distance^2: 1025.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.465025
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:165 - Inputs - distance: 32.249031, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.031009, 1/area_of_effect: 0.020000, distance^2: 1040.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.449095
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:165 - Inputs - distance: 39.623226, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.025238, 1/area_of_effect: 0.020000, distance^2: 1570.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.141540
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:165 - Inputs - distance: 30.479502, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.032809, 1/area_of_effect: 0.020000, distance^2: 929.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.584970
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:165 - Inputs - distance: 47.169907, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.021200, 1/area_of_effect: 0.020000, distance^2: 2225.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.022881
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:165 - Inputs - distance: 44.271889, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.022588, 1/area_of_effect: 0.020000, distance^2: 1960.000122, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.056014
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:165 - Inputs - distance: 7.810250, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.128037, 1/area_of_effect: 0.020000, distance^2: 61.000004, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 75.141243
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:165 - Inputs - distance: 49.091751, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.020370, 1/area_of_effect: 0.020000, distance^2: 2410.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.006514
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:165 - Inputs - distance: 35.000000, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.028571, 1/area_of_effect: 0.020000, distance^2: 1225.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.296861
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:165 - Inputs - distance: 11.000000, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.090909, 1/area_of_effect: 0.020000, distance^2: 121.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 24.862961
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:165 - Inputs - distance: 39.012817, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.025633, 1/area_of_effect: 0.020000, distance^2: 1521.999878, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.157011
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:165 - Inputs - distance: 16.970562, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.058926, 1/area_of_effect: 0.020000, distance^2: 287.999969, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 5.734278
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:165 - Inputs - distance: 41.976185, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.023823, 1/area_of_effect: 0.020000, distance^2: 1762.000122, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.092053
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:165 - Inputs - distance: 17.464249, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.057260, 1/area_of_effect: 0.020000, distance^2: 304.999969, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 5.182954
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:165 - Inputs - distance: 38.013157, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.026307, 1/area_of_effect: 0.020000, distance^2: 1445.000122, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 0.185169
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:165 - Inputs - distance: 10.440307, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:167 - Intermediate calculations - 1/distance: 0.095783, 1/area_of_effect: 0.020000, distance^2: 109.000000, velocity magnitude: 4.242640
-[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:188 - Result - repulsive_force: 29.497105
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:157 - Inputs - distance: 1.000000, function_scale: 1.000000, area_of_effect: 5.000000, vel_x: 0.000000, vel_y: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 1.000000, 1/area_of_effect: 0.200000, distance^2: 1.000000, velocity magnitude: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.800000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:157 - Inputs - distance: 1.000000, function_scale: 1.000000, area_of_effect: 5.000000, vel_x: 0.000000, vel_y: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 1.000000, 1/area_of_effect: 0.200000, distance^2: 1.000000, velocity magnitude: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.800000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:157 - Inputs - distance: 39.824615, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.025110, 1/area_of_effect: 0.020000, distance^2: 1586.000000, velocity magnitude: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.032220
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:157 - Inputs - distance: 40.311287, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.024807, 1/area_of_effect: 0.020000, distance^2: 1624.999878, velocity magnitude: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.029581
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:157 - Inputs - distance: 45.891174, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021791, 1/area_of_effect: 0.020000, distance^2: 2106.000000, velocity magnitude: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.008503
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:157 - Inputs - distance: 44.102154, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.022675, 1/area_of_effect: 0.020000, distance^2: 1945.000000, velocity magnitude: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.013751
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:157 - Inputs - distance: 17.804493, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.056166, 1/area_of_effect: 0.020000, distance^2: 316.999969, velocity magnitude: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 1.140871
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:157 - Inputs - distance: 6.082763, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.164399, 1/area_of_effect: 0.020000, distance^2: 37.000004, velocity magnitude: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 39.026749
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:157 - Inputs - distance: 34.234486, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.029210, 1/area_of_effect: 0.020000, distance^2: 1172.000000, velocity magnitude: 0.000000
+[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.078586
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:157 - Inputs - distance: 34.205261, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.029235, 1/area_of_effect: 0.020000, distance^2: 1169.999878, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.334888
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:157 - Inputs - distance: 35.114101, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.028479, 1/area_of_effect: 0.020000, distance^2: 1233.000122, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.291740
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:157 - Inputs - distance: 41.303753, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.024211, 1/area_of_effect: 0.020000, distance^2: 1706.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.104720
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:157 - Inputs - distance: 38.587563, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.025915, 1/area_of_effect: 0.020000, distance^2: 1489.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.168540
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:157 - Inputs - distance: 12.206555, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.081923, 1/area_of_effect: 0.020000, distance^2: 149.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 17.632071
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:157 - Inputs - distance: 5.385165, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.185695, 1/area_of_effect: 0.020000, distance^2: 29.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 242.408875
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:157 - Inputs - distance: 30.000000, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.033333, 1/area_of_effect: 0.020000, distance^2: 900.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.628539
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:157 - Inputs - distance: 30.083218, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.033241, 1/area_of_effect: 0.020000, distance^2: 905.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.620744
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:157 - Inputs - distance: 37.013512, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.027017, 1/area_of_effect: 0.020000, distance^2: 1370.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.217309
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:157 - Inputs - distance: 33.120991, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.030192, 1/area_of_effect: 0.020000, distance^2: 1097.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.394188
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:157 - Inputs - distance: 49.396355, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.020244, 1/area_of_effect: 0.020000, distance^2: 2439.999756, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.004250
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:157 - Inputs - distance: 6.708204, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.149071, 1/area_of_effect: 0.020000, distance^2: 45.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 121.689499
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:157 - Inputs - distance: 9.219544, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.108465, 1/area_of_effect: 0.020000, distance^2: 85.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 44.156017
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:157 - Inputs - distance: 26.305893, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.038014, 1/area_of_effect: 0.020000, distance^2: 692.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 1.104454
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:157 - Inputs - distance: 48.795490, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.020494, 1/area_of_effect: 0.020000, distance^2: 2380.999756, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.008797
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:157 - Inputs - distance: 32.140316, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.031114, 1/area_of_effect: 0.020000, distance^2: 1032.999878, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.456446
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:157 - Inputs - distance: 45.694637, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021884, 1/area_of_effect: 0.020000, distance^2: 2087.999756, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.038290
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:157 - Inputs - distance: 43.965897, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.022745, 1/area_of_effect: 0.020000, distance^2: 1933.000122, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.060246
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:157 - Inputs - distance: 2.828427, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.353553, 1/area_of_effect: 0.020000, distance^2: 8.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 1768.934082
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:157 - Inputs - distance: 14.764823, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.067729, 1/area_of_effect: 0.020000, distance^2: 218.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 9.288764
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:157 - Inputs - distance: 23.769728, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.042070, 1/area_of_effect: 0.020000, distance^2: 564.999939, velocity magnitude: 4.242640
+[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 1.657282
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:157 - Inputs - distance: 48.093658, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.020793, 1/area_of_effect: 0.020000, distance^2: 2313.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.014541
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:157 - Inputs - distance: 41.725292, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.023966, 1/area_of_effect: 0.020000, distance^2: 1741.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.096654
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:157 - Inputs - distance: 39.217342, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.025499, 1/area_of_effect: 0.020000, distance^2: 1538.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.151690
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:157 - Inputs - distance: 37.854988, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.026417, 1/area_of_effect: 0.020000, distance^2: 1433.000122, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.189974
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:157 - Inputs - distance: 7.615773, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.131306, 1/area_of_effect: 0.020000, distance^2: 58.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 81.419510
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:157 - Inputs - distance: 21.633308, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.046225, 1/area_of_effect: 0.020000, distance^2: 468.000031, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 2.377421
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:157 - Inputs - distance: 22.022715, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.045408, 1/area_of_effect: 0.020000, distance^2: 484.999969, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 2.222589
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:157 - Inputs - distance: 43.737854, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.022863, 1/area_of_effect: 0.020000, distance^2: 1912.999878, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.063506
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:157 - Inputs - distance: 34.655445, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.028855, 1/area_of_effect: 0.020000, distance^2: 1200.999878, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.312828
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:157 - Inputs - distance: 48.764740, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.020507, 1/area_of_effect: 0.020000, distance^2: 2377.999756, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.009039
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:157 - Inputs - distance: 45.354160, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.022049, 1/area_of_effect: 0.020000, distance^2: 2056.999756, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.042255
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:157 - Inputs - distance: 32.984844, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.030317, 1/area_of_effect: 0.020000, distance^2: 1088.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.402308
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:157 - Inputs - distance: 32.140316, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.031114, 1/area_of_effect: 0.020000, distance^2: 1032.999878, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.456446
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:157 - Inputs - distance: 14.422205, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.069338, 1/area_of_effect: 0.020000, distance^2: 208.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 10.063528
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:157 - Inputs - distance: 28.600698, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.034964, 1/area_of_effect: 0.020000, distance^2: 817.999939, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.776133
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:157 - Inputs - distance: 22.472204, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.044499, 1/area_of_effect: 0.020000, distance^2: 504.999969, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 2.058262
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:157 - Inputs - distance: 34.669872, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.028843, 1/area_of_effect: 0.020000, distance^2: 1202.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.312144
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:157 - Inputs - distance: 49.578220, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.020170, 1/area_of_effect: 0.020000, distance^2: 2458.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.002937
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:157 - Inputs - distance: 47.169907, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021200, 1/area_of_effect: 0.020000, distance^2: 2225.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.022881
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:157 - Inputs - distance: 36.124783, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.027682, 1/area_of_effect: 0.020000, distance^2: 1304.999878, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.249741
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:157 - Inputs - distance: 48.332184, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.020690, 1/area_of_effect: 0.020000, distance^2: 2336.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.012534
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:157 - Inputs - distance: 33.120991, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.030192, 1/area_of_effect: 0.020000, distance^2: 1097.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.394188
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:157 - Inputs - distance: 28.600698, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.034964, 1/area_of_effect: 0.020000, distance^2: 817.999939, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.776133
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:157 - Inputs - distance: 5.000000, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.200000, 1/area_of_effect: 0.020000, distance^2: 25.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 305.470123
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:157 - Inputs - distance: 36.013885, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.027767, 1/area_of_effect: 0.020000, distance^2: 1297.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.254070
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:157 - Inputs - distance: 36.124783, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.027682, 1/area_of_effect: 0.020000, distance^2: 1304.999878, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.249741
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:157 - Inputs - distance: 43.416588, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.023033, 1/area_of_effect: 0.020000, distance^2: 1885.000122, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.068257
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:157 - Inputs - distance: 43.324360, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.023082, 1/area_of_effect: 0.020000, distance^2: 1877.000122, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.069657
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:157 - Inputs - distance: 38.600517, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.025906, 1/area_of_effect: 0.020000, distance^2: 1489.999878, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.168179
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:157 - Inputs - distance: 47.010635, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021272, 1/area_of_effect: 0.020000, distance^2: 2209.999756, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.024415
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:157 - Inputs - distance: 41.773197, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.023939, 1/area_of_effect: 0.020000, distance^2: 1745.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.095764
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:157 - Inputs - distance: 46.754681, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021388, 1/area_of_effect: 0.020000, distance^2: 2186.000244, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.026943
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:157 - Inputs - distance: 30.066593, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.033260, 1/area_of_effect: 0.020000, distance^2: 904.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.622293
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:157 - Inputs - distance: 35.383614, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.028262, 1/area_of_effect: 0.020000, distance^2: 1252.000122, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.279962
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:157 - Inputs - distance: 46.872166, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021335, 1/area_of_effect: 0.020000, distance^2: 2197.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.025773
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:157 - Inputs - distance: 35.440090, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.028217, 1/area_of_effect: 0.020000, distance^2: 1256.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.277550
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:157 - Inputs - distance: 36.400551, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.027472, 1/area_of_effect: 0.020000, distance^2: 1325.000122, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.239257
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:157 - Inputs - distance: 12.806249, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.078087, 1/area_of_effect: 0.020000, distance^2: 164.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 15.026937
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:157 - Inputs - distance: 30.265491, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.033041, 1/area_of_effect: 0.020000, distance^2: 916.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.604017
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:157 - Inputs - distance: 38.078865, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.026261, 1/area_of_effect: 0.020000, distance^2: 1450.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.183203
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:157 - Inputs - distance: 35.777088, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.027951, 1/area_of_effect: 0.020000, distance^2: 1280.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.263536
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:157 - Inputs - distance: 39.824615, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.025110, 1/area_of_effect: 0.020000, distance^2: 1586.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.136698
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:157 - Inputs - distance: 30.805843, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.032461, 1/area_of_effect: 0.020000, distance^2: 949.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.557104
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 49.979996, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.020008, 1/area_of_effect: 0.020000, distance^2: 2498.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.000136
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 31.112698, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.032141, 1/area_of_effect: 0.020000, distance^2: 967.999939, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.532137
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 46.173584, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021657, 1/area_of_effect: 0.020000, distance^2: 2131.999756, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.032982
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 38.910152, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.025700, 1/area_of_effect: 0.020000, distance^2: 1514.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.159736
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 33.301651, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.030029, 1/area_of_effect: 0.020000, distance^2: 1109.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.383656
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 47.010635, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021272, 1/area_of_effect: 0.020000, distance^2: 2209.999756, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.024415
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 43.863426, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.022798, 1/area_of_effect: 0.020000, distance^2: 1924.000122, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.061700
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 45.967381, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021755, 1/area_of_effect: 0.020000, distance^2: 2113.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.035229
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 40.199501, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.024876, 1/area_of_effect: 0.020000, distance^2: 1615.999878, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.128013
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 45.891174, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021791, 1/area_of_effect: 0.020000, distance^2: 2106.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.036074
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 44.821869, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.022311, 1/area_of_effect: 0.020000, distance^2: 2008.999878, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.048794
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 21.260292, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.047036, 1/area_of_effect: 0.020000, distance^2: 452.000031, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 2.537704
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 26.000000, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.038462, 1/area_of_effect: 0.020000, distance^2: 676.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 1.158664
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 41.109608, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.024325, 1/area_of_effect: 0.020000, distance^2: 1689.999878, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.108582
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 27.856777, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.035898, 1/area_of_effect: 0.020000, distance^2: 776.000061, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.869189
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 38.288380, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.026118, 1/area_of_effect: 0.020000, distance^2: 1466.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.177044
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:157 - Inputs - distance: 22.472204, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.044499, 1/area_of_effect: 0.020000, distance^2: 504.999969, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 2.058262
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 42.449970, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.023557, 1/area_of_effect: 0.020000, distance^2: 1802.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.083750
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 39.597980, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.025254, 1/area_of_effect: 0.020000, distance^2: 1568.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.142156
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 38.832977, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.025751, 1/area_of_effect: 0.020000, distance^2: 1508.000122, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.161809
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 31.016125, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.032241, 1/area_of_effect: 0.020000, distance^2: 962.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.539869
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 48.764740, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.020507, 1/area_of_effect: 0.020000, distance^2: 2377.999756, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.009039
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 46.615448, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021452, 1/area_of_effect: 0.020000, distance^2: 2173.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.028352
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 46.043457, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021719, 1/area_of_effect: 0.020000, distance^2: 2120.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.034394
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 39.115215, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.025565, 1/area_of_effect: 0.020000, distance^2: 1530.000122, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.154329
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 29.732138, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.033634, 1/area_of_effect: 0.020000, distance^2: 884.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.654328
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 44.922153, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.022261, 1/area_of_effect: 0.020000, distance^2: 2017.999878, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.047530
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 49.517673, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.020195, 1/area_of_effect: 0.020000, distance^2: 2452.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.003371
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 24.083189, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.041523, 1/area_of_effect: 0.020000, distance^2: 580.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 1.574366
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 45.541191, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021958, 1/area_of_effect: 0.020000, distance^2: 2074.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.040056
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 20.396078, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.049029, 1/area_of_effect: 0.020000, distance^2: 416.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 2.960571
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 38.600517, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.025906, 1/area_of_effect: 0.020000, distance^2: 1489.999878, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.168179
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 43.566040, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.022954, 1/area_of_effect: 0.020000, distance^2: 1897.999878, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.066024
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 14.317822, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.069843, 1/area_of_effect: 0.020000, distance^2: 205.000015, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 10.315414
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 35.355339, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.028284, 1/area_of_effect: 0.020000, distance^2: 1250.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.281178
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 48.083260, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.020797, 1/area_of_effect: 0.020000, distance^2: 2311.999756, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.014630
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 32.062439, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.031189, 1/area_of_effect: 0.020000, distance^2: 1028.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.461785
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 48.754486, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.020511, 1/area_of_effect: 0.020000, distance^2: 2377.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.009119
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 33.136082, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.030179, 1/area_of_effect: 0.020000, distance^2: 1097.999878, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.393298
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 38.209946, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.026171, 1/area_of_effect: 0.020000, distance^2: 1460.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.179330
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 44.000000, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.022727, 1/area_of_effect: 0.020000, distance^2: 1936.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.059767
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 37.656342, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.026556, 1/area_of_effect: 0.020000, distance^2: 1418.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.196153
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 25.059929, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.039904, 1/area_of_effect: 0.020000, distance^2: 628.000061, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 1.344697
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 14.142136, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.070711, 1/area_of_effect: 0.020000, distance^2: 200.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 10.757359
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 40.718548, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.024559, 1/area_of_effect: 0.020000, distance^2: 1658.000122, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.116656
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 35.355339, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.028284, 1/area_of_effect: 0.020000, distance^2: 1250.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.281178
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 7.000000, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.142857, 1/area_of_effect: 0.020000, distance^2: 49.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 106.375244
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 49.517673, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.020195, 1/area_of_effect: 0.020000, distance^2: 2452.000000, velocity magnitude: 4.242640
+[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.003371
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:157 - Inputs - distance: 1.000000, function_scale: 1.000000, area_of_effect: 5.000000, vel_x: 0.000000, vel_y: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 1.000000, 1/area_of_effect: 0.200000, distance^2: 1.000000, velocity magnitude: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.800000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:157 - Inputs - distance: 1.000000, function_scale: 1.000000, area_of_effect: 5.000000, vel_x: 0.000000, vel_y: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 1.000000, 1/area_of_effect: 0.200000, distance^2: 1.000000, velocity magnitude: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.800000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:157 - Inputs - distance: 33.120991, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.030192, 1/area_of_effect: 0.020000, distance^2: 1097.000000, velocity magnitude: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.092911
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:157 - Inputs - distance: 37.054016, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.026988, 1/area_of_effect: 0.020000, distance^2: 1373.000122, velocity magnitude: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.050893
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:157 - Inputs - distance: 45.122055, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.022162, 1/area_of_effect: 0.020000, distance^2: 2035.999878, velocity magnitude: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.010619
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:157 - Inputs - distance: 48.259712, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.020721, 1/area_of_effect: 0.020000, distance^2: 2328.999756, velocity magnitude: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.003097
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:157 - Inputs - distance: 45.011108, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.022217, 1/area_of_effect: 0.020000, distance^2: 2025.999878, velocity magnitude: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.010941
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:157 - Inputs - distance: 24.515301, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.040791, 1/area_of_effect: 0.020000, distance^2: 601.000000, velocity magnitude: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.345938
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:157 - Inputs - distance: 43.011627, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.023250, 1/area_of_effect: 0.020000, distance^2: 1850.000122, velocity magnitude: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.017565
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:157 - Inputs - distance: 38.483765, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.025985, 1/area_of_effect: 0.020000, distance^2: 1481.000122, velocity magnitude: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.040412
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:157 - Inputs - distance: 34.985710, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.028583, 1/area_of_effect: 0.020000, distance^2: 1223.999878, velocity magnitude: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.070123
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:157 - Inputs - distance: 27.586229, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 0.000000, vel_y: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.036250, 1/area_of_effect: 0.020000, distance^2: 761.000061, velocity magnitude: 0.000000
+[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.213534
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 4.000000, function_scale: 1.000000, area_of_effect: 5.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.250000, 1/area_of_effect: 0.200000, distance^2: 16.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.013258
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 4.000000, function_scale: 1.000000, area_of_effect: 5.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.250000, 1/area_of_effect: 0.200000, distance^2: 16.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.013258
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 47.074409, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021243, 1/area_of_effect: 0.020000, distance^2: 2216.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.023797
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 34.014702, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.029399, 1/area_of_effect: 0.020000, distance^2: 1157.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.344657
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 41.593269, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.024042, 1/area_of_effect: 0.020000, distance^2: 1730.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.099134
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 45.044422, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.022200, 1/area_of_effect: 0.020000, distance^2: 2029.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.046008
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 42.047592, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.023783, 1/area_of_effect: 0.020000, distance^2: 1768.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.090770
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 21.095022, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.047405, 1/area_of_effect: 0.020000, distance^2: 444.999969, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 2.612757
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 40.049969, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.024969, 1/area_of_effect: 0.020000, distance^2: 1604.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.131427
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 34.539833, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.028952, 1/area_of_effect: 0.020000, distance^2: 1193.000122, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.318361
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 30.886890, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.032376, 1/area_of_effect: 0.020000, distance^2: 954.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.550396
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:157 - Inputs - distance: 23.345236, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.042835, 1/area_of_effect: 0.020000, distance^2: 545.000061, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 1.777650
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 43.566040, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.022954, 1/area_of_effect: 0.020000, distance^2: 1897.999878, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.066024
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 31.257000, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.031993, 1/area_of_effect: 0.020000, distance^2: 977.000061, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.520791
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 47.169907, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021200, 1/area_of_effect: 0.020000, distance^2: 2225.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.022881
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 38.209946, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.026171, 1/area_of_effect: 0.020000, distance^2: 1460.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.179330
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 42.011902, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.023803, 1/area_of_effect: 0.020000, distance^2: 1764.999878, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.091410
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 39.319206, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.025433, 1/area_of_effect: 0.020000, distance^2: 1546.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.149092
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 18.027756, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.055470, 1/area_of_effect: 0.020000, distance^2: 324.999969, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 4.630356
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 37.336308, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.026784, 1/area_of_effect: 0.020000, distance^2: 1393.999878, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.206458
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 30.675724, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.032599, 1/area_of_effect: 0.020000, distance^2: 941.000061, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.568048
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 26.832815, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.037268, 1/area_of_effect: 0.020000, distance^2: 720.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 1.017515
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:157 - Inputs - distance: 19.104973, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.052342, 1/area_of_effect: 0.020000, distance^2: 365.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 3.759374
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:157 - Inputs - distance: 48.259712, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.020721, 1/area_of_effect: 0.020000, distance^2: 2328.999756, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.013138
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:157 - Inputs - distance: 39.115215, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.025565, 1/area_of_effect: 0.020000, distance^2: 1530.000122, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.154329
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:157 - Inputs - distance: 46.486557, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021512, 1/area_of_effect: 0.020000, distance^2: 2161.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.029677
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:157 - Inputs - distance: 43.737854, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.022863, 1/area_of_effect: 0.020000, distance^2: 1912.999878, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.063506
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:157 - Inputs - distance: 34.000000, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.029412, 1/area_of_effect: 0.020000, distance^2: 1156.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.345422
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:157 - Inputs - distance: 38.327538, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.026091, 1/area_of_effect: 0.020000, distance^2: 1469.000122, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.175912
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:157 - Inputs - distance: 36.138622, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.027671, 1/area_of_effect: 0.020000, distance^2: 1306.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.249206
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:157 - Inputs - distance: 14.866069, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.067267, 1/area_of_effect: 0.020000, distance^2: 221.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 9.074121
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:157 - Inputs - distance: 34.205261, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.029235, 1/area_of_effect: 0.020000, distance^2: 1169.999878, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.334888
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:157 - Inputs - distance: 25.709921, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.038895, 1/area_of_effect: 0.020000, distance^2: 661.000061, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 1.212810
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:157 - Inputs - distance: 48.093658, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.020793, 1/area_of_effect: 0.020000, distance^2: 2313.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.014541
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:157 - Inputs - distance: 21.540659, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.046424, 1/area_of_effect: 0.020000, distance^2: 464.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 2.416095
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:157 - Inputs - distance: 13.453624, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.074329, 1/area_of_effect: 0.020000, distance^2: 181.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 12.734816
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:157 - Inputs - distance: 44.147480, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.022651, 1/area_of_effect: 0.020000, distance^2: 1949.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.057715
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:157 - Inputs - distance: 34.058773, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.029361, 1/area_of_effect: 0.020000, distance^2: 1160.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.342374
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:157 - Inputs - distance: 40.261642, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.024838, 1/area_of_effect: 0.020000, distance^2: 1620.999878, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.126613
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:157 - Inputs - distance: 40.162170, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.024899, 1/area_of_effect: 0.020000, distance^2: 1612.999878, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.128859
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:157 - Inputs - distance: 34.481880, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.029001, 1/area_of_effect: 0.020000, distance^2: 1189.000122, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.321168
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:157 - Inputs - distance: 46.690472, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.021418, 1/area_of_effect: 0.020000, distance^2: 2180.000244, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.027590
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:157 - Inputs - distance: 33.105892, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.030206, 1/area_of_effect: 0.020000, distance^2: 1096.000122, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.395081
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:157 - Inputs - distance: 13.453624, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.074329, 1/area_of_effect: 0.020000, distance^2: 181.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 12.734816
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:157 - Inputs - distance: 31.304953, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.031944, 1/area_of_effect: 0.020000, distance^2: 980.000061, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.517075
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:157 - Inputs - distance: 49.497475, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.020203, 1/area_of_effect: 0.020000, distance^2: 2450.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.003516
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:157 - Inputs - distance: 20.024984, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.049938, 1/area_of_effect: 0.020000, distance^2: 401.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 3.167445
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:157 - Inputs - distance: 43.046486, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.023231, 1/area_of_effect: 0.020000, distance^2: 1853.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.073970
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:157 - Inputs - distance: 15.297058, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.065372, 1/area_of_effect: 0.020000, distance^2: 233.999985, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 8.226380
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:157 - Inputs - distance: 6.403124, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.156174, 1/area_of_effect: 0.020000, distance^2: 41.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 140.911301
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:157 - Inputs - distance: 40.853397, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.024478, 1/area_of_effect: 0.020000, distance^2: 1669.000122, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.113826
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:157 - Inputs - distance: 34.365681, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.029099, 1/area_of_effect: 0.020000, distance^2: 1181.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.326866
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:157 - Inputs - distance: 37.589893, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.026603, 1/area_of_effect: 0.020000, distance^2: 1413.000122, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.198257
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:157 - Inputs - distance: 31.764761, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.031481, 1/area_of_effect: 0.020000, distance^2: 1009.000061, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.482771
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:157 - Inputs - distance: 41.109608, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.024325, 1/area_of_effect: 0.020000, distance^2: 1689.999878, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.108582
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:157 - Inputs - distance: 31.400637, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.031846, 1/area_of_effect: 0.020000, distance^2: 986.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.509740
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:157 - Inputs - distance: 15.524175, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.064416, 1/area_of_effect: 0.020000, distance^2: 241.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 7.819075
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:157 - Inputs - distance: 29.832869, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.033520, 1/area_of_effect: 0.020000, distance^2: 890.000061, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.644504
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:157 - Inputs - distance: 44.045429, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.022704, 1/area_of_effect: 0.020000, distance^2: 1939.999878, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.059131
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:157 - Inputs - distance: 15.524175, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.064416, 1/area_of_effect: 0.020000, distance^2: 241.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 7.819075
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:157 - Inputs - distance: 38.639359, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.025880, 1/area_of_effect: 0.020000, distance^2: 1493.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 0.167101
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:157 - Inputs - distance: 10.198039, function_scale: 10000.000000, area_of_effect: 50.000000, vel_x: 3.000000, vel_y: 3.000000
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:159 - Intermediate calculations - 1/distance: 0.098058, 1/area_of_effect: 0.020000, distance^2: 104.000000, velocity magnitude: 4.242640
+[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:180 - Result - repulsive_force: 31.843493

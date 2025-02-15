@@ -49,7 +49,6 @@ extern Globals *globals;
 extern Drone *drone;
 extern WindowLayout layout;
 extern Config *config;
-extern IsAwake *isAwake;
 
 extern pid_t child1_pid;
 extern pid_t child2_pid;

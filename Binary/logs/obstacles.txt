@@ -1,21 +1,2 @@
-[Sat Feb 15 17:26:05 2025] src/map/obstacles.c:41 - Obstacles process started.
-[Sat Feb 15 17:27:51 2025] src/map/obstacles.c:41 - Obstacles process started.
-[Sat Feb 15 17:28:44 2025] src/map/obstacles.c:41 - Obstacles process started.
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:335 - Placed obstacle 0 at (30, 10)
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:335 - Placed obstacle 1 at (6, 4)
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:335 - Placed obstacle 2 at (24, 17)
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:335 - Placed obstacle 3 at (95, 26)
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:335 - Placed obstacle 4 at (8, 25)
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:335 - Placed obstacle 5 at (42, 9)
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:335 - Placed obstacle 6 at (52, 27)
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:335 - Placed obstacle 7 at (24, 9)
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:335 - Placed obstacle 8 at (53, 3)
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:335 - Placed obstacle 9 at (69, 28)
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:335 - Placed obstacle 10 at (37, 23)
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:335 - Placed obstacle 11 at (39, 8)
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:335 - Placed obstacle 12 at (6, 1)
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:335 - Placed obstacle 13 at (51, 3)
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:335 - Placed obstacle 14 at (97, 28)
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:339 - Obstacle Count: 15
-[Sat Feb 15 17:28:52 2025] src/map/map_utils.c:341 - 15 obstacles have been randomly placed on the grid.
-[Sat Feb 15 17:55:59 2025] src/map/obstacles.c:41 - Obstacles process started.
+[Fri Feb 14 22:03:56 2025] src/map/obstacles.c:42 - Obstacles process started.
+[Fri Feb 14 22:06:04 2025] src/map/obstacles.c:42 - Obstacles process started.
