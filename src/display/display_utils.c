@@ -5,7 +5,6 @@ sem_t *sem_g = NULL;
 sem_t *sem_drone = NULL;
 
 bool resources_exist = false;
-int display_fd = -1;
 int fd = 0;
 int input = 0;
 int parent_height = 0, parent_width = 0;
@@ -15,6 +14,7 @@ Globals *globals = NULL;
 Drone *drone = NULL;
 WindowLayout layout;
 Config *config = NULL;
+IsAwake *isAwake = NULL;
 
 pid_t child1_pid = -1;
 pid_t child2_pid = -1;
@@ -48,10 +48,6 @@ void refresh_win(WINDOW *local_win, int height, int width, int startx, int start
     }
 }
 
-void setup_resources() {
-
-};
-
 void handle_sigint(int sig)
 {
     printf("\nReceived SIGINT. Cleaning up resources...\n");
@@ -78,8 +74,10 @@ void handle_sigint(int sig)
     }
     if (resources_exist)
     {
-        detach_shared_memory(drone, SHM_DRONE_SIZE);
         detach_shared_memory(globals, SHM_G_SIZE);
+        detach_shared_memory(drone, SHM_DRONE_SIZE);
+        detach_shared_memory(config, SHM_CONFIG_SIZE);
+        detach_shared_memory(isAwake, SHM_ISACTIVE_SIZE);
         printf("Shared memory detached.\n");
     }
     close(fd);

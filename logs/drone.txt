@@ -1,1610 +1,441 @@
-[Mon Jan 20 18:24:46 2025] src/drone/drone.c:7 - program started!
-[Mon Jan 20 18:24:46 2025] src/drone/drone_utils.c:52 - shared memories got attached!
-[Mon Jan 20 18:24:46 2025] src/drone/drone_utils.c:65 - opened fd in read mode!
-[Mon Jan 20 18:24:46 2025] src/drone/drone_utils.c:76 - Parent: All resources are initialized successfully.
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:550 - Enqueued Command: d
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:604 - Input 'd' received from the pipe
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:562 - Dequeued Command: d
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'd'
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:435 - User Force: X = 0.50, Y = 0.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:193 - CLOSE TO LEFT WALL
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:214 - CLOSE TO TOP WALL
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.80, Y = 0.80
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:251 - Drone Position: X = 1.00, Y = 1.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 30.00, Y = 75.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 79.48
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 4.00, Y = 21.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 20.22
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 51.00, Y = 78.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 91.81
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 26.00, Y = 32.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 39.82
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 3: 0.03
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 17.00, Y = 38.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 40.31
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 4: 0.03
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 16.00, Y = 66.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 66.71
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 48.00, Y = 48.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 66.47
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 46.00, Y = 10.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 45.89
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 7: 0.01
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 11.00, Y = 70.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 69.72
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 56.00, Y = 88.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 102.93
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 25.00, Y = 18.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 29.41
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 38.00, Y = 25.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 44.10
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 11: 0.01
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 68.00, Y = 34.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 74.69
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 10.00, Y = 72.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 71.57
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 4.00, Y = 89.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 88.05
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.05, Y = -0.06
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 64.00, Y = 88.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:327 - Distance to target 0: 107.42
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 78.00, Y = 76.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:327 - Distance to target 1: 107.49
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 32.00, Y = 55.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:327 - Distance to target 2: 62.27
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 27.00, Y = 55.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:327 - Distance to target 3: 59.93
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 99.00, Y = 2.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:327 - Distance to target 4: 98.01
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 79.00, Y = 94.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:327 - Distance to target 5: 121.38
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 12.00, Y = 15.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:327 - Distance to target 6: 17.80
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:339 - Attractive Force for target 6: 1.14
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 78.00, Y = 0.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:327 - Distance to target 7: 77.01
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 16.00, Y = 84.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:327 - Distance to target 8: 84.34
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 7.00, Y = 0.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:327 - Distance to target 9: 6.08
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:339 - Attractive Force for target 9: 39.03
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 5.00, Y = 35.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:327 - Distance to target 10: 34.23
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 0.08
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 98.00, Y = 79.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:327 - Distance to target 11: 124.47
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 5.00, Y = 77.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:327 - Distance to target 12: 76.11
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 54.00, Y = 94.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:327 - Distance to target 13: 107.04
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:324 - Target 14 Position: X = 72.00, Y = 46.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:327 - Distance to target 14: 84.06
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:378 - Target Force: X = 5.00, Y = 5.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:451 - Total Force: X = 6.25, Y = 5.74
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 5.00, Y_POS = 5.00
-[Mon Jan 20 18:24:50 2025] src/utils.c:304 - Free spot set at (1, 1).
-[Mon Jan 20 18:24:50 2025] src/utils.c:237 - Drone moved to empty space at (5, 5).
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:523 - updating velocities
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:528 - dx/dt = 40.00, dy/dt = 40.00
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:538 - updated velocities
-[Mon Jan 20 18:24:50 2025] src/drone/drone_utils.c:632 - Processed input: 'd'
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:550 - Enqueued Command: w
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:604 - Input 'w' received from the pipe
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:562 - Dequeued Command: w
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'w'
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:435 - User Force: X = 0.00, Y = -0.50
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.00, Y = 0.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:251 - Drone Position: X = 5.00, Y = 5.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 30.00, Y = 75.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 74.33
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 4.00, Y = 21.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 16.03
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 51.00, Y = 78.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 86.28
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 26.00, Y = 32.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 34.21
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 3: 0.33
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 17.00, Y = 38.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 35.11
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 4: 0.29
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 16.00, Y = 66.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 61.98
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 48.00, Y = 48.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 60.81
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 46.00, Y = 10.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 41.30
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 7: 0.10
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 11.00, Y = 70.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 65.28
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 56.00, Y = 88.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 97.42
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 25.00, Y = 18.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 23.85
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 38.00, Y = 25.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 38.59
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 11: 0.17
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 68.00, Y = 34.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 69.35
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 10.00, Y = 72.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 67.19
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 4.00, Y = 89.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 84.01
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.55, Y = -0.64
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 64.00, Y = 88.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:327 - Distance to target 0: 101.83
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 78.00, Y = 76.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:327 - Distance to target 1: 101.83
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 32.00, Y = 55.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:327 - Distance to target 2: 56.82
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 27.00, Y = 55.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:327 - Distance to target 3: 54.63
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 99.00, Y = 2.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:327 - Distance to target 4: 94.05
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 79.00, Y = 94.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:327 - Distance to target 5: 115.75
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 12.00, Y = 15.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:327 - Distance to target 6: 12.21
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:339 - Attractive Force for target 6: 17.63
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 78.00, Y = 0.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:327 - Distance to target 7: 73.17
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 16.00, Y = 84.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:327 - Distance to target 8: 79.76
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 7.00, Y = 0.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:327 - Distance to target 9: 5.39
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:339 - Attractive Force for target 9: 242.41
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 5.00, Y = 35.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:327 - Distance to target 10: 30.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 0.63
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 98.00, Y = 79.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:327 - Distance to target 11: 118.85
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 5.00, Y = 77.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:327 - Distance to target 12: 72.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 54.00, Y = 94.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:327 - Distance to target 13: 101.60
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:324 - Target 14 Position: X = 72.00, Y = 46.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:327 - Distance to target 14: 78.55
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:378 - Target Force: X = 5.00, Y = 5.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:451 - Total Force: X = 4.45, Y = 3.86
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 9.00, Y_POS = 9.00
-[Mon Jan 20 18:24:53 2025] src/utils.c:304 - Free spot set at (5, 5).
-[Mon Jan 20 18:24:53 2025] src/utils.c:237 - Drone moved to empty space at (9, 9).
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:523 - updating velocities
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:528 - dx/dt = 40.00, dy/dt = 40.00
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:538 - updated velocities
-[Mon Jan 20 18:24:53 2025] src/drone/drone_utils.c:632 - Processed input: 'w'
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:550 - Enqueued Command: w
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:604 - Input 'w' received from the pipe
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:562 - Dequeued Command: w
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'w'
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:435 - User Force: X = 0.00, Y = -0.50
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.00, Y = 0.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:251 - Drone Position: X = 9.00, Y = 9.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 30.00, Y = 75.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 69.26
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 4.00, Y = 21.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 13.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 51.00, Y = 78.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 80.78
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 26.00, Y = 32.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 28.60
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 17.00, Y = 38.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 30.08
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 4: 0.62
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 16.00, Y = 66.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 57.43
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 48.00, Y = 48.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 55.15
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 46.00, Y = 10.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 37.01
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 7: 0.22
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 11.00, Y = 70.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 61.03
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 56.00, Y = 88.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 91.92
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 25.00, Y = 18.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 18.36
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 38.00, Y = 25.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 33.12
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 11: 0.39
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 68.00, Y = 34.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 64.08
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 10.00, Y = 72.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 63.01
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 4.00, Y = 89.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 80.16
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.73, Y = -0.79
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 64.00, Y = 88.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:327 - Distance to target 0: 96.26
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 78.00, Y = 76.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:327 - Distance to target 1: 96.18
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 32.00, Y = 55.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:327 - Distance to target 2: 51.43
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 27.00, Y = 55.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:327 - Distance to target 3: 49.40
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:339 - Attractive Force for target 3: 0.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 99.00, Y = 2.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:327 - Distance to target 4: 90.27
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 79.00, Y = 94.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:327 - Distance to target 5: 110.11
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 12.00, Y = 15.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:327 - Distance to target 6: 6.71
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:339 - Attractive Force for target 6: 121.69
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 78.00, Y = 0.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:327 - Distance to target 7: 69.58
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 16.00, Y = 84.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:327 - Distance to target 8: 75.33
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 7.00, Y = 0.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:327 - Distance to target 9: 9.22
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:339 - Attractive Force for target 9: 44.16
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 5.00, Y = 35.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:327 - Distance to target 10: 26.31
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 1.10
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 98.00, Y = 79.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:327 - Distance to target 11: 113.23
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 5.00, Y = 77.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:327 - Distance to target 12: 68.12
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 54.00, Y = 94.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:327 - Distance to target 13: 96.18
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:324 - Target 14 Position: X = 72.00, Y = 46.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:327 - Distance to target 14: 73.06
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:378 - Target Force: X = 5.00, Y = 5.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:451 - Total Force: X = 4.27, Y = 3.71
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 14.00, Y_POS = 13.00
-[Mon Jan 20 18:24:55 2025] src/utils.c:304 - Free spot set at (9, 9).
-[Mon Jan 20 18:24:55 2025] src/utils.c:237 - Drone moved to empty space at (14, 13).
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:523 - updating velocities
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:528 - dx/dt = 50.00, dy/dt = 40.00
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:538 - updated velocities
-[Mon Jan 20 18:24:55 2025] src/drone/drone_utils.c:632 - Processed input: 'w'
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:550 - Enqueued Command: a
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:604 - Input 'a' received from the pipe
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:562 - Dequeued Command: a
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'a'
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:435 - User Force: X = -0.50, Y = 0.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.00, Y = 0.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:251 - Drone Position: X = 14.00, Y = 13.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 30.00, Y = 75.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 64.03
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 4.00, Y = 21.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 12.81
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 51.00, Y = 78.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 74.79
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 26.00, Y = 32.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 22.47
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 17.00, Y = 38.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 25.18
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 16.00, Y = 66.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 53.04
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 48.00, Y = 48.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 48.80
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 6: 0.01
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 46.00, Y = 10.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 32.14
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 7: 0.46
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 11.00, Y = 70.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 57.08
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 56.00, Y = 88.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 85.96
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 25.00, Y = 18.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 12.08
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 38.00, Y = 25.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 26.83
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 68.00, Y = 34.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 57.94
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 10.00, Y = 72.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 59.14
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 4.00, Y = 89.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 76.66
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.46, Y = -0.05
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 64.00, Y = 88.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:327 - Distance to target 0: 90.14
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 78.00, Y = 76.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:327 - Distance to target 1: 89.81
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 32.00, Y = 55.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:327 - Distance to target 2: 45.69
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:339 - Attractive Force for target 2: 0.04
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 27.00, Y = 55.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:327 - Distance to target 3: 43.97
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:339 - Attractive Force for target 3: 0.06
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 99.00, Y = 2.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:327 - Distance to target 4: 85.71
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 79.00, Y = 94.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:327 - Distance to target 5: 103.86
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 12.00, Y = 15.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:327 - Distance to target 6: 2.83
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:339 - Attractive Force for target 6: 1768.93
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 78.00, Y = 0.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:327 - Distance to target 7: 65.31
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 16.00, Y = 84.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:327 - Distance to target 8: 71.03
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 7.00, Y = 0.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:327 - Distance to target 9: 14.76
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:339 - Attractive Force for target 9: 9.29
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 5.00, Y = 35.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:327 - Distance to target 10: 23.77
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 1.66
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 98.00, Y = 79.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:327 - Distance to target 11: 106.83
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 5.00, Y = 77.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:327 - Distance to target 12: 64.63
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 54.00, Y = 94.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:327 - Distance to target 13: 90.34
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:324 - Target 14 Position: X = 72.00, Y = 46.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:327 - Distance to target 14: 66.73
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:378 - Target Force: X = 5.00, Y = 5.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:451 - Total Force: X = 4.04, Y = 4.95
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 19.00, Y_POS = 18.00
-[Mon Jan 20 18:24:58 2025] src/utils.c:304 - Free spot set at (14, 13).
-[Mon Jan 20 18:24:58 2025] src/utils.c:237 - Drone moved to empty space at (19, 18).
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:523 - updating velocities
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:528 - dx/dt = 50.00, dy/dt = 50.00
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:538 - updated velocities
-[Mon Jan 20 18:24:58 2025] src/drone/drone_utils.c:632 - Processed input: 'a'
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:550 - Enqueued Command: a
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:604 - Input 'a' received from the pipe
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:562 - Dequeued Command: a
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'a'
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:435 - User Force: X = -0.50, Y = 0.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.00, Y = 0.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:251 - Drone Position: X = 19.00, Y = 18.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 30.00, Y = 75.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 58.05
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 4.00, Y = 21.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 15.30
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 51.00, Y = 78.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 68.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 26.00, Y = 32.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 15.65
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 17.00, Y = 38.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 20.10
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 16.00, Y = 66.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 48.09
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 5: 0.01
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 48.00, Y = 48.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 41.73
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 6: 0.10
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 46.00, Y = 10.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 28.16
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 11.00, Y = 70.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 52.61
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 56.00, Y = 88.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 79.18
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 25.00, Y = 18.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 6.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 38.00, Y = 25.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 20.25
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 68.00, Y = 34.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 51.55
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 10.00, Y = 72.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 54.74
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 4.00, Y = 89.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 72.57
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.07, Y = -0.08
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 64.00, Y = 88.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:327 - Distance to target 0: 83.22
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 78.00, Y = 76.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:327 - Distance to target 1: 82.73
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 32.00, Y = 55.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:327 - Distance to target 2: 39.22
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:339 - Attractive Force for target 2: 0.15
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 27.00, Y = 55.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:327 - Distance to target 3: 37.85
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:339 - Attractive Force for target 3: 0.19
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 99.00, Y = 2.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:327 - Distance to target 4: 81.58
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 79.00, Y = 94.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:327 - Distance to target 5: 96.83
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 12.00, Y = 15.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:327 - Distance to target 6: 7.62
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:339 - Attractive Force for target 6: 81.42
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 78.00, Y = 0.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:327 - Distance to target 7: 61.68
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 16.00, Y = 84.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:327 - Distance to target 8: 66.07
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 7.00, Y = 0.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:327 - Distance to target 9: 21.63
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:339 - Attractive Force for target 9: 2.38
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 5.00, Y = 35.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:327 - Distance to target 10: 22.02
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 2.22
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 98.00, Y = 79.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:327 - Distance to target 11: 99.81
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 5.00, Y = 77.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:327 - Distance to target 12: 60.64
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 54.00, Y = 94.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:327 - Distance to target 13: 83.67
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:324 - Target 14 Position: X = 72.00, Y = 46.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:327 - Distance to target 14: 59.94
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:378 - Target Force: X = 5.00, Y = 5.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:451 - Total Force: X = 4.43, Y = 4.92
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 24.00, Y_POS = 23.00
-[Mon Jan 20 18:25:02 2025] src/utils.c:304 - Free spot set at (19, 18).
-[Mon Jan 20 18:25:02 2025] src/utils.c:237 - Drone moved to empty space at (24, 23).
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:523 - updating velocities
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:528 - dx/dt = 50.00, dy/dt = 50.00
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:538 - updated velocities
-[Mon Jan 20 18:25:02 2025] src/drone/drone_utils.c:632 - Processed input: 'a'
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:550 - Enqueued Command: x
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:604 - Input 'x' received from the pipe
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:562 - Dequeued Command: x
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'x'
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:435 - User Force: X = 0.00, Y = 0.50
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.00, Y = 0.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:251 - Drone Position: X = 24.00, Y = 23.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 30.00, Y = 75.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 52.35
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 4.00, Y = 21.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 20.10
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 51.00, Y = 78.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 61.27
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 26.00, Y = 32.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 9.22
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 17.00, Y = 38.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 16.55
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 16.00, Y = 66.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 43.74
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 5: 0.06
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 48.00, Y = 48.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 34.66
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 6: 0.31
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 46.00, Y = 10.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 25.55
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 11.00, Y = 70.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 48.76
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 8: 0.01
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 56.00, Y = 88.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 72.45
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 25.00, Y = 18.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 5.10
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 38.00, Y = 25.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 14.14
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 68.00, Y = 34.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 45.35
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 12: 0.04
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 10.00, Y = 72.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 50.96
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 4.00, Y = 89.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 68.96
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.27, Y = -0.31
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 64.00, Y = 88.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:327 - Distance to target 0: 76.32
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 78.00, Y = 76.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:327 - Distance to target 1: 75.66
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 32.00, Y = 55.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:327 - Distance to target 2: 32.98
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:339 - Attractive Force for target 2: 0.40
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 27.00, Y = 55.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:327 - Distance to target 3: 32.14
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:339 - Attractive Force for target 3: 0.46
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 99.00, Y = 2.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:327 - Distance to target 4: 77.88
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 79.00, Y = 94.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:327 - Distance to target 5: 89.81
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 12.00, Y = 15.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:327 - Distance to target 6: 14.42
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:339 - Attractive Force for target 6: 10.06
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 78.00, Y = 0.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:327 - Distance to target 7: 58.69
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 16.00, Y = 84.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:327 - Distance to target 8: 61.52
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 7.00, Y = 0.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:327 - Distance to target 9: 28.60
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:339 - Attractive Force for target 9: 0.78
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 5.00, Y = 35.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:327 - Distance to target 10: 22.47
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 2.06
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 98.00, Y = 79.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:327 - Distance to target 11: 92.80
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 5.00, Y = 77.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:327 - Distance to target 12: 57.25
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 54.00, Y = 94.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:327 - Distance to target 13: 77.08
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:324 - Target 14 Position: X = 72.00, Y = 46.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:327 - Distance to target 14: 53.23
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:378 - Target Force: X = 5.00, Y = 5.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:451 - Total Force: X = 4.73, Y = 5.19
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 29.00, Y_POS = 29.00
-[Mon Jan 20 18:25:06 2025] src/utils.c:304 - Free spot set at (24, 23).
-[Mon Jan 20 18:25:06 2025] src/utils.c:237 - Drone moved to empty space at (29, 29).
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:523 - updating velocities
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:528 - dx/dt = 50.00, dy/dt = 60.00
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:538 - updated velocities
-[Mon Jan 20 18:25:06 2025] src/drone/drone_utils.c:632 - Processed input: 'x'
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:550 - Enqueued Command: w
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:604 - Input 'w' received from the pipe
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:562 - Dequeued Command: w
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'w'
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:435 - User Force: X = 0.00, Y = -0.50
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.00, Y = 0.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:251 - Drone Position: X = 29.00, Y = 29.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 87.00, Y = 58.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 64.85
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 18.00, Y = 19.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 14.87
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 84.00, Y = 55.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 60.84
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 83.00, Y = 96.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 86.05
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 98.00, Y = 94.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 94.79
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 57.00, Y = 76.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 54.71
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 58.00, Y = 48.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 34.67
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 6: 0.31
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 62.00, Y = 66.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 49.58
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 7: 0.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 87.00, Y = 1.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 64.40
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 51.00, Y = 41.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 25.06
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 69.00, Y = 4.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 47.17
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 10: 0.02
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 24.00, Y = 99.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 70.18
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 32.00, Y = 65.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 36.12
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 12: 0.25
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 10.00, Y = 9.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 27.59
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 73.00, Y = 9.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 48.33
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 14: 0.01
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.31, Y = -0.44
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 90.00, Y = 87.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:327 - Distance to target 0: 84.17
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 0.00, Y = 45.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:327 - Distance to target 1: 33.12
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:339 - Attractive Force for target 1: 0.39
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 85.00, Y = 50.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:327 - Distance to target 2: 59.81
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 12.00, Y = 6.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:327 - Distance to target 3: 28.60
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:339 - Attractive Force for target 3: 0.78
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 26.00, Y = 25.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:327 - Distance to target 4: 5.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:339 - Attractive Force for target 4: 305.47
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 96.00, Y = 53.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:327 - Distance to target 5: 71.17
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 59.00, Y = 90.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:327 - Distance to target 6: 67.98
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 12.00, Y = 83.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:327 - Distance to target 7: 56.61
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 30.00, Y = 65.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:327 - Distance to target 8: 36.01
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:339 - Attractive Force for target 8: 0.25
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 53.00, Y = 2.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:327 - Distance to target 9: 36.12
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:339 - Attractive Force for target 9: 0.25
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 50.00, Y = 67.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:327 - Distance to target 10: 43.42
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 0.07
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 14.00, Y = 90.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:327 - Distance to target 11: 62.82
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 15.00, Y = 70.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:327 - Distance to target 12: 43.32
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:339 - Attractive Force for target 12: 0.07
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 69.00, Y = 84.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:327 - Distance to target 13: 68.01
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:324 - Target 14 Position: X = 52.00, Y = 60.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:327 - Distance to target 14: 38.60
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:339 - Attractive Force for target 14: 0.17
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:324 - Target 15 Position: X = 16.00, Y = 87.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:327 - Distance to target 15: 59.44
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:378 - Target Force: X = 5.00, Y = 5.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:451 - Total Force: X = 4.69, Y = 4.06
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 34.00, Y_POS = 35.00
-[Mon Jan 20 18:25:10 2025] src/utils.c:304 - Free spot set at (29, 29).
-[Mon Jan 20 18:25:10 2025] src/utils.c:237 - Drone moved to empty space at (34, 35).
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:523 - updating velocities
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:528 - dx/dt = 50.00, dy/dt = 60.00
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:538 - updated velocities
-[Mon Jan 20 18:25:10 2025] src/drone/drone_utils.c:632 - Processed input: 'w'
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:550 - Enqueued Command: d
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:604 - Input 'd' received from the pipe
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:562 - Dequeued Command: d
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'd'
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:435 - User Force: X = 0.50, Y = 0.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.00, Y = 0.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:251 - Drone Position: X = 34.00, Y = 35.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 87.00, Y = 58.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 57.78
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 18.00, Y = 19.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 22.63
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 84.00, Y = 55.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 53.85
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 83.00, Y = 96.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 78.24
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 98.00, Y = 94.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 87.05
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 57.00, Y = 76.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 47.01
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 5: 0.02
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 58.00, Y = 48.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 27.29
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 62.00, Y = 66.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 41.77
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 7: 0.10
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 87.00, Y = 1.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 62.97
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 51.00, Y = 41.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 18.03
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 69.00, Y = 4.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 46.75
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 10: 0.03
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 24.00, Y = 99.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 64.78
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 32.00, Y = 65.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 30.07
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 12: 0.62
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 10.00, Y = 9.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 35.38
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 13: 0.28
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 73.00, Y = 9.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 46.87
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 14: 0.03
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.35, Y = -0.95
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 90.00, Y = 87.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:327 - Distance to target 0: 76.42
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 0.00, Y = 45.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:327 - Distance to target 1: 35.44
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:339 - Attractive Force for target 1: 0.28
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 85.00, Y = 50.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:327 - Distance to target 2: 53.16
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 12.00, Y = 6.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:327 - Distance to target 3: 36.40
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:339 - Attractive Force for target 3: 0.24
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 26.00, Y = 25.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:327 - Distance to target 4: 12.81
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:339 - Attractive Force for target 4: 15.03
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 96.00, Y = 53.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:327 - Distance to target 5: 64.56
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 59.00, Y = 90.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:327 - Distance to target 6: 60.42
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 12.00, Y = 83.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:327 - Distance to target 7: 52.80
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 30.00, Y = 65.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:327 - Distance to target 8: 30.27
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:339 - Attractive Force for target 8: 0.60
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 53.00, Y = 2.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:327 - Distance to target 9: 38.08
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:339 - Attractive Force for target 9: 0.18
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 50.00, Y = 67.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:327 - Distance to target 10: 35.78
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 0.26
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 14.00, Y = 90.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:327 - Distance to target 11: 58.52
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 15.00, Y = 70.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:327 - Distance to target 12: 39.82
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:339 - Attractive Force for target 12: 0.14
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 69.00, Y = 84.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:327 - Distance to target 13: 60.22
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:324 - Target 14 Position: X = 52.00, Y = 60.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:327 - Distance to target 14: 30.81
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:339 - Attractive Force for target 14: 0.56
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:324 - Target 15 Position: X = 16.00, Y = 87.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:327 - Distance to target 15: 55.03
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:378 - Target Force: X = 5.00, Y = 5.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:451 - Total Force: X = 5.15, Y = 4.05
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 40.00, Y_POS = 41.00
-[Mon Jan 20 18:25:16 2025] src/utils.c:304 - Free spot set at (34, 35).
-[Mon Jan 20 18:25:16 2025] src/utils.c:237 - Drone moved to empty space at (40, 41).
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:523 - updating velocities
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:528 - dx/dt = 60.00, dy/dt = 60.00
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:538 - updated velocities
-[Mon Jan 20 18:25:16 2025] src/drone/drone_utils.c:632 - Processed input: 'd'
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:550 - Enqueued Command: d
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:604 - Input 'd' received from the pipe
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:562 - Dequeued Command: d
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'd'
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:435 - User Force: X = 0.50, Y = 0.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.00, Y = 0.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:251 - Drone Position: X = 40.00, Y = 41.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 87.00, Y = 58.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 49.98
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 0: 0.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 18.00, Y = 19.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 31.11
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 1: 0.53
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 84.00, Y = 55.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 46.17
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 2: 0.03
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 83.00, Y = 96.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 69.81
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 98.00, Y = 94.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 78.57
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 57.00, Y = 76.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 38.91
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 5: 0.16
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 58.00, Y = 48.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 19.31
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 62.00, Y = 66.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 33.30
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 7: 0.38
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 87.00, Y = 1.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 61.72
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 51.00, Y = 41.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 11.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 69.00, Y = 4.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 47.01
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 10: 0.02
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 24.00, Y = 99.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 60.17
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 32.00, Y = 65.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 25.30
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 10.00, Y = 9.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 43.86
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 13: 0.06
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 73.00, Y = 9.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 45.97
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 14: 0.04
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.81, Y = -0.91
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 90.00, Y = 87.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:327 - Distance to target 0: 67.94
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 0.00, Y = 45.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:327 - Distance to target 1: 40.20
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:339 - Attractive Force for target 1: 0.13
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 85.00, Y = 50.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:327 - Distance to target 2: 45.89
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:339 - Attractive Force for target 2: 0.04
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 12.00, Y = 6.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:327 - Distance to target 3: 44.82
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:339 - Attractive Force for target 3: 0.05
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 26.00, Y = 25.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:327 - Distance to target 4: 21.26
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:339 - Attractive Force for target 4: 2.54
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 96.00, Y = 53.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:327 - Distance to target 5: 57.27
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 59.00, Y = 90.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:327 - Distance to target 6: 52.55
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 12.00, Y = 83.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:327 - Distance to target 7: 50.48
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 30.00, Y = 65.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:327 - Distance to target 8: 26.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:339 - Attractive Force for target 8: 1.16
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 53.00, Y = 2.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:327 - Distance to target 9: 41.11
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:339 - Attractive Force for target 9: 0.11
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 50.00, Y = 67.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:327 - Distance to target 10: 27.86
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 0.87
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 14.00, Y = 90.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:327 - Distance to target 11: 55.47
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 15.00, Y = 70.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:327 - Distance to target 12: 38.29
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:339 - Attractive Force for target 12: 0.18
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 69.00, Y = 84.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:327 - Distance to target 13: 51.87
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:324 - Target 14 Position: X = 52.00, Y = 60.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:327 - Distance to target 14: 22.47
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:339 - Attractive Force for target 14: 2.06
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:324 - Target 15 Position: X = 16.00, Y = 87.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:327 - Distance to target 15: 51.88
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:378 - Target Force: X = 3.87, Y = 5.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:451 - Total Force: X = 3.56, Y = 4.09
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 46.00, Y_POS = 47.00
-[Mon Jan 20 18:25:18 2025] src/utils.c:304 - Free spot set at (40, 41).
-[Mon Jan 20 18:25:18 2025] src/utils.c:237 - Drone moved to empty space at (46, 47).
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:523 - updating velocities
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:528 - dx/dt = 60.00, dy/dt = 60.00
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:538 - updated velocities
-[Mon Jan 20 18:25:18 2025] src/drone/drone_utils.c:632 - Processed input: 'd'
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:550 - Enqueued Command: d
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:604 - Input 'd' received from the pipe
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:562 - Dequeued Command: d
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'd'
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:435 - User Force: X = 0.50, Y = 0.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.00, Y = 0.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:251 - Drone Position: X = 46.00, Y = 47.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 87.00, Y = 58.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 42.45
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 0: 0.08
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 18.00, Y = 19.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 39.60
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 1: 0.14
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 84.00, Y = 55.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 38.83
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 2: 0.16
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 83.00, Y = 96.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 61.40
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 98.00, Y = 94.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 70.09
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 57.00, Y = 76.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 31.02
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 5: 0.54
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 58.00, Y = 48.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 12.04
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 62.00, Y = 66.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 24.84
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 87.00, Y = 1.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 61.62
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 51.00, Y = 41.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 7.81
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 69.00, Y = 4.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 48.76
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 10: 0.01
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 24.00, Y = 99.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 56.46
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 32.00, Y = 65.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 22.80
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 10.00, Y = 9.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 52.35
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 73.00, Y = 9.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 46.62
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 14: 0.03
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.55, Y = -0.69
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 90.00, Y = 87.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:327 - Distance to target 0: 59.46
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 0.00, Y = 45.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:327 - Distance to target 1: 46.04
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 1: 0.03
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 85.00, Y = 50.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:327 - Distance to target 2: 39.12
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 2: 0.15
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 12.00, Y = 6.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:327 - Distance to target 3: 53.26
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 26.00, Y = 25.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:327 - Distance to target 4: 29.73
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 4: 0.65
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 96.00, Y = 53.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:327 - Distance to target 5: 50.36
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 59.00, Y = 90.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:327 - Distance to target 6: 44.92
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 6: 0.05
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 12.00, Y = 83.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:327 - Distance to target 7: 49.52
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 7: 0.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 30.00, Y = 65.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:327 - Distance to target 8: 24.08
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 8: 1.57
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 53.00, Y = 2.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:327 - Distance to target 9: 45.54
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 9: 0.04
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 50.00, Y = 67.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:327 - Distance to target 10: 20.40
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 2.96
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 14.00, Y = 90.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:327 - Distance to target 11: 53.60
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 15.00, Y = 70.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:327 - Distance to target 12: 38.60
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 12: 0.17
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 69.00, Y = 84.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:327 - Distance to target 13: 43.57
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 13: 0.07
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:324 - Target 14 Position: X = 52.00, Y = 60.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:327 - Distance to target 14: 14.32
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 14: 10.32
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:324 - Target 15 Position: X = 16.00, Y = 87.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:327 - Distance to target 15: 50.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:378 - Target Force: X = 5.00, Y = 5.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:451 - Total Force: X = 4.95, Y = 4.31
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 52.00, Y_POS = 53.00
-[Mon Jan 20 18:25:21 2025] src/utils.c:304 - Free spot set at (46, 47).
-[Mon Jan 20 18:25:21 2025] src/utils.c:237 - Drone moved to empty space at (52, 53).
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:523 - updating velocities
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:528 - dx/dt = 60.00, dy/dt = 60.00
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:538 - updated velocities
-[Mon Jan 20 18:25:21 2025] src/drone/drone_utils.c:632 - Processed input: 'd'
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:550 - Enqueued Command: x
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:604 - Input 'x' received from the pipe
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:562 - Dequeued Command: x
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'x'
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:435 - User Force: X = 0.00, Y = 0.50
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.00, Y = 0.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:251 - Drone Position: X = 52.00, Y = 53.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 87.00, Y = 58.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 35.36
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 0: 0.28
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 18.00, Y = 19.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 48.08
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 1: 0.01
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 84.00, Y = 55.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 32.06
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 2: 0.46
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 83.00, Y = 96.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 53.01
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 98.00, Y = 94.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 61.62
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 57.00, Y = 76.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 23.54
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 58.00, Y = 48.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 7.81
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 62.00, Y = 66.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 16.40
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 87.00, Y = 1.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 62.68
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 51.00, Y = 41.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 12.04
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 69.00, Y = 4.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 51.87
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 24.00, Y = 99.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 53.85
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 32.00, Y = 65.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 23.32
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 10.00, Y = 9.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 60.83
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 73.00, Y = 9.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 48.75
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 14: 0.01
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.75, Y = -0.09
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 90.00, Y = 87.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:327 - Distance to target 0: 50.99
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 0.00, Y = 45.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:327 - Distance to target 1: 52.61
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 85.00, Y = 50.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:327 - Distance to target 2: 33.14
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 2: 0.39
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 12.00, Y = 6.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:327 - Distance to target 3: 61.72
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 26.00, Y = 25.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:327 - Distance to target 4: 38.21
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 4: 0.18
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 96.00, Y = 53.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:327 - Distance to target 5: 44.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 5: 0.06
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 59.00, Y = 90.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:327 - Distance to target 6: 37.66
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 6: 0.20
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 12.00, Y = 83.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:327 - Distance to target 7: 50.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 30.00, Y = 65.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:327 - Distance to target 8: 25.06
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 8: 1.34
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 53.00, Y = 2.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:327 - Distance to target 9: 51.01
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 50.00, Y = 67.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:327 - Distance to target 10: 14.14
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 10.76
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 14.00, Y = 90.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:327 - Distance to target 11: 53.04
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 15.00, Y = 70.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:327 - Distance to target 12: 40.72
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 12: 0.12
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 69.00, Y = 84.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:327 - Distance to target 13: 35.36
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 13: 0.28
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:324 - Target 14 Position: X = 52.00, Y = 60.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:327 - Distance to target 14: 7.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 14: 106.38
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:324 - Target 15 Position: X = 16.00, Y = 87.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:327 - Distance to target 15: 49.52
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 15: 0.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:378 - Target Force: X = 3.56, Y = 5.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:451 - Total Force: X = 2.80, Y = 5.41
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 58.00, Y_POS = 59.00
-[Mon Jan 20 18:25:23 2025] src/utils.c:304 - Free spot set at (52, 53).
-[Mon Jan 20 18:25:23 2025] src/utils.c:237 - Drone moved to empty space at (58, 59).
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:523 - updating velocities
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:528 - dx/dt = 60.00, dy/dt = 60.00
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:538 - updated velocities
-[Mon Jan 20 18:25:23 2025] src/drone/drone_utils.c:632 - Processed input: 'x'
-[Sat Feb  8 16:13:13 2025] src/drone/drone.c:7 - program started!
-[Sat Feb  8 16:13:13 2025] src/drone/drone_utils.c:52 - shared memories got attached!
-[Sat Feb  8 16:13:13 2025] src/drone/drone_utils.c:65 - opened fd in read mode!
-[Sat Feb  8 16:13:13 2025] src/drone/drone_utils.c:76 - Parent: All resources are initialized successfully.
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:550 - Enqueued Command: d
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:604 - Input 'd' received from the pipe
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:562 - Dequeued Command: d
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'd'
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:435 - User Force: X = 0.50, Y = 0.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:193 - CLOSE TO LEFT WALL
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:214 - CLOSE TO TOP WALL
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.80, Y = 0.80
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:251 - Drone Position: X = 1.00, Y = 1.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 59.00, Y = 6.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 58.22
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 84.00, Y = 29.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 87.60
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 96.00, Y = 11.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 95.52
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 92.00, Y = 19.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 92.76
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 30.00, Y = 17.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 33.12
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 4: 0.09
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 50.00, Y = 14.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 50.70
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 76.00, Y = 27.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 79.38
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 75.00, Y = 6.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 74.17
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 80.00, Y = 26.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 82.86
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 38.00, Y = 3.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 37.05
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 9: 0.05
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 11.00, Y = 23.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 24.17
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 19.00, Y = 11.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 20.59
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 55.00, Y = 26.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 59.51
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 54.00, Y = 3.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 53.04
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 45.00, Y = 11.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 45.12
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 14: 0.01
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.14, Y = -0.05
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 99.00, Y = 16.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:327 - Distance to target 0: 99.14
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 49.00, Y = 6.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:327 - Distance to target 1: 48.26
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:339 - Attractive Force for target 1: 0.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 82.00, Y = 21.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:327 - Distance to target 2: 83.43
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 62.00, Y = 24.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:327 - Distance to target 3: 65.19
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 73.00, Y = 16.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:327 - Distance to target 4: 73.55
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 46.00, Y = 2.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:327 - Distance to target 5: 45.01
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:339 - Attractive Force for target 5: 0.01
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 6.00, Y = 25.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:327 - Distance to target 6: 24.52
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:339 - Attractive Force for target 6: 0.35
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 85.00, Y = 5.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:327 - Distance to target 7: 84.10
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 44.00, Y = 2.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:327 - Distance to target 8: 43.01
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:339 - Attractive Force for target 8: 0.02
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 65.00, Y = 23.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:327 - Distance to target 9: 67.68
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 36.00, Y = 17.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:327 - Distance to target 10: 38.48
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 0.04
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 59.00, Y = 14.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:327 - Distance to target 11: 59.44
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 31.00, Y = 19.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:327 - Distance to target 12: 34.99
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:339 - Attractive Force for target 12: 0.07
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 20.00, Y = 21.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:327 - Distance to target 13: 27.59
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:339 - Attractive Force for target 13: 0.21
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:324 - Target 14 Position: X = 75.00, Y = 21.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:327 - Distance to target 14: 76.66
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:378 - Target Force: X = 0.35, Y = 0.55
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:451 - Total Force: X = 1.50, Y = 1.30
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 4.00, Y_POS = 4.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:523 - updating velocities
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:528 - dx/dt = 30.00, dy/dt = 30.00
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:538 - updated velocities
-[Sat Feb  8 16:13:17 2025] src/drone/drone_utils.c:632 - Processed input: 'd'
-[Sat Feb  8 16:13:20 2025] src/drone/drone_utils.c:550 - Enqueued Command: d
-[Sat Feb  8 16:13:20 2025] src/drone/drone_utils.c:604 - Input 'd' received from the pipe
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:562 - Dequeued Command: d
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'd'
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:435 - User Force: X = 0.50, Y = 0.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:193 - CLOSE TO LEFT WALL
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:214 - CLOSE TO TOP WALL
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.01, Y = 0.01
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:251 - Drone Position: X = 4.00, Y = 4.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 59.00, Y = 6.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 55.04
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 84.00, Y = 29.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 83.82
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 96.00, Y = 11.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 92.27
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 92.00, Y = 19.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 89.27
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 30.00, Y = 17.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 29.07
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 50.00, Y = 14.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 47.07
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 5: 0.02
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 76.00, Y = 27.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 75.58
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 75.00, Y = 6.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 71.03
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 80.00, Y = 26.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 79.12
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 38.00, Y = 3.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 34.01
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 9: 0.34
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 11.00, Y = 23.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 20.25
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 19.00, Y = 11.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 16.55
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 55.00, Y = 26.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 55.54
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 54.00, Y = 3.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 50.01
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 45.00, Y = 11.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 41.59
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 14: 0.10
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.47, Y = -0.03
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 99.00, Y = 16.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:327 - Distance to target 0: 95.75
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 49.00, Y = 6.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:327 - Distance to target 1: 45.04
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 1: 0.05
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 82.00, Y = 21.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:327 - Distance to target 2: 79.83
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 62.00, Y = 24.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:327 - Distance to target 3: 61.35
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 73.00, Y = 16.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:327 - Distance to target 4: 70.04
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 46.00, Y = 2.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:327 - Distance to target 5: 42.05
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 5: 0.09
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 6.00, Y = 25.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:327 - Distance to target 6: 21.10
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 6: 2.61
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 85.00, Y = 5.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:327 - Distance to target 7: 81.01
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 44.00, Y = 2.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:327 - Distance to target 8: 40.05
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 8: 0.13
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 65.00, Y = 23.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:327 - Distance to target 9: 63.89
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 36.00, Y = 17.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:327 - Distance to target 10: 34.54
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 0.32
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 59.00, Y = 14.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:327 - Distance to target 11: 55.90
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 31.00, Y = 19.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:327 - Distance to target 12: 30.89
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 12: 0.55
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 20.00, Y = 21.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:327 - Distance to target 13: 23.35
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:339 - Attractive Force for target 13: 1.78
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:324 - Target 14 Position: X = 75.00, Y = 21.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:327 - Distance to target 14: 73.01
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:378 - Target Force: X = 2.51, Y = 4.30
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:451 - Total Force: X = 2.56, Y = 4.28
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 7.00, Y_POS = 7.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:523 - updating velocities
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:528 - dx/dt = 30.00, dy/dt = 30.00
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:538 - updated velocities
-[Sat Feb  8 16:13:21 2025] src/drone/drone_utils.c:632 - Processed input: 'd'
-[Sat Feb  8 16:13:22 2025] src/drone/drone_utils.c:550 - Enqueued Command: d
-[Sat Feb  8 16:13:22 2025] src/drone/drone_utils.c:604 - Input 'd' received from the pipe
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:562 - Dequeued Command: d
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'd'
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:435 - User Force: X = 0.50, Y = 0.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.00, Y = 0.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:251 - Drone Position: X = 7.00, Y = 7.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 59.00, Y = 6.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 52.01
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 84.00, Y = 29.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 80.08
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 96.00, Y = 11.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 89.09
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 92.00, Y = 19.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 85.84
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 30.00, Y = 17.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 25.08
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 50.00, Y = 14.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 43.57
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 5: 0.07
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 76.00, Y = 27.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 71.84
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 75.00, Y = 6.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 68.01
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 80.00, Y = 26.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 75.43
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 38.00, Y = 3.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 31.26
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 9: 0.52
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 11.00, Y = 23.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 16.49
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 19.00, Y = 11.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 12.65
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 55.00, Y = 26.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 51.62
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 54.00, Y = 3.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 47.17
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 13: 0.02
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 45.00, Y = 11.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 38.21
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 14: 0.18
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.78, Y = -0.10
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 99.00, Y = 16.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:327 - Distance to target 0: 92.44
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 49.00, Y = 6.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:327 - Distance to target 1: 42.01
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 1: 0.09
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 82.00, Y = 21.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:327 - Distance to target 2: 76.30
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 62.00, Y = 24.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:327 - Distance to target 3: 57.57
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 73.00, Y = 16.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:327 - Distance to target 4: 66.61
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 46.00, Y = 2.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:327 - Distance to target 5: 39.32
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 5: 0.15
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 6.00, Y = 25.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:327 - Distance to target 6: 18.03
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 6: 4.63
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 85.00, Y = 5.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:327 - Distance to target 7: 78.03
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 44.00, Y = 2.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:327 - Distance to target 8: 37.34
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 8: 0.21
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 65.00, Y = 23.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:327 - Distance to target 9: 60.17
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 36.00, Y = 17.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:327 - Distance to target 10: 30.68
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 0.57
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 59.00, Y = 14.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:327 - Distance to target 11: 52.47
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 31.00, Y = 19.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:327 - Distance to target 12: 26.83
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 12: 1.02
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 20.00, Y = 21.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:327 - Distance to target 13: 19.10
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:339 - Attractive Force for target 13: 3.76
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:324 - Target 14 Position: X = 75.00, Y = 21.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:327 - Distance to target 14: 69.43
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:378 - Target Force: X = 4.71, Y = 5.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:451 - Total Force: X = 4.42, Y = 4.90
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 11.00, Y_POS = 11.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:523 - updating velocities
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:528 - dx/dt = 40.00, dy/dt = 40.00
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:538 - updated velocities
-[Sat Feb  8 16:13:23 2025] src/drone/drone_utils.c:632 - Processed input: 'd'
-[Sat Feb  8 16:13:24 2025] src/drone/drone_utils.c:550 - Enqueued Command: d
-[Sat Feb  8 16:13:24 2025] src/drone/drone_utils.c:604 - Input 'd' received from the pipe
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:562 - Dequeued Command: d
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'd'
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:435 - User Force: X = 0.50, Y = 0.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.00, Y = 0.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:251 - Drone Position: X = 11.00, Y = 11.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 59.00, Y = 6.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 48.26
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 0: 0.01
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 84.00, Y = 29.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 75.19
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 96.00, Y = 11.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 85.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 92.00, Y = 19.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 81.39
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 30.00, Y = 17.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 19.92
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 50.00, Y = 14.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 39.12
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 5: 0.15
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 76.00, Y = 27.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 66.94
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 75.00, Y = 6.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 64.20
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 80.00, Y = 26.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 70.61
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 38.00, Y = 3.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 28.16
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 11.00, Y = 23.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 12.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 19.00, Y = 11.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 8.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 55.00, Y = 26.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 46.49
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 12: 0.03
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 54.00, Y = 3.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 43.74
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 13: 0.06
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 45.00, Y = 11.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 34.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 14: 0.35
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.60, Y = -0.03
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 99.00, Y = 16.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:327 - Distance to target 0: 88.14
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 49.00, Y = 6.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:327 - Distance to target 1: 38.33
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:339 - Attractive Force for target 1: 0.18
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 82.00, Y = 21.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:327 - Distance to target 2: 71.70
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 62.00, Y = 24.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:327 - Distance to target 3: 52.63
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 73.00, Y = 16.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:327 - Distance to target 4: 62.20
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 46.00, Y = 2.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:327 - Distance to target 5: 36.14
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:339 - Attractive Force for target 5: 0.25
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 6.00, Y = 25.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:327 - Distance to target 6: 14.87
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:339 - Attractive Force for target 6: 9.07
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 85.00, Y = 5.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:327 - Distance to target 7: 74.24
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 44.00, Y = 2.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:327 - Distance to target 8: 34.21
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:339 - Attractive Force for target 8: 0.33
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 65.00, Y = 23.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:327 - Distance to target 9: 55.32
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 36.00, Y = 17.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:327 - Distance to target 10: 25.71
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 1.21
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 59.00, Y = 14.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:327 - Distance to target 11: 48.09
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:339 - Attractive Force for target 11: 0.01
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 31.00, Y = 19.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:327 - Distance to target 12: 21.54
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:339 - Attractive Force for target 12: 2.42
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 20.00, Y = 21.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:327 - Distance to target 13: 13.45
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:339 - Attractive Force for target 13: 12.73
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:324 - Target 14 Position: X = 75.00, Y = 21.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:327 - Distance to target 14: 64.78
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:378 - Target Force: X = 5.00, Y = 5.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:451 - Total Force: X = 4.90, Y = 4.97
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 16.00, Y_POS = 16.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:523 - updating velocities
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:528 - dx/dt = 50.00, dy/dt = 50.00
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:538 - updated velocities
-[Sat Feb  8 16:13:25 2025] src/drone/drone_utils.c:632 - Processed input: 'd'
-[Sat Feb  8 16:13:26 2025] src/drone/drone_utils.c:550 - Enqueued Command: d
-[Sat Feb  8 16:13:26 2025] src/drone/drone_utils.c:604 - Input 'd' received from the pipe
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:562 - Dequeued Command: d
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'd'
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:435 - User Force: X = 0.50, Y = 0.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.00, Y = 0.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:251 - Drone Position: X = 16.00, Y = 16.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 59.00, Y = 6.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 44.15
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 0: 0.06
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 84.00, Y = 29.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 69.23
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 96.00, Y = 11.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 80.16
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 92.00, Y = 19.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 76.06
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 30.00, Y = 17.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 14.04
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 50.00, Y = 14.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 34.06
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 5: 0.34
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 76.00, Y = 27.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 61.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 75.00, Y = 6.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 59.84
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 80.00, Y = 26.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 64.78
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 38.00, Y = 3.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 25.55
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 11.00, Y = 23.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 8.60
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 19.00, Y = 11.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 5.83
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 55.00, Y = 26.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 40.26
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 12: 0.13
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 54.00, Y = 3.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 40.16
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 13: 0.13
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 45.00, Y = 11.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 29.43
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.64, Y = -0.11
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 99.00, Y = 16.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:327 - Distance to target 0: 83.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 49.00, Y = 6.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:327 - Distance to target 1: 34.48
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:339 - Attractive Force for target 1: 0.32
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 82.00, Y = 21.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:327 - Distance to target 2: 66.19
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 62.00, Y = 24.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:327 - Distance to target 3: 46.69
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:339 - Attractive Force for target 3: 0.03
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 73.00, Y = 16.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:327 - Distance to target 4: 57.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 46.00, Y = 2.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:327 - Distance to target 5: 33.11
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:339 - Attractive Force for target 5: 0.40
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 6.00, Y = 25.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:327 - Distance to target 6: 13.45
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:339 - Attractive Force for target 6: 12.73
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 85.00, Y = 5.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:327 - Distance to target 7: 69.87
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 44.00, Y = 2.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:327 - Distance to target 8: 31.30
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:339 - Attractive Force for target 8: 0.52
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 65.00, Y = 23.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:327 - Distance to target 9: 49.50
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:339 - Attractive Force for target 9: 0.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 36.00, Y = 17.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:327 - Distance to target 10: 20.02
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 3.17
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 59.00, Y = 14.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:327 - Distance to target 11: 43.05
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:339 - Attractive Force for target 11: 0.07
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 31.00, Y = 19.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:327 - Distance to target 12: 15.30
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:339 - Attractive Force for target 12: 8.23
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 20.00, Y = 21.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:327 - Distance to target 13: 6.40
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:339 - Attractive Force for target 13: 140.91
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:324 - Target 14 Position: X = 75.00, Y = 21.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:327 - Distance to target 14: 59.21
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:378 - Target Force: X = 5.00, Y = 5.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:451 - Total Force: X = 4.86, Y = 4.89
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 21.00, Y_POS = 21.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:523 - updating velocities
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:528 - dx/dt = 50.00, dy/dt = 50.00
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:538 - updated velocities
-[Sat Feb  8 16:13:27 2025] src/drone/drone_utils.c:632 - Processed input: 'd'
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:550 - Enqueued Command: d
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:604 - Input 'd' received from the pipe
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:619 - Equations are processing!
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:562 - Dequeued Command: d
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:385 - UPDATING USER FORCE with input 'd'
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:435 - User Force: X = 0.50, Y = 0.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:188 - UPDATING WALL FORCE
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:237 - Wall Force (Clamped): X = 0.00, Y = 0.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:243 - UPDATING OBSTACLES FORCE
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:251 - Drone Position: X = 21.00, Y = 21.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:257 - Obstacle 0 Position: X = 59.00, Y = 6.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:260 - Distance to obstacle 0: 40.85
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 0: 0.11
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:257 - Obstacle 1 Position: X = 84.00, Y = 29.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:260 - Distance to obstacle 1: 63.51
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:257 - Obstacle 2 Position: X = 96.00, Y = 11.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:260 - Distance to obstacle 2: 75.66
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:257 - Obstacle 3 Position: X = 92.00, Y = 19.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:260 - Distance to obstacle 3: 71.03
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:257 - Obstacle 4 Position: X = 30.00, Y = 17.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:260 - Distance to obstacle 4: 9.85
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:257 - Obstacle 5 Position: X = 50.00, Y = 14.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:260 - Distance to obstacle 5: 29.83
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:257 - Obstacle 6 Position: X = 76.00, Y = 27.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:260 - Distance to obstacle 6: 55.33
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:257 - Obstacle 7 Position: X = 75.00, Y = 6.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:260 - Distance to obstacle 7: 56.04
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:257 - Obstacle 8 Position: X = 80.00, Y = 26.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:260 - Distance to obstacle 8: 59.21
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:257 - Obstacle 9 Position: X = 38.00, Y = 3.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:260 - Distance to obstacle 9: 24.76
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:257 - Obstacle 10 Position: X = 11.00, Y = 23.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:260 - Distance to obstacle 10: 10.20
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:257 - Obstacle 11 Position: X = 19.00, Y = 11.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:260 - Distance to obstacle 11: 10.20
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:257 - Obstacle 12 Position: X = 55.00, Y = 26.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:260 - Distance to obstacle 12: 34.37
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 12: 0.33
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:257 - Obstacle 13 Position: X = 54.00, Y = 3.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:260 - Distance to obstacle 13: 37.59
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:271 - Repulsive Force for obstacle 13: 0.20
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:257 - Obstacle 14 Position: X = 45.00, Y = 11.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:260 - Distance to obstacle 14: 26.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:307 - Obstacle Force: X = -0.60, Y = -0.18
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:313 - UPDATING TARGETS FORCE
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:324 - Target 0 Position: X = 99.00, Y = 16.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:327 - Distance to target 0: 78.16
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:324 - Target 1 Position: X = 49.00, Y = 6.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:327 - Distance to target 1: 31.76
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:339 - Attractive Force for target 1: 0.48
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:324 - Target 2 Position: X = 82.00, Y = 21.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:327 - Distance to target 2: 61.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:324 - Target 3 Position: X = 62.00, Y = 24.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:327 - Distance to target 3: 41.11
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:339 - Attractive Force for target 3: 0.11
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:324 - Target 4 Position: X = 73.00, Y = 16.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:327 - Distance to target 4: 52.24
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:324 - Target 5 Position: X = 46.00, Y = 2.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:327 - Distance to target 5: 31.40
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:339 - Attractive Force for target 5: 0.51
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:324 - Target 6 Position: X = 6.00, Y = 25.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:327 - Distance to target 6: 15.52
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:339 - Attractive Force for target 6: 7.82
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:324 - Target 7 Position: X = 85.00, Y = 5.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:327 - Distance to target 7: 65.97
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:324 - Target 8 Position: X = 44.00, Y = 2.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:327 - Distance to target 8: 29.83
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:339 - Attractive Force for target 8: 0.64
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:324 - Target 9 Position: X = 65.00, Y = 23.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:327 - Distance to target 9: 44.05
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:339 - Attractive Force for target 9: 0.06
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:324 - Target 10 Position: X = 36.00, Y = 17.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:327 - Distance to target 10: 15.52
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:339 - Attractive Force for target 10: 7.82
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:324 - Target 11 Position: X = 59.00, Y = 14.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:327 - Distance to target 11: 38.64
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:339 - Attractive Force for target 11: 0.17
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:324 - Target 12 Position: X = 31.00, Y = 19.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:327 - Distance to target 12: 10.20
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:339 - Attractive Force for target 12: 31.84
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:324 - Target 13 Position: X = 75.00, Y = 21.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:327 - Distance to target 13: 54.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:378 - Target Force: X = 5.00, Y = 5.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:451 - Total Force: X = 4.90, Y = 4.82
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:458 - UPDATING POSITION
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:508 - new positions: X_POS = 26.00, Y_POS = 26.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:516 - updated position of the drone in the grid!
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:523 - updating velocities
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:528 - dx/dt = 50.00, dy/dt = 50.00
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:538 - updated velocities
-[Sat Feb  8 16:13:29 2025] src/drone/drone_utils.c:632 - Processed input: 'd'
+[Sat Feb 15 13:40:11 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 13:40:11 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 13:40:11 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 13:40:11 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 13:42:17 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 13:42:17 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 13:42:17 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 13:42:17 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 13:43:46 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 13:43:46 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 13:43:46 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 13:43:46 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:558 - Enqueued Command: d
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:612 - Input 'd' received from the pipe
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:627 - Equations are processing!
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:570 - Dequeued Command: d
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:393 - UPDATING USER FORCE with input 'd'
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:443 - User Force: X = 0.50, Y = 0.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:196 - UPDATING WALL FORCE
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:201 - CLOSE TO LEFT WALL
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:222 - CLOSE TO TOP WALL
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:245 - Wall Force (Clamped): X = 0.80, Y = 0.80
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:251 - UPDATING OBSTACLES FORCE
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:259 - Drone Position: X = 1.00, Y = 1.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:265 - Obstacle 0 Position: X = 89.00, Y = 29.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:268 - Distance to obstacle 0: 92.35
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:265 - Obstacle 1 Position: X = 91.00, Y = 4.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:268 - Distance to obstacle 1: 90.05
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:265 - Obstacle 2 Position: X = 70.00, Y = 24.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:268 - Distance to obstacle 2: 72.73
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:265 - Obstacle 3 Position: X = 73.00, Y = 18.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:268 - Distance to obstacle 3: 73.98
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:265 - Obstacle 4 Position: X = 1.00, Y = 2.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:268 - Distance to obstacle 4: 1.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:265 - Obstacle 5 Position: X = 76.00, Y = 26.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:268 - Distance to obstacle 5: 79.06
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:265 - Obstacle 6 Position: X = 95.00, Y = 15.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:268 - Distance to obstacle 6: 95.04
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:265 - Obstacle 7 Position: X = 29.00, Y = 2.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:268 - Distance to obstacle 7: 28.02
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:265 - Obstacle 8 Position: X = 42.00, Y = 22.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:268 - Distance to obstacle 8: 46.07
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:279 - Repulsive Force for obstacle 8: 0.01
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:265 - Obstacle 9 Position: X = 96.00, Y = 10.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:268 - Distance to obstacle 9: 95.43
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:265 - Obstacle 10 Position: X = 20.00, Y = 1.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:268 - Distance to obstacle 10: 19.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:265 - Obstacle 11 Position: X = 98.00, Y = 5.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:268 - Distance to obstacle 11: 97.08
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:265 - Obstacle 12 Position: X = 84.00, Y = 7.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:268 - Distance to obstacle 12: 83.22
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:265 - Obstacle 13 Position: X = 43.00, Y = 17.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:268 - Distance to obstacle 13: 44.94
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:279 - Repulsive Force for obstacle 13: 0.01
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:265 - Obstacle 14 Position: X = 64.00, Y = 10.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:268 - Distance to obstacle 14: 63.64
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:315 - Obstacle Force: X = -0.02, Y = -0.01
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:321 - UPDATING TARGETS FORCE
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:332 - Target 0 Position: X = 68.00, Y = 14.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:335 - Distance to target 0: 68.25
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:332 - Target 1 Position: X = 93.00, Y = 18.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:335 - Distance to target 1: 93.56
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:332 - Target 2 Position: X = 13.00, Y = 25.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:335 - Distance to target 2: 26.83
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:347 - Attractive Force for target 2: 0.24
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:332 - Target 3 Position: X = 82.00, Y = 18.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:335 - Distance to target 3: 82.76
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:332 - Target 4 Position: X = 81.00, Y = 3.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:335 - Distance to target 4: 80.02
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:332 - Target 5 Position: X = 10.00, Y = 5.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:335 - Distance to target 5: 9.85
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:347 - Attractive Force for target 5: 8.41
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:332 - Target 6 Position: X = 34.00, Y = 28.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:335 - Distance to target 6: 42.64
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:347 - Attractive Force for target 6: 0.02
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:332 - Target 7 Position: X = 66.00, Y = 6.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:335 - Distance to target 7: 65.19
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:332 - Target 8 Position: X = 58.00, Y = 24.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:335 - Distance to target 8: 61.47
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:332 - Target 9 Position: X = 41.00, Y = 4.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:335 - Distance to target 9: 40.11
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:347 - Attractive Force for target 9: 0.03
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:332 - Target 10 Position: X = 48.00, Y = 1.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:335 - Distance to target 10: 47.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:347 - Attractive Force for target 10: 0.01
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:332 - Target 11 Position: X = 88.00, Y = 24.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:335 - Distance to target 11: 89.99
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:332 - Target 12 Position: X = 77.00, Y = 26.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:335 - Distance to target 12: 80.01
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:332 - Target 13 Position: X = 80.00, Y = 4.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:335 - Distance to target 13: 79.06
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:332 - Target 14 Position: X = 32.00, Y = 28.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:335 - Distance to target 14: 41.11
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:347 - Attractive Force for target 14: 0.03
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:332 - Target 15 Position: X = 16.00, Y = 89.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:335 - Distance to target 15: 89.27
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:386 - Target Force: X = 5.00, Y = 3.66
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:459 - Total Force: X = 6.28, Y = 4.45
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:466 - UPDATING POSITION
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:516 - new positions: X_POS = 5.00, Y_POS = 5.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:524 - updated position of the drone in the grid!
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:531 - updating velocities
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:536 - dx/dt = 40.00, dy/dt = 40.00
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:546 - updated velocities
+[Sat Feb 15 13:44:22 2025] src/drone/drone_utils.c:640 - Processed input: 'd'
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:558 - Enqueued Command: d
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:612 - Input 'd' received from the pipe
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:627 - Equations are processing!
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:570 - Dequeued Command: d
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:393 - UPDATING USER FORCE with input 'd'
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:443 - User Force: X = 0.50, Y = 0.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:196 - UPDATING WALL FORCE
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:245 - Wall Force (Clamped): X = 0.00, Y = 0.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:251 - UPDATING OBSTACLES FORCE
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:259 - Drone Position: X = 5.00, Y = 5.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:265 - Obstacle 0 Position: X = 89.00, Y = 29.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:268 - Distance to obstacle 0: 87.36
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:265 - Obstacle 1 Position: X = 91.00, Y = 4.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:268 - Distance to obstacle 1: 86.01
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:265 - Obstacle 2 Position: X = 70.00, Y = 24.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:268 - Distance to obstacle 2: 67.72
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:265 - Obstacle 3 Position: X = 73.00, Y = 18.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:268 - Distance to obstacle 3: 69.23
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:265 - Obstacle 4 Position: X = 1.00, Y = 2.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:268 - Distance to obstacle 4: 5.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:265 - Obstacle 5 Position: X = 76.00, Y = 26.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:268 - Distance to obstacle 5: 74.04
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:265 - Obstacle 6 Position: X = 95.00, Y = 15.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:268 - Distance to obstacle 6: 90.55
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:265 - Obstacle 7 Position: X = 29.00, Y = 2.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:268 - Distance to obstacle 7: 24.19
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:265 - Obstacle 8 Position: X = 42.00, Y = 22.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:268 - Distance to obstacle 8: 40.72
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:279 - Repulsive Force for obstacle 8: 0.12
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:265 - Obstacle 9 Position: X = 96.00, Y = 10.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:268 - Distance to obstacle 9: 91.14
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:265 - Obstacle 10 Position: X = 20.00, Y = 1.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:268 - Distance to obstacle 10: 15.52
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:265 - Obstacle 11 Position: X = 98.00, Y = 5.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:268 - Distance to obstacle 11: 93.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:265 - Obstacle 12 Position: X = 84.00, Y = 7.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:268 - Distance to obstacle 12: 79.03
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:265 - Obstacle 13 Position: X = 43.00, Y = 17.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:268 - Distance to obstacle 13: 39.85
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:279 - Repulsive Force for obstacle 13: 0.14
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:265 - Obstacle 14 Position: X = 64.00, Y = 10.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:268 - Distance to obstacle 14: 59.21
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:315 - Obstacle Force: X = -0.24, Y = -0.09
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:321 - UPDATING TARGETS FORCE
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:332 - Target 0 Position: X = 68.00, Y = 14.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:335 - Distance to target 0: 63.64
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:332 - Target 1 Position: X = 93.00, Y = 18.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:335 - Distance to target 1: 88.96
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:332 - Target 2 Position: X = 13.00, Y = 25.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:335 - Distance to target 2: 21.54
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:347 - Attractive Force for target 2: 2.42
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:332 - Target 3 Position: X = 82.00, Y = 18.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:335 - Distance to target 3: 78.09
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:332 - Target 4 Position: X = 81.00, Y = 3.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:335 - Distance to target 4: 76.03
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:332 - Target 5 Position: X = 10.00, Y = 5.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:335 - Distance to target 5: 5.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:347 - Attractive Force for target 5: 305.47
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:332 - Target 6 Position: X = 34.00, Y = 28.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:335 - Distance to target 6: 37.01
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:347 - Attractive Force for target 6: 0.22
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:332 - Target 7 Position: X = 66.00, Y = 6.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:335 - Distance to target 7: 61.01
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:332 - Target 8 Position: X = 58.00, Y = 24.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:335 - Distance to target 8: 56.30
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:332 - Target 9 Position: X = 41.00, Y = 4.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:335 - Distance to target 9: 36.01
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:347 - Attractive Force for target 9: 0.25
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:332 - Target 10 Position: X = 48.00, Y = 1.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:335 - Distance to target 10: 43.19
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:347 - Attractive Force for target 10: 0.07
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:332 - Target 11 Position: X = 88.00, Y = 24.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:335 - Distance to target 11: 85.15
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:332 - Target 12 Position: X = 77.00, Y = 26.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:335 - Distance to target 12: 75.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:332 - Target 13 Position: X = 80.00, Y = 4.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:335 - Distance to target 13: 75.01
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:332 - Target 14 Position: X = 32.00, Y = 28.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:335 - Distance to target 14: 35.47
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:347 - Attractive Force for target 14: 0.28
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:332 - Target 15 Position: X = 16.00, Y = 89.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:335 - Distance to target 15: 84.72
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:386 - Target Force: X = 5.00, Y = 2.57
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:459 - Total Force: X = 5.26, Y = 2.48
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:466 - UPDATING POSITION
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:516 - new positions: X_POS = 9.00, Y_POS = 8.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:524 - updated position of the drone in the grid!
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:531 - updating velocities
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:536 - dx/dt = 40.00, dy/dt = 30.00
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:546 - updated velocities
+[Sat Feb 15 13:44:24 2025] src/drone/drone_utils.c:640 - Processed input: 'd'
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:558 - Enqueued Command: d
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:612 - Input 'd' received from the pipe
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:627 - Equations are processing!
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:570 - Dequeued Command: d
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:393 - UPDATING USER FORCE with input 'd'
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:443 - User Force: X = 0.50, Y = 0.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:196 - UPDATING WALL FORCE
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:245 - Wall Force (Clamped): X = 0.00, Y = 0.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:251 - UPDATING OBSTACLES FORCE
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:259 - Drone Position: X = 9.00, Y = 8.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:265 - Obstacle 0 Position: X = 89.00, Y = 29.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:268 - Distance to obstacle 0: 82.71
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:265 - Obstacle 1 Position: X = 91.00, Y = 4.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:268 - Distance to obstacle 1: 82.10
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:265 - Obstacle 2 Position: X = 70.00, Y = 24.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:268 - Distance to obstacle 2: 63.06
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:265 - Obstacle 3 Position: X = 73.00, Y = 18.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:268 - Distance to obstacle 3: 64.78
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:265 - Obstacle 4 Position: X = 1.00, Y = 2.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:268 - Distance to obstacle 4: 10.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:265 - Obstacle 5 Position: X = 76.00, Y = 26.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:268 - Distance to obstacle 5: 69.38
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:265 - Obstacle 6 Position: X = 95.00, Y = 15.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:268 - Distance to obstacle 6: 86.28
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:265 - Obstacle 7 Position: X = 29.00, Y = 2.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:268 - Distance to obstacle 7: 20.88
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:265 - Obstacle 8 Position: X = 42.00, Y = 22.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:268 - Distance to obstacle 8: 35.85
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:279 - Repulsive Force for obstacle 8: 0.26
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:265 - Obstacle 9 Position: X = 96.00, Y = 10.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:268 - Distance to obstacle 9: 87.02
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:265 - Obstacle 10 Position: X = 20.00, Y = 1.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:268 - Distance to obstacle 10: 13.04
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:265 - Obstacle 11 Position: X = 98.00, Y = 5.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:268 - Distance to obstacle 11: 89.05
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:265 - Obstacle 12 Position: X = 84.00, Y = 7.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:268 - Distance to obstacle 12: 75.01
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:265 - Obstacle 13 Position: X = 43.00, Y = 17.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:268 - Distance to obstacle 13: 35.17
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:279 - Repulsive Force for obstacle 13: 0.29
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:265 - Obstacle 14 Position: X = 64.00, Y = 10.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:268 - Distance to obstacle 14: 55.04
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:315 - Obstacle Force: X = -0.52, Y = -0.18
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:321 - UPDATING TARGETS FORCE
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:332 - Target 0 Position: X = 68.00, Y = 14.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:335 - Distance to target 0: 59.30
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:332 - Target 1 Position: X = 93.00, Y = 18.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:335 - Distance to target 1: 84.59
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:332 - Target 2 Position: X = 13.00, Y = 25.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:335 - Distance to target 2: 17.46
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:347 - Attractive Force for target 2: 5.18
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:332 - Target 3 Position: X = 82.00, Y = 18.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:335 - Distance to target 3: 73.68
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:332 - Target 4 Position: X = 81.00, Y = 3.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:335 - Distance to target 4: 72.17
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:332 - Target 5 Position: X = 10.00, Y = 5.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:335 - Distance to target 5: 3.16
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:347 - Attractive Force for target 5: 1256.79
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:332 - Target 6 Position: X = 34.00, Y = 28.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:335 - Distance to target 6: 32.02
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:347 - Attractive Force for target 6: 0.47
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:332 - Target 7 Position: X = 66.00, Y = 6.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:335 - Distance to target 7: 57.04
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:332 - Target 8 Position: X = 58.00, Y = 24.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:335 - Distance to target 8: 51.55
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:332 - Target 9 Position: X = 41.00, Y = 4.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:335 - Distance to target 9: 32.25
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:347 - Attractive Force for target 9: 0.45
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:332 - Target 10 Position: X = 48.00, Y = 1.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:335 - Distance to target 10: 39.62
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:347 - Attractive Force for target 10: 0.14
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:332 - Target 11 Position: X = 88.00, Y = 24.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:335 - Distance to target 11: 80.60
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:332 - Target 12 Position: X = 77.00, Y = 26.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:335 - Distance to target 12: 70.34
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:332 - Target 13 Position: X = 80.00, Y = 4.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:335 - Distance to target 13: 71.11
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:332 - Target 14 Position: X = 32.00, Y = 28.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:335 - Distance to target 14: 30.48
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:347 - Attractive Force for target 14: 0.58
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:332 - Target 15 Position: X = 16.00, Y = 89.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:335 - Distance to target 15: 81.30
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:386 - Target Force: X = 5.00, Y = 5.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:459 - Total Force: X = 4.98, Y = 4.82
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:466 - UPDATING POSITION
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:516 - new positions: X_POS = 14.00, Y_POS = 12.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:524 - updated position of the drone in the grid!
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:531 - updating velocities
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:536 - dx/dt = 50.00, dy/dt = 40.00
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:546 - updated velocities
+[Sat Feb 15 13:44:26 2025] src/drone/drone_utils.c:640 - Processed input: 'd'
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:558 - Enqueued Command: q
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:612 - Input 'q' received from the pipe
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:627 - Equations are processing!
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:570 - Dequeued Command: q
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:393 - UPDATING USER FORCE with input 'q'
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:443 - User Force: X = -0.35, Y = -0.35
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:196 - UPDATING WALL FORCE
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:245 - Wall Force (Clamped): X = 0.00, Y = 0.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:251 - UPDATING OBSTACLES FORCE
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:259 - Drone Position: X = 14.00, Y = 12.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:265 - Obstacle 0 Position: X = 88.00, Y = 4.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:268 - Distance to obstacle 0: 74.43
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:265 - Obstacle 1 Position: X = 84.00, Y = 22.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:268 - Distance to obstacle 1: 70.71
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:265 - Obstacle 2 Position: X = 77.00, Y = 11.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:268 - Distance to obstacle 2: 63.01
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:265 - Obstacle 3 Position: X = 84.00, Y = 1.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:268 - Distance to obstacle 3: 70.86
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:265 - Obstacle 4 Position: X = 84.00, Y = 2.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:268 - Distance to obstacle 4: 70.71
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:265 - Obstacle 5 Position: X = 94.00, Y = 22.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:268 - Distance to obstacle 5: 80.62
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:265 - Obstacle 6 Position: X = 61.00, Y = 8.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:268 - Distance to obstacle 6: 47.17
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:279 - Repulsive Force for obstacle 6: 0.02
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:265 - Obstacle 7 Position: X = 65.00, Y = 3.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:268 - Distance to obstacle 7: 51.79
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:265 - Obstacle 8 Position: X = 83.00, Y = 25.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:268 - Distance to obstacle 8: 70.21
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:265 - Obstacle 9 Position: X = 56.00, Y = 26.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:268 - Distance to obstacle 9: 44.27
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:279 - Repulsive Force for obstacle 9: 0.06
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:265 - Obstacle 10 Position: X = 74.00, Y = 17.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:268 - Distance to obstacle 10: 60.21
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:265 - Obstacle 11 Position: X = 34.00, Y = 19.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:268 - Distance to obstacle 11: 21.19
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:265 - Obstacle 12 Position: X = 20.00, Y = 28.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:268 - Distance to obstacle 12: 17.09
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:265 - Obstacle 13 Position: X = 85.00, Y = 28.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:268 - Distance to obstacle 13: 72.78
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:265 - Obstacle 14 Position: X = 23.00, Y = 0.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:268 - Distance to obstacle 14: 15.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:315 - Obstacle Force: X = -0.08, Y = -0.02
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:321 - UPDATING TARGETS FORCE
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:332 - Target 0 Position: X = 91.00, Y = 10.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:335 - Distance to target 0: 77.03
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:332 - Target 1 Position: X = 91.00, Y = 16.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:335 - Distance to target 1: 77.10
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:332 - Target 2 Position: X = 19.00, Y = 6.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:335 - Distance to target 2: 7.81
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:347 - Attractive Force for target 2: 75.14
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:332 - Target 3 Position: X = 63.00, Y = 15.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:335 - Distance to target 3: 49.09
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:347 - Attractive Force for target 3: 0.01
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:332 - Target 4 Position: X = 49.00, Y = 12.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:335 - Distance to target 4: 35.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:347 - Attractive Force for target 4: 0.30
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:332 - Target 5 Position: X = 94.00, Y = 25.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:335 - Distance to target 5: 81.05
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:332 - Target 6 Position: X = 14.00, Y = 1.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:335 - Distance to target 6: 11.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:347 - Attractive Force for target 6: 24.86
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:332 - Target 7 Position: X = 53.00, Y = 13.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:335 - Distance to target 7: 39.01
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:347 - Attractive Force for target 7: 0.16
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:332 - Target 8 Position: X = 2.00, Y = 0.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:335 - Distance to target 8: 16.97
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:347 - Attractive Force for target 8: 5.73
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:332 - Target 9 Position: X = 71.00, Y = 7.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:335 - Distance to target 9: 57.22
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:332 - Target 10 Position: X = 55.00, Y = 21.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:335 - Distance to target 10: 41.98
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:347 - Attractive Force for target 10: 0.09
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:332 - Target 11 Position: X = 31.00, Y = 8.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:335 - Distance to target 11: 17.46
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:347 - Attractive Force for target 11: 5.18
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:332 - Target 12 Position: X = 77.00, Y = 0.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:335 - Distance to target 12: 64.13
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:332 - Target 13 Position: X = 52.00, Y = 13.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:335 - Distance to target 13: 38.01
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:347 - Attractive Force for target 13: 0.19
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:332 - Target 14 Position: X = 4.00, Y = 15.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:335 - Distance to target 14: 10.44
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:347 - Attractive Force for target 14: 29.50
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:386 - Target Force: X = 5.00, Y = 5.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:459 - Total Force: X = 4.57, Y = 4.63
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:466 - UPDATING POSITION
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:516 - new positions: X_POS = 19.00, Y_POS = 17.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:524 - updated position of the drone in the grid!
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:531 - updating velocities
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:536 - dx/dt = 50.00, dy/dt = 50.00
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:546 - updated velocities
+[Sat Feb 15 13:44:55 2025] src/drone/drone_utils.c:640 - Processed input: 'q'
+[Sat Feb 15 14:05:29 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 14:05:29 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 14:05:29 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 14:05:29 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 14:07:53 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 14:07:53 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 14:07:53 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 14:07:53 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 14:13:26 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 14:13:26 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 14:13:26 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 14:13:26 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 14:15:22 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 14:15:22 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 14:15:22 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 14:15:22 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 14:16:12 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 14:16:12 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 14:16:12 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 14:16:12 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 14:18:48 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 14:18:48 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 14:18:48 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 14:18:48 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 14:21:08 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 14:21:08 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 14:21:08 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 14:21:08 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 14:22:08 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 14:22:08 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 14:22:08 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 14:22:08 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 14:24:21 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 14:24:21 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 14:24:21 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 14:24:21 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 14:29:05 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 14:29:05 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 14:29:05 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 14:29:05 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 17:55:50 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 17:55:50 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 17:55:50 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 17:55:50 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 17:56:23 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 17:56:51 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 17:56:51 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 17:56:51 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 17:56:51 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 17:57:41 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 17:57:41 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 17:57:41 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 17:57:41 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 17:58:36 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 17:58:36 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 17:58:36 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 17:58:36 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.
+[Sat Feb 15 17:59:47 2025] src/drone/drone.c:7 - program started!
+[Sat Feb 15 17:59:47 2025] src/drone/drone_utils.c:58 - shared memories got attached!
+[Sat Feb 15 17:59:47 2025] src/drone/drone_utils.c:71 - opened fd in read mode!
+[Sat Feb 15 17:59:47 2025] src/drone/drone_utils.c:82 - Parent: All resources are initialized successfully.

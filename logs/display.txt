@@ -1,29 +1,95 @@
-[Mon Jan 20 18:24:42 2025] src/display/display.c:6 - program started!
-[Mon Jan 20 18:24:42 2025] src/display/display_utils.c:47 - ncurses initialized!
-[Mon Jan 20 18:24:42 2025] src/display/display_utils.c:64 - shared memories got attached!
-[Mon Jan 20 18:24:42 2025] src/display/display_utils.c:70 - wrote my pid in the shared memory globals!
-[Mon Jan 20 18:24:42 2025] src/display/display_utils.c:94 - SERVER PIPE: 
-[Mon Jan 20 18:24:42 2025] src/display/display_utils.c:101 - opened fd in write mode!
-[Mon Jan 20 18:24:50 2025] src/display/display_utils.c:168 - Input 'd' written to the pipe
-[Mon Jan 20 18:24:53 2025] src/display/display_utils.c:168 - Input 'w' written to the pipe
-[Mon Jan 20 18:24:55 2025] src/display/display_utils.c:168 - Input 'w' written to the pipe
-[Mon Jan 20 18:24:58 2025] src/display/display_utils.c:168 - Input 'a' written to the pipe
-[Mon Jan 20 18:25:02 2025] src/display/display_utils.c:168 - Input 'a' written to the pipe
-[Mon Jan 20 18:25:06 2025] src/display/display_utils.c:168 - Input 'x' written to the pipe
-[Mon Jan 20 18:25:10 2025] src/display/display_utils.c:168 - Input 'w' written to the pipe
-[Mon Jan 20 18:25:16 2025] src/display/display_utils.c:168 - Input 'd' written to the pipe
-[Mon Jan 20 18:25:18 2025] src/display/display_utils.c:168 - Input 'd' written to the pipe
-[Mon Jan 20 18:25:21 2025] src/display/display_utils.c:168 - Input 'd' written to the pipe
-[Mon Jan 20 18:25:23 2025] src/display/display_utils.c:168 - Input 'x' written to the pipe
-[Mon Jan 20 18:25:32 2025] src/display/display_utils.c:168 - Input 'p' written to the pipe
-[Sat Feb  8 16:13:06 2025] src/display/display.c:6 - program started!
-[Sat Feb  8 16:13:06 2025] src/display/display.c:25 - shared memories got attached!
-[Sat Feb  8 16:13:06 2025] src/display/display.c:31 - wrote my pid in the shared memory globals!
-[Sat Feb  8 16:13:06 2025] src/display/display.c:39 - ncurses initialized!
-[Sat Feb  8 16:13:06 2025] src/display/display.c:73 - opened fd in write mode!
-[Sat Feb  8 16:13:17 2025] src/display/display.c:126 - Input 'd' written to the pipe
-[Sat Feb  8 16:13:20 2025] src/display/display.c:126 - Input 'd' written to the pipe
-[Sat Feb  8 16:13:22 2025] src/display/display.c:126 - Input 'd' written to the pipe
-[Sat Feb  8 16:13:24 2025] src/display/display.c:126 - Input 'd' written to the pipe
-[Sat Feb  8 16:13:26 2025] src/display/display.c:126 - Input 'd' written to the pipe
-[Sat Feb  8 16:13:29 2025] src/display/display.c:126 - Input 'd' written to the pipe
+[Sat Feb 15 13:40:06 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 13:40:06 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 13:40:06 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 13:40:06 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 13:40:06 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 13:42:14 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 13:42:14 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 13:42:14 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 13:42:14 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 13:42:14 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 13:43:43 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 13:43:43 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 13:43:43 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 13:43:43 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 13:43:43 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 13:44:22 2025] src/display/display.c:132 - Input 'd' written to the pipe
+[Sat Feb 15 13:44:24 2025] src/display/display.c:132 - Input 'd' written to the pipe
+[Sat Feb 15 13:44:26 2025] src/display/display.c:132 - Input 'd' written to the pipe
+[Sat Feb 15 13:44:55 2025] src/display/display.c:132 - Input 'q' written to the pipe
+[Sat Feb 15 13:44:58 2025] src/display/display.c:132 - Input 'p' written to the pipe
+[Sat Feb 15 14:05:24 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 14:05:24 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 14:05:24 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 14:05:24 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 14:05:24 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 14:07:48 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 14:07:48 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 14:07:48 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 14:07:48 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 14:07:48 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 14:13:23 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 14:13:23 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 14:13:23 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 14:13:23 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 14:13:23 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 14:15:19 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 14:15:19 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 14:15:19 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 14:15:19 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 14:15:19 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 14:16:10 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 14:16:10 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 14:16:10 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 14:16:10 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 14:16:10 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 14:18:45 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 14:18:45 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 14:18:45 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 14:18:45 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 14:18:45 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 14:21:04 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 14:21:04 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 14:21:04 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 14:21:04 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 14:21:04 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 14:22:06 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 14:22:06 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 14:22:06 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 14:22:06 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 14:22:06 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 14:24:15 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 14:24:15 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 14:24:15 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 14:24:15 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 14:24:15 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 14:29:03 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 14:29:03 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 14:29:03 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 14:29:03 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 14:29:03 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 17:55:41 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 17:55:41 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 17:55:41 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 17:55:41 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 17:55:41 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 17:56:46 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 17:56:46 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 17:56:46 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 17:56:46 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 17:56:46 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 17:57:38 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 17:57:38 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 17:57:38 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 17:57:38 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 17:57:38 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 17:58:27 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 17:58:27 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 17:58:27 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 17:58:27 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 17:58:27 2025] src/display/display.c:77 - opened fd in write mode!
+[Sat Feb 15 17:59:45 2025] src/display/display.c:6 - program started!
+[Sat Feb 15 17:59:45 2025] src/display/display.c:29 - shared memories got attached!
+[Sat Feb 15 17:59:45 2025] src/display/display.c:35 - wrote my pid in the shared memory globals!
+[Sat Feb 15 17:59:45 2025] src/display/display.c:43 - ncurses initialized!
+[Sat Feb 15 17:59:45 2025] src/display/display.c:77 - opened fd in write mode!

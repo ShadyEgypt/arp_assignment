@@ -6,12 +6,12 @@ sem_t *sem_g = NULL;
 sem_t *sem_drone = NULL;
 
 bool resources_exist = false;
-int map_fd = -1;
 
 Grid *grid = NULL;
 Globals *globals = NULL;
 Drone *drone = NULL;
 Config *config = NULL;
+IsAwake *isAwake = NULL;
 
 pid_t child1_pid = -1;
 pid_t child2_pid = -1;
@@ -50,18 +50,16 @@ void setup_resources()
     config = (Config *)config_addr;
     srand(time(NULL));
 
+    int shm_isawake_fd = attach_shared_memory(SHM_ISACTIVE_NAME, SHM_ISACTIVE_SIZE);
+    void *isawake_addr = map_shared_memory(shm_isawake_fd, SHM_ISACTIVE_SIZE);
+    isAwake = (IsAwake *)isawake_addr;
+
     // Open semaphore
     sem_grid = open_semaphore(SEM_GRID_NAME);
     sem_g = open_semaphore(SEM_G_NAME);
     // g1 = sem_grid;
     // g2 = sem_g;
     // g_grid = grid;
-
-    map_fd = open(MAP_FIFO, O_RDONLY | O_NONBLOCK);
-    if (map_fd == -1)
-    {
-        perror("Failed to open map pipe");
-    }
 
     resources_exist = true;
 
@@ -187,13 +185,8 @@ void child1_task()
                 instruction_window = NULL;
             }
             draw_game();
-            char message[100];
-            snprintf(message, sizeof(message), "%s is alive at %ld\n", "map", time(NULL));
-
-            if (write(map_fd, message, strlen(message) + 1) == -1)
-            {
-                fprintf(stderr, "Error writing to %s: %s\n", MAP_FIFO, strerror(errno));
-            }
+            time_t current_time = time(NULL);
+            isAwake->map = current_time;
         }
         usleep(100000); // Reduce CPU usage
     }
@@ -225,7 +218,9 @@ void handle_sigint_map(int sig)
     {
         detach_shared_memory(grid, SHM_GRID_SIZE);
         detach_shared_memory(globals, SHM_G_SIZE);
+        detach_shared_memory(drone, SHM_DRONE_SIZE);
         detach_shared_memory(config, SHM_CONFIG_SIZE);
+        detach_shared_memory(isAwake, SHM_ISACTIVE_SIZE);
         printf("Shared memory detached and destroyed.\n");
     }
     // Cleanup ncurses
@@ -233,7 +228,6 @@ void handle_sigint_map(int sig)
     delwin(game_window);
     delwin(game_window);
     endwin();
-    close(map_fd);
     exit(0); // Exit the program
 }
 // targets and obstacles
