@@ -116,6 +116,7 @@ void sigint_handler(int signal)
         std::cout << "Closed globals shared memory file descriptor." << std::endl;
     }
     close(fd);
+    exit(0);
 }
 
 class ObstaclesSubscriber

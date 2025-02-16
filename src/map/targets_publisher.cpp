@@ -39,6 +39,7 @@ void sigint_handler(int signal)
         shm_globals_fd = -1;
         std::cout << "Closed globals shared memory file descriptor." << std::endl;
     }
+    exit(0);
 }
 
 std::shared_ptr<void> map_shared_memory(int shm_fd, size_t size)
