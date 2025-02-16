@@ -1,6 +1,6 @@
 #include "obstacles_publisher.h"
 #define LOCAL_IP "192.168.0.125"
-#define PORT 6000
+#define PORT 6001
 
 Grid *grid_;
 Globals *globals_;
@@ -203,17 +203,17 @@ public:
 
 bool ObstaclesPublisher::publish()
 {
-    std::cout << "Obstacles: " << grid_->target_count << std::endl;
-    if (listener_.matched_ > 0 && grid_ != nullptr)
+    std::cout << "Obstacles: " << grid_->obstacle_count << std::endl;
+    if (grid_ != nullptr)
     {
-        for (int i = 0; i < grid_->target_count; ++i)
+        for (int i = 0; i < grid_->obstacle_count; ++i)
         {
             ObstacleMessage msg;
             msg.id(i); // Assuming `id`, `x`, and `y` are setter methods
             msg.x(static_cast<unsigned long>(grid_->obstacles[i].x));
             msg.y(static_cast<unsigned long>(grid_->obstacles[i].y));
             writer_->write(&msg); // Assuming `write` requires a pointer to the data
-            std::cout << "Published target ID: " << msg.id() << " at position (" << msg.x() << ", " << msg.y() << ")" << std::endl;
+            std::cout << "Published obstacle ID: " << msg.id() << " at position (" << msg.x() << ", " << msg.y() << ")" << std::endl;
             std::this_thread::sleep_for(std::chrono::milliseconds(100));
         }
         return true;

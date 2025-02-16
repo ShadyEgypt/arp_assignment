@@ -42,6 +42,7 @@ void setup_resources();
 void child1_task();
 void child2_task();
 void handle_sigint_map(int sig);
+void draw_game();
 void reset_targets(Grid *grid);
 void reset_obstacles(Grid *grid);
 bool is_adjacent_occupied(Grid *grid, uint x, uint y);

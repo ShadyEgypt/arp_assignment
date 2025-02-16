@@ -30,9 +30,19 @@ void readFromPipe(int fd)
 
     while (read(fd, &target, sizeof(Target)) > 0)
     {
+        acquire_semaphore(s1);
         printf("Received - ID: %d, X: %d, Y: %d\n", placed_targets, target.x, target.y);
         grid->targets[placed_targets] = target;
         placed_targets++;
+        if (placed_targets == 15)
+        {
+            placed_targets = 0;
+        }
+        else if (placed_targets == 0)
+        {
+            reset_targets(grid);
+        }
+        release_semaphore(s1);
     }
 }
 

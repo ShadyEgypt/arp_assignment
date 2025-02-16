@@ -318,29 +318,26 @@ void child2_task()
 void child3_task()
 {
     printf("Child 3: Resetting grid periodically\n");
-    while (!globals->display_pid || !globals->drone_pid)
+    while (!globals->display_pid || !globals->drone_pid || !globals->obstacles_pid || !globals->map_pid || !globals->pub)
     {
+        sleep(1);
         printf("Child 3: Waiting for PIDs...\n");
-        printf("Child 3: display_pid: %d, drone_pid: %d\n",
-               globals->display_pid, globals->drone_pid);
-        sleep(2);
     }
 
-    while (!globals->obstacles_pid || !globals->map_pid || !globals->pub)
-    {
-        printf("Waiting for PIDs...\n");
-        printf("obstacles_pid: %d, map_pid: %d\n",
-               globals->obstacles_pid, globals->map_pid);
-        sleep(2); // Pause for 2 seconds
-    }
-    printf("Child 3: display_pid: %d, drone_pid: %d, obstacles_pid: %d, map_pid: %d\n",
-           globals->display_pid, globals->drone_pid, globals->obstacles_pid, globals->map_pid);
+    printf("Child 3: display_pid: %d\n", globals->display_pid);
+    printf("Child 3: map_pid: %d\n", globals->map_pid);
+    printf("Child 3: obstacles_pid: %d\n", globals->obstacles_pid);
+    printf("Child 3: targets_pid: %d\n", globals->targets_pid);
+    printf("Child 3: drone_pid: %d\n", globals->drone_pid);
+    printf("Child 3: pub_pid: %d\n", globals->pub);
+    printf("Child 3: sub_pid: %d\n", globals->sub);
+
     while (1)
     {
         kill(globals->obstacles_pid, SIGUSR1);
 
         printf("Child 3: Grid reset, sleeping...\n");
-        sleep(60);
+        sleep(10);
     }
 }
 

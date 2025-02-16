@@ -1,21 +1,16 @@
 #!/bin/bash
 
-# Change to the directory containing the binaries
 cd ./Binary
 
-# Launch each binary in a new Konsole tab
-konsole --new-tab -e ./server &
+./server >./logs/server.log 2>&1 &
 sleep 3
-konsole --new-tab -e ./display &
+./map >./logs/map.log 2>&1 &
 sleep 1
-konsole --new-tab -e ./map &
-sleep 1
-konsole --new-tab -e ./obstacles &
-sleep 1
-konsole --new-tab -e ./targets &
-sleep 1
-konsole --new-tab -e ./drone &
-sleep 1
+./display >./logs/display.log 2>&1 &
+./obstacles >./logs/obstacles.log 2>&1 &
+./targets >./logs/targets.log 2>&1 &
+./drone >./logs/drone.log 2>&1 &
+
 konsole --new-tab -e ./obstacles_publisher &
 sleep 1
 konsole --new-tab -e ./targets_subscriber &

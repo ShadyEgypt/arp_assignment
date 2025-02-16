@@ -27,7 +27,6 @@ void reset_obstacles_handler(int sig)
     acquire_semaphore(s1);
     printf("Semaphore locked!\n");
     reset_obstacles(grid);
-    reset_targets(grid);
     set_obstacles_randomly(grid, log_file);
     // Unlock semaphore after operation
     kill(globals->pub, SIGUSR1);
