@@ -30,9 +30,19 @@ void readFromPipe(int fd)
 
     while (read(fd, &obstacle, sizeof(Obstacle)) > 0)
     {
+        acquire_semaphore(s1);
         printf("Received - ID: %d, X: %d, Y: %d\n", placed_obstacles, obstacle.x, obstacle.y);
         grid->obstacles[placed_obstacles] = obstacle;
         placed_obstacles++;
+        if (placed_obstacles == 15)
+        {
+            placed_obstacles = 0;
+        }
+        else if (placed_obstacles == 0)
+        {
+            reset_obstacles(grid);
+        }
+        release_semaphore(s1);
     }
 }
 

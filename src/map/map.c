@@ -85,6 +85,7 @@ int main()
             mvprintw(0, 50, "Press Ctrl+C to exit.");
             wrefresh(game_window);
 
+            acquire_semaphore(sem_grid);
             // Draw Targets
             wattron(game_window, COLOR_PAIR(1));
             for (uint i = 0; i < grid->target_count; i++)
@@ -109,19 +110,22 @@ int main()
             }
             wattroff(game_window, COLOR_PAIR(1));
             wrefresh(game_window);
+            release_semaphore(sem_grid);
 
+            acquire_semaphore(sem_grid);
             // Draw Obstacles
-            wattron(game_window, COLOR_PAIR(2));
             for (uint i = 0; i < grid->obstacle_count; i++)
             {
                 Obstacle obstacle = grid->obstacles[i];
                 x = obstacle.x;
                 y = obstacle.y;
                 grid->grid[obstacle.y][obstacle.x] = 255;
+                wattron(game_window, COLOR_PAIR(2));
                 mvwprintw(game_window, y, x, "O");
+                wattroff(game_window, COLOR_PAIR(2));
             }
-            wattroff(game_window, COLOR_PAIR(2));
             wrefresh(game_window);
+            release_semaphore(sem_grid);
 
             // Draw walls
             // Top and bottom borders
@@ -151,7 +155,7 @@ int main()
             wrefresh(game_window);
             refresh();
         }
-        usleep(100000); // Reduce CPU usage
+        sleep(1);
     }
 
     return 0;

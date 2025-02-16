@@ -208,7 +208,7 @@ bool TargetsPublisher::publish()
         for (int i = 0; i < grid_->target_count; ++i)
         {
             TargetMessage msg;
-            msg.id(i); // Assuming `id`, `x`, and `y` are setter methods
+            msg.id(i);
             msg.x(static_cast<unsigned long>(grid_->targets[i].x));
             msg.y(static_cast<unsigned long>(grid_->targets[i].y));
             writer_->write(&msg); // Assuming `write` requires a pointer to the data

@@ -1,9 +1,10 @@
 #include "obstacles_subscriber.h"
 #define LOCAL_IP "192.168.0.125"
-#define PORT 6000
+#define PORT 6001
 
 Grid *grid_;
 Globals *globals_;
+pid_t my_pid;
 int shm_grid_fd;
 int shm_globals_fd;
 volatile std::sig_atomic_t shutdown_flag = 0;
@@ -146,6 +147,8 @@ private:
             if (info.current_count_change == 1)
             {
                 std::cout << "Subscriber matched." << std::endl;
+                globals_->sub = my_pid;
+                std::cout << "Set PID in SHM: " << globals_->sub << std::endl;
                 eprosima::fastdds::rtps::LocatorList locators;
                 reader->get_listening_locators(locators);
                 for (const eprosima::fastdds::rtps::Locator &locator : locators)
@@ -180,6 +183,8 @@ private:
                     std::cout << "Index: " << static_cast<unsigned int>(id)
                               << " X: " << static_cast<unsigned int>(obstacle.x)
                               << " Y: " << static_cast<unsigned int>(obstacle.y) << std::endl;
+                    grid_->obstacles[id].x = obstacle.x;
+                    grid_->obstacles[id].y = obstacle.y;
                     writeToPipe(fd, obstacle);
                 }
             }
