@@ -1,4 +1,6 @@
 #include "obstacles_subscriber.h"
+#define LOCAL_IP "192.168.0.125"
+#define PORT 6000
 
 Grid *grid_;
 Globals *globals_;
@@ -237,18 +239,21 @@ public:
         DomainParticipantQos participantQos;
         participantQos.name("obstacle_subscriber");
 
-        participantQos.wire_protocol().builtin.discovery_config.use_SIMPLE_EndpointDiscoveryProtocol = false;
-        participantQos.wire_protocol().builtin.discovery_config.discoveryProtocol = DiscoveryProtocol::CLIENT;
-        Locator_t server_locator;
-        IPLocator::setIPv4(server_locator, 127, 0, 0, 1);
-        server_locator.port = 11812;
-        participantQos.wire_protocol().builtin.discovery_config.m_DiscoveryServers.push_back(server_locator);
+        // * Configure the current participant as SERVER
+        participantQos.wire_protocol().builtin.discovery_config.discoveryProtocol = DiscoveryProtocol::SERVER;
 
-        //  // Explicit configuration of shm transport
-        // participantQos.transport().use_builtin_transports = false;
-        // auto shm_transport = std::make_shared<SharedMemTransportDescriptor>();
-        // shm_transport->segment_size(10 * 1024 * 1024);
-        // participantQos.transport().user_transports.push_back(shm_transport);
+        // * Add custom user transport
+        auto data_transport = std::make_shared<TCPv4TransportDescriptor>();
+        data_transport->add_listener_port(PORT);
+        participantQos.transport().user_transports.push_back(data_transport);
+
+        // * Define the listening locator
+        constexpr uint16_t tcp_listening_port = PORT;
+        Locator_t listening_locator;
+        IPLocator::setIPv4(listening_locator, LOCAL_IP);
+        IPLocator::setPhysicalPort(listening_locator, tcp_listening_port);
+        IPLocator::setLogicalPort(listening_locator, tcp_listening_port);
+        participantQos.wire_protocol().builtin.metatrafficUnicastLocatorList.push_back(listening_locator);
 
         participant_ = DomainParticipantFactory::get_instance()->create_participant(0, participantQos);
 

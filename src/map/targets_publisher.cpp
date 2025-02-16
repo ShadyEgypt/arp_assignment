@@ -1,4 +1,6 @@
 #include "targets_publisher.h"
+#define LOCAL_IP "192.168.0.125"
+#define PORT 6000
 
 Grid *grid_;
 Globals *globals_;
@@ -153,27 +155,23 @@ public:
         DomainParticipantQos participantQos;
         participantQos.name("target_publisher");
 
-        // * Disable built-in transports (UDP, SHM, ecc.)
-        participantQos.transport().use_builtin_transports = false;
-        // * Disable Simple Server mode
-        participantQos.wire_protocol().builtin.discovery_config.use_SIMPLE_EndpointDiscoveryProtocol = false;
+        // * Configure the current participant as SERVER
+        participantQos.wire_protocol().builtin.discovery_config.discoveryProtocol = DiscoveryProtocol::CLIENT;
 
-        // * Configure the TCP transport
-        auto tcp_transport = std::make_shared<TCPv4TransportDescriptor>();
-        tcp_transport->add_listener_port(5100);
-        tcp_transport->interfaceWhiteList.push_back("127.0.0.1");
-        tcp_transport->set_WAN_address("127.0.0.1");
-        participantQos.transport().user_transports.push_back(tcp_transport);
-        // * Configure Discovery Server mode
-        participantQos.wire_protocol().builtin.discovery_config.discoveryProtocol = DiscoveryProtocol::SERVER;
-        participantQos.wire_protocol().participant_id = 1;
+        // * Add custom user transport with TCP port 0 (automatic port assignation)
+        auto data_transport = std::make_shared<TCPv4TransportDescriptor>();
+        data_transport->add_listener_port(0);
+        participantQos.transport().user_transports.push_back(data_transport);
 
-        // * Set the port 11811
+        // * Define the server locator to be on interface
+        constexpr uint16_t server_port = PORT;
         Locator_t server_locator;
-        IPLocator::setIPv4(server_locator, 127, 0, 0, 1);
-        server_locator.port = 11811;
-        participantQos.wire_protocol().builtin.metatrafficUnicastLocatorList.push_back(server_locator);
+        IPLocator::setIPv4(server_locator, LOCAL_IP);
+        IPLocator::setPhysicalPort(server_locator, server_port);
+        IPLocator::setLogicalPort(server_locator, server_port);
 
+        // *Add the server
+        participantQos.wire_protocol().builtin.discovery_config.m_DiscoveryServers.push_back(server_locator);
         participant_ = DomainParticipantFactory::get_instance()->create_participant(0, participantQos);
         if (!participant_)
         {
