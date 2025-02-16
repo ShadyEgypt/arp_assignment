@@ -1,1 +1,1 @@
-rm -rf ./logs/*
+rm -rf ./Binary/logs/*
