@@ -16,8 +16,8 @@ konsole --new-tab -e ./targets &
 sleep 1
 konsole --new-tab -e ./drone &
 sleep 1
-konsole --new-tab -e ./targets_publisher &
+konsole --new-tab -e ./obstacles_publisher &
 sleep 1
-konsole --new-tab -e ./obstacles_subscriber &
+konsole --new-tab -e ./targets_subscriber &
 
 echo "All binaries are running in separate Konsole tabs."
