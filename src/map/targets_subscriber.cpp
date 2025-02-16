@@ -1,25 +1,12 @@
 #include "targets_subscriber.h"
+#define LOCAL_IP "192.168.0.125"
+#define PORT 6000
 
 Grid *grid_;
 Globals *globals_;
 int shm_grid_fd;
 int shm_globals_fd;
 volatile std::sig_atomic_t shutdown_flag = 0;
-int fd;
-
-void writeToPipe(int fd, const Target &target)
-{
-    if (fd == -1)
-    {
-        throw std::system_error(EINVAL, std::system_category(), "Invalid file descriptor");
-    }
-
-    ssize_t bytes_written = write(fd, &target, sizeof(Target));
-    if (bytes_written == -1)
-    {
-        throw std::system_error(errno, std::system_category(), "Failed to write to FIFO");
-    }
-}
 
 std::shared_ptr<void> map_shared_memory(int shm_fd, size_t size)
 {
@@ -85,35 +72,6 @@ private:
 void sigint_handler(int signal)
 {
     shutdown_flag = 1;
-
-    // Detach shared memory for Grid
-    if (grid_ != nullptr)
-    {
-        munmap((void *)grid_, sizeof(Grid));
-        std::cout << "Detached grid shared memory." << std::endl;
-    }
-
-    // Detach shared memory for Globals
-    if (globals_ != nullptr)
-    {
-        munmap((void *)globals_, sizeof(Globals));
-        std::cout << "Detached globals shared memory." << std::endl;
-    }
-
-    // Optionally close shared memory file descriptors if they are stored globally
-    if (shm_grid_fd != -1)
-    {
-        close(shm_grid_fd);
-        shm_grid_fd = -1;
-        std::cout << "Closed grid shared memory file descriptor." << std::endl;
-    }
-    if (shm_globals_fd != -1)
-    {
-        close(shm_globals_fd);
-        shm_globals_fd = -1;
-        std::cout << "Closed globals shared memory file descriptor." << std::endl;
-    }
-    close(fd);
 }
 
 class TargetsSubscriber
@@ -132,9 +90,14 @@ private:
     class SubListener : public DataReaderListener
     {
     public:
-        SubListener() : samples_(0) {}
+        SubListener()
+            : samples_(0)
+        {
+        }
 
-        ~SubListener() override {}
+        ~SubListener() override
+        {
+        }
 
         void on_subscription_matched(
             DataReader *reader,
@@ -169,15 +132,13 @@ private:
             {
                 if (info.valid_data)
                 {
-                    Target target;
-                    unsigned char id = static_cast<unsigned char>(my_message_.id());
-                    target.id = id;
-                    target.x = static_cast<unsigned char>(my_message_.x());
-                    target.y = static_cast<unsigned char>(my_message_.y());
-                    std::cout << "Index: " << static_cast<unsigned int>(id)
-                              << " X: " << static_cast<unsigned int>(target.x)
-                              << " Y: " << static_cast<unsigned int>(target.y) << std::endl;
-                    writeToPipe(fd, target);
+                    samples_++;
+                    std::cout << "Index: " << my_message_.id()
+                              << " X: " << my_message_.x()
+                              << " Y: " << my_message_.y() << std::endl;
+                    grid_->targets[my_message_.id()].id = my_message_.id();
+                    grid_->targets[my_message_.id()].x = my_message_.x();
+                    grid_->targets[my_message_.id()].y = my_message_.y();
                 }
             }
         }
@@ -238,18 +199,21 @@ public:
         DomainParticipantQos participantQos;
         participantQos.name("target_subscriber");
 
-        participantQos.wire_protocol().builtin.discovery_config.use_SIMPLE_EndpointDiscoveryProtocol = false;
-        participantQos.wire_protocol().builtin.discovery_config.discoveryProtocol = DiscoveryProtocol::CLIENT;
-        Locator_t server_locator;
-        IPLocator::setIPv4(server_locator, 127, 0, 0, 1);
-        server_locator.port = 11812;
-        participantQos.wire_protocol().builtin.discovery_config.m_DiscoveryServers.push_back(server_locator);
+        // * Configure the current participant as SERVER
+        participantQos.wire_protocol().builtin.discovery_config.discoveryProtocol = DiscoveryProtocol::SERVER;
 
-        //  // Explicit configuration of shm transport
-        // participantQos.transport().use_builtin_transports = false;
-        // auto shm_transport = std::make_shared<SharedMemTransportDescriptor>();
-        // shm_transport->segment_size(10 * 1024 * 1024);
-        // participantQos.transport().user_transports.push_back(shm_transport);
+        // * Add custom user transport
+        auto data_transport = std::make_shared<TCPv4TransportDescriptor>();
+        data_transport->add_listener_port(PORT);
+        participantQos.transport().user_transports.push_back(data_transport);
+
+        // * Define the listening locator
+        constexpr uint16_t tcp_listening_port = PORT;
+        Locator_t listening_locator;
+        IPLocator::setIPv4(listening_locator, LOCAL_IP);
+        IPLocator::setPhysicalPort(listening_locator, tcp_listening_port);
+        IPLocator::setLogicalPort(listening_locator, tcp_listening_port);
+        participantQos.wire_protocol().builtin.metatrafficUnicastLocatorList.push_back(listening_locator);
 
         participant_ = DomainParticipantFactory::get_instance()->create_participant(0, participantQos);
 
@@ -298,12 +262,10 @@ public:
     }
 };
 
-TargetsSubscriber *subscriber = new TargetsSubscriber();
+TargetsSubscriber *subscriber;
 
 int main()
 {
-    std::string fifoPath = "/tmp/targets";
-    fd = open(fifoPath.c_str(), O_WRONLY);
     SharedMemoryHandle shm_grid_fd(SHM_GRID_NAME, O_RDWR, 0666);
     auto grid_ptr = std::static_pointer_cast<Grid>(map_shared_memory(shm_grid_fd.get_fd(), SHM_GRID_SIZE));
     if (!grid_ptr)
@@ -321,18 +283,14 @@ int main()
         return false;
     }
     globals_ = globals_ptr.get();
-
-    globals_->sub = getpid();
-    std::cout << "Set PID in SHM: " << globals_->sub << std::endl;
-
     // Initialize the global publisher
     if (subscriber->init())
     {
-        std::cout << "Subscriber initialized successfully." << std::endl;
+        std::cout << "Publisher initialized successfully." << std::endl;
     }
     else
     {
-        std::cerr << "Failed to initialize subscriber." << std::endl;
+        std::cerr << "Failed to initialize publisher." << std::endl;
         return 1; // Return an error code
     }
     std::signal(SIGINT, sigint_handler); // Register signal handler
