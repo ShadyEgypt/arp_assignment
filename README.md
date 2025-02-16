@@ -29,26 +29,24 @@ The system is divided into several key components, as outlined below:
 - **Drone Dynamics**: Simulates the drone’s behavior and responds to user inputs and environmental factors.
 - **Watchdog**: Monitors system health and ensures proper operation of components.
 - **Display**: Shows an interactive map of the evirovment.
-- **Obstacles and Targets Generators**: Creates dynamic obstacles and target positions to be shared with the drone system.
+- **Targets Generator**: Creates target points.
+- **Targets Publisher**: Publishes the generated targets points to the other machine
+- **Obstacles Subscriber**: Subscribes to a topic to get the generated obstacles' points from the other machine.
 
 
 ## How to Run the Project
-To start the game run this commands on the terminal:
+To compile the project
 ```
+chmod u+x make.sh
+./make
+```
+To run the project
+```
+chmod u+x run.sh
 ./run.sh
 ```
-it's better to run each process in a separate terminal.
-```
-cd Binary/
-./server
-./map
-./display
-./drone
-./targets
-./obstacles
-./targets_publisher
-./obstacles_subscriber
-```
+You also need to run the other machine.
+And don't forget to edit the IP and PORT in the sub and pub files.
 ## Results
 ![results](./res.jpg "DDS Results")
 
